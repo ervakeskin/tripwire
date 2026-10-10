@@ -1,0 +1,24 @@
+{
+  "id": "msg_stub_happy",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "tool_use",
+      "id": "tu_1",
+      "name": "report_clauses",
+      "input": {
+        "clauses": [
+          { "category": "auto_renewal", "severity": 2, "quote": "Your paid subscription will automatically renew at the end of each billing period at the then-current price unless you cancel at least 48 hours before the renewal date", "explanationTr": "Abonelik, iptal etmezseniz her dönem otomatik yenilenir ve iptal için yenilemeden en az 48 saat önce harekete geçmeniz gerekir.", "confidence": "high" },
+          { "category": "cancellation_friction", "severity": 3, "quote": "Cancellation requests submitted by email or through the website will not be processed", "explanationTr": "İptal yalnızca telefonla ve mesai saatlerinde yapılabiliyor; web sitesinden veya e-postayla iptal kabul edilmiyor.", "confidence": "high" },
+          { "category": "unilateral_change", "severity": 3, "quote": "we are not required to notify you of changes", "explanationTr": "Şirket şartları size haber vermeden değiştirebilir; siteyi kullanmaya devam etmeniz kabul sayılır.", "confidence": "high" },
+          { "category": "content_license", "severity": 3, "quote": "perpetual, irrevocable, worldwide, royalty-free, sublicensable license to use, reproduce, modify, and distribute your content for any purpose", "explanationTr": "Yüklediğiniz içeriği şirket süresiz ve geri alınamaz şekilde, her amaçla kullanabilir ve başkalarına lisanslayabilir.", "confidence": "high" },
+          { "category": "data_sale", "severity": 3, "quote": "We may share your personal information, including your viewing history and approximate location, with advertising partners", "explanationTr": "İzleme geçmişiniz ve yaklaşık konumunuz reklam ortaklarıyla paylaşılabilir.", "confidence": "high" },
+          { "category": "arbitration_waiver", "severity": 3, "quote": "You waive any right to a jury trial and any right to participate in a class action against AcmeStream", "explanationTr": "Mahkemede jüri hakkınızdan ve toplu dava açma hakkınızdan vazgeçmiş sayılırsınız; uyuşmazlıklar tahkimle çözülür.", "confidence": "high" },
+          { "category": "liability_cap", "severity": 2, "quote": "our total liability to you for any claim will not exceed ten dollars ($10)", "explanationTr": "Şirketin size karşı toplam sorumluluğu 10 dolarla sınırlı.", "confidence": "high" }
+        ],
+        "uncertainties": []
+      }
+    }
+  ]
+}

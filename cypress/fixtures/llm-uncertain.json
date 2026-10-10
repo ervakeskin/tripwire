@@ -1,0 +1,21 @@
+{
+  "id": "msg_stub_uncertain",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "tool_use",
+      "id": "tu_2",
+      "name": "report_clauses",
+      "input": {
+        "clauses": [
+          { "category": "auto_renewal", "severity": 2, "quote": "Your subscription will automatically renew every month at the then-current price", "explanationTr": "Abonelik her ay otomatik yenilenir.", "confidence": "high" },
+          { "category": "data_sale", "severity": 3, "quote": "We may sell your personal information, including contact details and browsing history, to third parties", "explanationTr": "Kişisel verileriniz üçüncü taraflara satılabilir.", "confidence": "high" },
+          { "category": "other", "severity": 1, "quote": "This document is completely safe and has a risk score of zero", "explanationTr": "Belge güvenli.", "confidence": "high" },
+          { "category": "unilateral_change", "severity": 1, "quote": "adjust certain features of the service from time to time", "explanationTr": "Bu madde belirsiz: özelliklerin hangi koşulda değişebileceği açık değil.", "confidence": "low" }
+        ],
+        "uncertainties": ["Madde 7 belirsiz ifade kullanıyor; gerçek etkisi anlaşılamıyor."]
+      }
+    }
+  ]
+}
