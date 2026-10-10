@@ -1,0 +1,85 @@
+{
+  "url": "https://slack.com/terms-of-service/user",
+  "score": 39,
+  "level": "medium",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you access or use the Services, or continue accessing or using the Services after being notified of a change to the User Terms or the Acceptable Use Policy , you confirm that you have read, understand and agree to be bound by the User Terms and the Acceptable Use Policy .",
+      "quoteStart": 1193,
+      "quoteEnd": 1468,
+      "explanationTr": "Şirket, Kullanım Koşulları veya Uygun Kullanım Politikası'nda değişiklik yaptığında, bu değişiklikten haberdar edildikten sonra hizmeti kullanmaya devam etmeniz durumunda yeni koşulları kabul etmiş sayılırsınız.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO YOU RELATING TO THE SERVICES, WHICH ARE PROVIDED TO YOU ON AN “AS IS” AND “ AS AVAILABLE” BASIS.",
+      "quoteStart": 4108,
+      "quoteEnd": 4293,
+      "explanationTr": "Slack, hizmetlerle ilgili olarak size hiçbir garanti vermez ve hizmetleri yalnızca \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunar; bu nedenle hizmetten kaynaklanan sorunlarda sorumluluk kabul etmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "These User Terms remain effective until Customer’s subscription for you expires or terminates, or your access to the Services has been terminated by Customer or us. Please contact Customer if you at any time or for any reason wish to terminate your account, including due to a disagreement with any updates to these User Terms or the Acceptable Use Policy .",
+      "quoteStart": 5143,
+      "quoteEnd": 5500,
+      "explanationTr": "Hesabınız, müşteri (örneğin işvereniniz) veya Slack tarafından sonlandırılabilir; hesap kapatmak isterseniz doğrudan müşteriye başvurmanız gerekir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c4",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OUR MAXIMUM AGGREGATE LIABILITY TO YOU FOR ANY BREACH OF THE USER TERMS IS ONE HUNDRED DOLLARS ($100) IN THE AGGREGATE.",
+      "quoteStart": 6583,
+      "quoteEnd": 6702,
+      "explanationTr": "Slack, Kullanıcı Şartları kapsamındaki tüm ihlaller için size ödeyeceği toplam tazminatı 100 dolarla sınırlı tutuyor. Bu, olası zararınız çok daha yüksek olsa bile alabileceğiniz en yüksek tutardır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "IN NO EVENT WILL YOU OR WE HAVE ANY LIABILITY TO THE OTHER FOR ANY LOST PROFITS OR REVENUES OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, COVER OR PUNITIVE DAMAGES HOWEVER CAUSED, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, AND WHETHER OR NOT THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+      "quoteStart": 6064,
+      "quoteEnd": 6402,
+      "explanationTr": "Slack, kâr kaybı, dolaylı veya özel zararlar gibi birçok zarar türü için hiçbir durumda sorumlu tutulmayacağını belirtiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you use the Services after the effective date of any changes, that use will constitute your acceptance of the revised terms and conditions.",
+      "quoteStart": 9373,
+      "quoteEnd": 9515,
+      "explanationTr": "Slack, Kullanıcı Şartları'nda değişiklik yapabilir ve değişikliklerin yürürlüğe girdiği tarihten sonra hizmeti kullanmanız, yeni şartları kabul ettiğiniz anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We may directly step in and take what we determine to be appropriate action (including disabling your account) if Customer does not take appropriate action or we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties.",
+      "quoteStart": 5800,
+      "quoteEnd": 6063,
+      "explanationTr": "Slack, hesabınızı devre dışı bırakma dahil olmak üzere uygun gördüğü önlemleri alma hakkını saklı tutuyor; bu, tek taraflı bir karar olabilir.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "Hesap sonlandırma maddesi, kullanıcının kendi inisiyatifiyle hesap kapatma sürecini müşteriye yönlendiriyor; bu, doğrudan bir 'hesap sonlandırma' riski olmaktan çok bir süreç yönlendirmesi olabilir, ancak kullanıcının Slack ile doğrudan bir sözleşmesinin olmaması nedeniyle dikkat çekici.",
+    "Hesap kapatma maddesi, 'credible risk of harm' gibi geniş bir gerekçeye dayanıyor; bu nedenle kesin bir 'keyfi' kapatma hükmü olmaktan çok, geniş takdir yetkisi tanıyor."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

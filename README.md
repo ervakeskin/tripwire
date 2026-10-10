@@ -65,16 +65,31 @@ Tehdit modeli: ToS sayfasının kendisi saldırgan olabilir.
 
 **Bilinen sınırlar:** (1) Model kandırılıp *hiç madde döndürmezse* validator bunu yakalayamaz (yanlış negatif) — bu durumda UI zayıf sinyalle ("0 ≠ güvenli", enjeksiyon varsa "güvenmeyin") uyarır. (2) `@page-agent/page-controller` paketinde `executeJavascript` için doğrudan `eval` var; biz bu API'yi çağırmıyoruz (read-only kullanım), ancak paket bundle'da yer alıyor. (3) Enjeksiyon tespiti heuristiktir; yeni kalıpları kaçırabilir.
 
-## Eval (≥5 gerçek ToS)
+## Eval (6 gerçek ToS)
 
-Korpus: `eval/corpus/*.txt` (Spotify, Dropbox, Reddit, Grammarly, LinkedIn, Slack; kaynak URL/tarih `SOURCES.json`, `npm run eval:fetch` ile üretilir). Elle etiketli gold: `eval/gold.json` (`test/gold.test.ts` her gold alıntının korpusta bulunduğunu doğrular). Eşleşme: aynı kategori + alıntı aralıkları kesişiyor.
+Korpus: `eval/corpus/*.txt` (Spotify, Dropbox, Reddit, Grammarly, LinkedIn, Slack; kaynak URL/tarih `SOURCES.json`, `npm run eval:fetch` ile üretilir). Elle etiketli gold: `eval/gold.json` (29 madde; `test/gold.test.ts` her gold alıntının korpusta bulunduğunu doğrular).
+**Eşleşme kuralı:** aynı kategori **ve** alıntı aralıkları ≤400 karakter yakınlıkta (gold tek cümledir, model çoğu zaman aynı maddenin komşu cümlesini alıntılar).
+**Yanlış alarm adayı** = gold'da olmayan her model maddesi. Gold seyrek olduğu için bunlar tek tek elle sınıflandırıldı (`eval/adjudication.json`): *gerçek risk* (gold eksik) · *sınırda* · *gürültü*.
+
+| Model · istem | Kapsam | Yakalanan | Recall | Fazla madde | gerçek / sınırda / gürültü | Düzeltilmiş precision* | Alıntı doğrulamasında atılan |
+|---|---|---|---|---|---|---|---|
+| gemini-3.1-flash-lite · v2 | %100 | 23/29 | %79 | 53 | 23 / 24 / 6 | **%76** | 4/82 (%5) |
+| qwen3.8-27b · v2 | %100 | 25/29 | **%86** | 75 | 26 / 36 / 13 | %69 | 4/109 (%4) |
+| gpt-oss-20b · v2 | %100 | 21/29 | %72 | 54 | 16 / 11 / 7 (20 incelenmedi) | ≥%57 (incelenmeyenler yanlış alarm sayıldı) | 20/99 (%20) |
+| qwen3.8-27b · v1 (ilk istem) | %100 | 23/29 | %79 | 120 | incelenmedi | – | 11/164 (%7) |
+
+\* (yakalanan + gerçek risk + sınırda/2) / (yakalanan + fazla madde). Sınıflandırmayı geliştirici-yardımcısı yaptı; örnekleme ile doğrulanmalıdır. Ayrıntılı kaçırılan/fazla listeleri: `eval/report-*.md`, hata analizi: [`eval/ANALYSIS.md`](eval/ANALYSIS.md).
+
+Öne çıkanlar:
+- **Doğrulayıcı gerçekten iş görüyor:** gpt-oss-20b her 5 iddiadan 1'ini metinde olmayan alıntıyla üretti; bunların hiçbiri rapora girmedi.
+- **İstem sıkılaştırması (v1→v2) etkili:** fazla madde 120→75, uydurma alıntı 7%→4%, recall 79%→86%. *Dürüstlük notu:* istem aynı 6 belgedeki sonuca bakılarak ayarlandı; ayrı bir doğrulama kümesi yok, bu nedenle sayılar iyimser olabilir.
+- Skor kalibrasyonu: v1 sonuçları eski skorlayıcıyla (hepsi ~100'e yapışıyordu), v2 sonuçları yeni skorlayıcıyla (Slack 39 · Dropbox 66 · Reddit 57 · LinkedIn 59 · Spotify 77 · Grammarly 83, Gemini).
 
 ```bash
-LLM_PRESET=gemini LLM_API_KEY=... npm run eval   # gemini | groq | ollama → eval/report.md
-npm run eval -- --cached                         # kayıtlı sonuçları yeniden puanlar
+LLM_PRESET=gemini LLM_MODEL=gemini-3.1-flash-lite LLM_API_KEY=... npm run eval   # → eval/report-<model>_<prompt>.md
+npm run eval -- --cached                        # kayıtlı sonuçları yeniden puanlar (API çağrısı yok)
 ```
-
-> **Durum:** `eval/report.md` henüz gerçek model çıktısıyla üretilmedi (LLM anahtarı gerekir). Sonuçlar bu bölüme yapıştırılacak; "yanlış alarm adayları" gold eksik olabileceğinden tek tek elle gözden geçirilip burada sınıflandırılacak.
+Anahtarlar yalnızca ortam değişkenidir, repoya yazılmaz. `LLM_API_KEY` virgülle ayrılmış birden çok anahtar alır (ücretsiz kotalar için döndürülür).
 
 ## Test ve demo
 

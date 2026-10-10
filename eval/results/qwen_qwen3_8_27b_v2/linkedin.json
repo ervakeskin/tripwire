@@ -1,0 +1,166 @@
+{
+  "url": "https://www.linkedin.com/legal/user-agreement",
+  "score": 62,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify this Contract, our Privacy Policy and our Cookie Policy from time to time. If we materially change these terms or if we are legally required to provide notice, we will provide you notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. However, we may not always provide prior notice of changes to these terms (1) when those changes are legally required to be implemented with immediate effect, or (2) when those changes relate to a newly launched service or feature.",
+      "quoteStart": 3671,
+      "quoteEnd": 4227,
+      "explanationTr": "LinkedIn, sözleşme, gizlilik ve çerez politikalarını dilediği zaman değiştirebilir. Bazı durumlarda (yeni özellikler veya yasal zorunluluklar) değişiklikten önce haber vermemesi mümkün olabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "If you purchase a subscription, your payment method automatically will be charged at the start of each subscription period for the fees and taxes applicable to that period. To avoid future charges, cancel before the renewal date.",
+      "quoteStart": 7531,
+      "quoteEnd": 7760,
+      "explanationTr": "Abonelikleriniz için ödeme yönteminiz her dönem başında otomatik olarak tahsil edilir. Gelecek dönemlerde ücret ödememek için yenileme tarihinden önce iptal etmeniz gerekir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify our prices effective prospectively upon reasonable notice to the extent allowed under the law.",
+      "quoteStart": 7825,
+      "quoteEnd": 7933,
+      "explanationTr": "LinkedIn ücretlerini ileride değiştirebilir ve bu yeni fiyatlar size bildirildikten sonra geçerli olur. Bu değişikliklere onay vermeniz gerekmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "A worldwide, transferable and sublicensable right to use, copy, modify, distribute, publicly perform and display, host, and process your content and other information without any further consent, notice and/or compensation to you or others.",
+      "quoteStart": 10432,
+      "quoteEnd": 10672,
+      "explanationTr": "Paylaştığınız içerikler için LinkedIn'e dünya genelinde, devredilebilir ve alt lisans verilebilir geniş bir kullanım hakkı tanıyorsunuz. İçeriği silseniz bile daha önce başkalarına verilmiş lisanslar geçerli kalmaya devam edebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 1,
+      "quote": "To the extent that laws allow this, we are not obligated to publish any content or other information on our Services and can remove it with or without notice.",
+      "quoteStart": 9759,
+      "quoteEnd": 9917,
+      "explanationTr": "LinkedIn, içeriklerinizi bildirimde bulunmadan veya gerekçe göstermeden kaldırma hakkına sahiptir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c6",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "While we may edit and make format changes to your content (such as translating or transcribing it, modifying the size, layout or file type, and removing or adding labels or metadata), we will take steps to avoid materially modifying the meaning of your expression in content you share with others.",
+      "quoteStart": 12210,
+      "quoteEnd": 12507,
+      "explanationTr": "LinkedIn, paylaşımlarınızda çeviri, boyut, yerleşim veya dosya türü gibi değişiklikler yapabilir; ancak ifadenizin anlamını önemli ölçüde değiştirmemeye özen gösterileceği belirtiliyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "By submitting suggestions or other feedback regarding our Services to LinkedIn, you agree that LinkedIn can use and share (but does not have to) such feedback for any purpose without compensation to you.",
+      "quoteStart": 13027,
+      "quoteEnd": 13230,
+      "explanationTr": "Hizmetler hakkında gönderdiğiniz öneri ve geri bildirimleri LinkedIn, size hiçbir ödeme yapmadan herhangi bir amaçla kullanabilir ve üçüncü kişilerle paylaşabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We may change, suspend or discontinue any of our Services. We may also limit the availability of features, content and other information so that they are not available to all Visitors or Members (e.g., by country or by subscription access).",
+      "quoteStart": 13843,
+      "quoteEnd": 14083,
+      "explanationTr": "LinkedIn, bazı özellikleri değiştirebilir, kısıtlayabilir veya herhangi bir hizmeti tamamen sonlandırabilir; bu durumda önceden haber verilmeyebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We don’t promise to store or show (or keep showing) any information (including content) that you’ve shared. LinkedIn is not a storage service. You agree that we have no obligation to store, maintain or provide you a copy of any content or other information that you or others provide, except to the extent required by applicable law and as noted in our Privacy Policy.",
+      "quoteStart": 14084,
+      "quoteEnd": 14452,
+      "explanationTr": "Paylaştığınız içerikleri veya bilgileri saklamak, göstermek veya size kopyasını vermek zorunda değiller; LinkedIn bir depolama hizmeti olarak kabul edilmiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "LINKEDIN AND ITS AFFILIATES WILL NOT BE LIABLE TO YOU IN CONNECTION WITH THIS CONTRACT FOR ANY AMOUNT THAT EXCEEDS (A) THE TOTAL FEES PAID OR PAYABLE BY YOU TO LINKEDIN FOR THE SERVICES DURING THE TERM OF THIS CONTRACT, IF ANY, OR (B) US $1000.",
+      "quoteStart": 21763,
+      "quoteEnd": 22007,
+      "explanationTr": "LinkedIn, tazminat sorumluluğunu size ödediğiniz ücretle veya 1000 ABD doları ile sınırlıyor. Kâr kaybı, itibar kaybı veya veri kaybı gibi dolaylı zararlardan sorumlu tutulamıyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach this Contract or the law or are misusing the Services (e.g., violating any of the Dos and Don’ts or Professional Community Policies ).",
+      "quoteStart": 17889,
+      "quoteEnd": 18113,
+      "explanationTr": "LinkedIn, sözleşmeyi ihlal ettiğinizi veya hizmetleri kötüye kullandığınızı düşünürse hesabınızı kısıtlayabilir, askıya alabilir veya tamamen kapatabilir. Bu durumda içerikleriniz de kaldırılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "tracking",
+      "severity": 2,
+      "quote": "We use the data and other information that you provide and that we have about Members and content on the Services to make recommendations for connections, content, ads, and features that may be useful to you.",
+      "quoteStart": 18892,
+      "quoteEnd": 19100,
+      "explanationTr": "LinkedIn, sizin hakkınızdaki verileri kullanarak bağlantı, içerik, reklam ve iş önerileri yapar. Profilinizdeki bilgiler, size ve işe alıcılara öneri sunmak için kullanılır.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c13",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On termination, you lose the right to access or use the Services.",
+      "quoteStart": 22985,
+      "quoteEnd": 23138,
+      "explanationTr": "LinkedIn, size ve uyarı gerekmeden hesabınızı istediği zaman kapatabilir; bu durumda hizmetlere erişim hakkınızı kaybedersiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "other",
+      "severity": 2,
+      "quote": "You and LinkedIn agree that the laws of the State of California, U.S.A., excluding its conflict of laws rules, shall exclusively govern any dispute relating to this Contract and/or the Services. You and LinkedIn both agree that all claims and disputes can be litigated only in the federal or state courts in Santa Clara County, California, USA, and you and LinkedIn each agree to personal jurisdiction in those courts.",
+      "quoteStart": 24670,
+      "quoteEnd": 25088,
+      "explanationTr": "ABD dışında yaşayanlar için tüm uyuşmazlıkların yalnızca Kaliforniya eyaletinin Santa Clara bölgesindeki mahkemelerde görülmesi ve Kaliforniya hukukunun uygulanması, tüketici için çok uzak ve masraflı bir süreç anlamına gelebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "To the extent we can under law, we may remove or restrict access to content, features, services, or information, including if we believe that it’s reasonably necessary to avoid harm to LinkedIn or others, violates the law or is reasonably necessary to prevent misuse of our Services. We reserve the right to take action against serious violations of this Contract, including by implementing account restrictions for significant violations.",
+      "quoteStart": 31088,
+      "quoteEnd": 31527,
+      "explanationTr": "LinkedIn, içeriğin zararlı veya yasa dışı olduğunu \"makul\" bulması durumunda içeriği kaldırma veya hesabınıza kısıtlama getirme hakkını saklı tutuyor; bu kararın tek taraflı ve keyfi olabileceği belirtiliyor.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "Hesap kapatma maddesinde 'notice' (bildirim) ifadesi geçiyor; bildirimin ne kadar önceden yapılacağı belirsiz, bu yüzden kesin bir 'bildirimsiz' ifadesi yerine 'istediği zaman' olarak yorumladım.",
+    "Bu bölüm ağırlıklı olarak kabul edilebilir kullanım kuralları ve şikayet/iletişim bilgileri içeriyor; tüketiciyi şaşırtacak ciddi bir madde bulunmuyor.",
+    "Hesap kısıtlama ifadesi \"ciddi ihlaller\" için geçerli olsa da, \"makul\" ölçütünün ne anlama geldiği belirsiz; bu nedenle güven düzeyi orta olarak işaretlendi."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}
