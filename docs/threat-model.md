@@ -23,7 +23,7 @@ Sayfa metni de LLM çıktısı da **güvenilmez veri** sayılır; ikisinin aras�
 | 4 | Modelin şema dışı/serbest metin çıktısı | Ayrıştırma hatası, enjeksiyon taşıyıcısı | Zorunlu tool çağrısı + Zod; madde bazında doğrulama; serbest metin hata sayılır | — |
 | 5 | Sayfanın uzantıya mesaj/DOM ile müdahalesi | Anahtar çalma | Anahtar yalnız `chrome.storage.local`'da ve yalnız background'da okunur; content script'te yok; sayfa uzantı bağlamına erişemez | Kötü niyetli başka uzantılar |
 | 6 | Kullanıcı verisinin sızması | Gizlilik | Yalnızca ToS sayfası metni, yalnızca kullanıcının seçtiği sağlayıcıya gider; telemetri yok | Sağlayıcının kendi saklama politikası |
-| 7 | Gereksiz yetki | Saldırı yüzeyi | İzinler: `activeTab`, `storage`, `sidePanel`, `scripting`; host izni yalnız desteklenen LLM uçları | Content script yalnızca kullanıcı taradığında, o sekmeye enjekte edilir (`registration: runtime`) |
+| 7 | Gereksiz yetki | Saldırı yüzeyi | İzinler: `activeTab`, `storage`, `sidePanel`, `scripting`, `declarativeContent`; host izni yalnız desteklenen LLM uçları (tüm-site host izni derleme sırasında manifestten çıkarılır, `wxt.config.ts`) | Content script yalnızca kullanıcı taradığında, o sekmeye enjekte edilir (`registration: runtime`) |
 | 8 | Bağımlılık riski | Tedarik zinciri | `@page-agent/page-controller` yalnızca **okuma** için kullanılır; `click/input/executeJavascript` çağrılmaz. Pakette doğrudan `eval` bulunur (build uyarısı verir) | Paket güncellemesiyle davranış değişimi → sürüm sabitlenir |
 
 ## Test karşılıkları

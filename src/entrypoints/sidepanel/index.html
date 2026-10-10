@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+  <div id="caption" data-testid="caption" hidden></div>
+  <div id="panel">
   <div class="disclaimer" id="disclaimer" data-testid="disclaimer">⚖️ Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın.</div>
   <header>
     <h1>Tripwire</h1>
@@ -15,6 +17,7 @@
   <button id="scan" data-testid="scan">Bu sayfayı tara</button>
   <div id="status" data-testid="status" role="status"></div>
   <main id="result"></main>
+  </div>
   <iframe id="page-frame" title="Taranan sayfa (yalnızca web demo modu)" sandbox="allow-same-origin"></iframe>
   <script type="module" src="./main.ts"></script>
 </body>

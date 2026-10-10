@@ -55,10 +55,13 @@ const webHost: Host = {
   async extract() {
     const doc = new URLSearchParams(location.search).get('doc') ?? 'tos-demo';
     const frame = document.getElementById('page-frame') as HTMLIFrameElement;
-    await new Promise<void>((res) => {
-      frame.onload = () => res();
-      frame.src = `/fixtures/${doc}.html`;
-    });
+    if (!frame.getAttribute('src')) {
+      // first call: load the fixture named in ?doc=; later calls reuse whatever page the user navigated to (e.g. via a found link)
+      await new Promise<void>((res) => {
+        frame.onload = () => res();
+        frame.src = `/fixtures/${doc}.html`;
+      });
+    }
     const w = frame.contentWindow!;
     const { visible, hidden } = extractVisibleText(frame.contentDocument!.body, w as unknown as Window);
     return { url: frame.src, title: frame.contentDocument!.title, text: visible, hiddenFlags: detectInjection(hidden), hiddenChars: hidden.length, looksLikeLegal: isLegalUrl(frame.src, frame.contentDocument!.title), textSource: 'fallback', agentChars: 0, ownChars: visible.length };

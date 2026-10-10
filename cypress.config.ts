@@ -7,8 +7,8 @@ export default defineConfig({
     baseUrl: 'http://localhost:4173',
     supportFile: false,
     specPattern: 'cypress/e2e/**/*.cy.ts',
-    viewportWidth: 1000,
-    viewportHeight: 900,
+    viewportWidth: 1280,
+    viewportHeight: 720,
     defaultCommandTimeout: 8000,
   },
 });

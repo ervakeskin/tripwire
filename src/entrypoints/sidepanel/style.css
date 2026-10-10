@@ -18,8 +18,13 @@ button#scan:disabled { opacity:.6; cursor:wait; }
 .clause .sev3 { background:var(--high); color:#fff; } .clause .sev2 { background:var(--med); color:#fff; }
 .clause blockquote { margin:8px 0; padding:6px 10px; border-left:3px solid var(--line); color:var(--muted); font-size:12.5px; cursor:pointer; }
 .clause blockquote:hover { border-color:#1f6feb; }
-#page-frame { display: none; }
-body.harness #page-frame { display: block; width: 100%; height: 320px; border: 1px solid var(--line); margin-top: 16px; }
+#page-frame, #caption { display: none; }
+/* web harness (Cypress demo): page on the left, side panel on the right, like Chrome's real side panel */
+body.harness { display: flex; height: 100vh; overflow: hidden; padding: 0; }
+body.harness #page-frame { display: block; order: 1; flex: 1; height: 100vh; border: 0; background: #fff; }
+body.harness #panel { order: 2; width: 400px; height: 100vh; overflow-y: auto; padding: 0 12px 24px; border-left: 1px solid var(--line); }
+body.harness #caption { display: block; position: fixed; left: 0; top: 0; z-index: 20; width: calc(100% - 400px); padding: 10px 18px; background: #111827e6; color: #fff; font: 600 17px system-ui, sans-serif; }
+body.harness #caption[hidden] { display: none; }
 .conf-low { color:var(--high); font-weight:700; }
 
 .meta { color: var(--muted); font-size: 11.5px; margin: 4px 0; }
