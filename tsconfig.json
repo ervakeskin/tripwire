@@ -1,0 +1,5 @@
+{
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": { "strict": true, "skipLibCheck": true, "types": ["chrome", "node"] },
+  "include": ["src", "test", "eval", ".wxt/wxt.d.ts"]
+}
