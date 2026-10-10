@@ -53,6 +53,7 @@ export async function callLlm(cfg: LlmConfig, system: string, userContent: strin
     headers: { 'content-type': 'application/json', ...(key ? { authorization: `Bearer ${key}` } : {}) },
     body: JSON.stringify({
       model: cfg.model, temperature: 0,
+      ...(/gpt-oss/.test(cfg.model) ? { reasoning_effort: 'low' } : {}), // cuts hidden reasoning tokens (free-tier TPM limits)
       messages: [{ role: 'system', content: system }, { role: 'user', content: userContent }],
       tools: [{ type: 'function', function: { name: TOOL_NAME, description: TOOL_DESC, parameters: TOOL_INPUT_SCHEMA } }],
       tool_choice: { type: 'function', function: { name: TOOL_NAME } },

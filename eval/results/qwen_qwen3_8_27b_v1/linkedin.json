@@ -1,0 +1,275 @@
+{
+  "url": "https://www.linkedin.com/legal/user-agreement",
+  "score": 96,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "If you purchase a subscription, your payment method automatically will be charged at the start of each subscription period for the fees and taxes applicable to that period. To avoid future charges, cancel before the renewal date.",
+      "quoteStart": 7531,
+      "quoteEnd": 7760,
+      "explanationTr": "Abonelikleriniz için ödeme yönteminiz her dönem başında otomatik olarak tahsil edilir. Gelecekteki ödemeleri önlemek için yenileme tarihinden önce iptal etmeniz gerekir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "We may store and continue billing your payment method (e.g., credit card), even after it has expired, to avoid interruptions in your paid Services and to use it to pay for other Services you may buy. If your primary payment method fails, we may automatically charge a secondary payment method, if you have provided one.",
+      "quoteStart": 7154,
+      "quoteEnd": 7473,
+      "explanationTr": "Ödeme yönteminiz, süresi dolmuş olsa bile saklanmaya ve faturalandırmaya devam edilebilir. Birincil ödeme yönteminiz başarısız olursa, ikincil bir yöntem varsa otomatik olarak tahsil edilebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Refunds are subject to our policy, and we may modify our prices and those modified prices will apply prospectively.",
+      "quoteStart": 6659,
+      "quoteEnd": 6774,
+      "explanationTr": "Fiyatlar ileride değiştirilebilir ve bu yeni fiyatlar ileriye dönük olarak geçerli olur. Yasaların izin verdiği ölçüde makul bir bildirimle fiyat değişikliği yapılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify our prices effective prospectively upon reasonable notice to the extent allowed under the law.",
+      "quoteStart": 7825,
+      "quoteEnd": 7933,
+      "explanationTr": "Yasaların izin verdiği ölçüde makul bir bildirimle fiyatları ileride değiştirebiliriz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "A worldwide, transferable and sublicensable right to use, copy, modify, distribute, publicly perform and display, host, and process your content and other information without any further consent, notice and/or compensation to you or others.",
+      "quoteStart": 10432,
+      "quoteEnd": 10672,
+      "explanationTr": "Paylaştığınız içerikler için LinkedIn'e dünya çapında, devredilebilir ve alt lisanslanabilir bir kullanım hakkı veriyorsunuz. Bu hak, ek onay, bildirim veya tazminat gerektirmeden içeriklerinizi kullanma, kopyalama, değiştirme ve dağıtma yetkisi içerir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "You are responsible for anything that happens through your account unless you close it or report misuse.",
+      "quoteStart": 5927,
+      "quoteEnd": 6031,
+      "explanationTr": "Hesabınız üzerinden gerçekleşen her şeyden, hesabı kapatmadığınız veya kötüye kullanımı bildirmedikçe siz sorumlusunuz.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c7",
+      "category": "other",
+      "severity": 1,
+      "quote": "To the extent that laws allow this, we are not obligated to publish any content or other information on our Services and can remove it with or without notice.",
+      "quoteStart": 9759,
+      "quoteEnd": 9917,
+      "explanationTr": "Yasalara izin verildiği ölçüde, içeriklerinizi yayınlamakla yükümlü değiliz ve bunları bildirimle veya bildirim olmadan kaldırabiliriz.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c8",
+      "category": "data_sale",
+      "severity": 2,
+      "quote": "You and LinkedIn agree that we may access, store, process, and use any information (including content and/or personal data) that you provide in accordance with the terms of the Privacy Policy and your choices (including settings).",
+      "quoteStart": 12796,
+      "quoteEnd": 13026,
+      "explanationTr": "LinkedIn, gizlilik politikasına ve ayarlarınıza uygun olarak paylaştığınız içerik ve kişisel verileri erişim, depolama, işleme ve kullanım amacıyla kullanabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c9",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "By submitting suggestions or other feedback regarding our Services to LinkedIn, you agree that LinkedIn can use and share (but does not have to) such feedback for any purpose without compensation to you.",
+      "quoteStart": 13027,
+      "quoteEnd": 13230,
+      "explanationTr": "Hizmetler hakkında öneri veya geri bildirim gönderirseniz, LinkedIn bu geri bildirimi size hiçbir ödeme yapmadan herhangi bir amaçla kullanabilir ve paylaşabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change or limit the availability of some features, or end any Service.",
+      "quoteStart": 13765,
+      "quoteEnd": 13842,
+      "explanationTr": "LinkedIn, bazı özelliklerin kullanılabilirliğini değiştirebilir, kısıtlayabilir veya herhangi bir hizmeti sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change, suspend or discontinue any of our Services. We may also limit the availability of features, content and other information so that they are not available to all Visitors or Members (e.g., by country or by subscription access).",
+      "quoteStart": 13843,
+      "quoteEnd": 14083,
+      "explanationTr": "LinkedIn, hizmetlerini değiştirebilir, askıya alabilir veya sonlandırabilir; ayrıca özelliklerin ve içeriklerin kullanılabilirliğini kısıtlayabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "We don’t promise to store or show (or keep showing) any information (including content) that you’ve shared. LinkedIn is not a storage service. You agree that we have no obligation to store, maintain or provide you a copy of any content or other information that you or others provide, except to the extent required by applicable law and as noted in our Privacy Policy.",
+      "quoteStart": 14084,
+      "quoteEnd": 14452,
+      "explanationTr": "LinkedIn, paylaştığınız içerik veya bilgileri saklamak, göstermek veya size kopyasını sağlamakla yükümlü değildir; bu bir depolama hizmeti değildir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "Others’ Content: By using the Services, you may encounter content or other information that might be inaccurate, incomplete, delayed, misleading, illegal, offensive, or otherwise harmful. You agree that we are not responsible for content or other information made available through or within the Services by others, including Members.",
+      "quoteStart": 14673,
+      "quoteEnd": 15007,
+      "explanationTr": "LinkedIn, diğer üyelerin paylaştığı içerik veya bilgilerden sorumlu olmadığını belirtiyor; bu içeriklerin yanlış, eksik veya zararlı olma riski size ait.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "You further acknowledge that LinkedIn does not supervise, direct, control, or monitor Members in the making of these offers, or in their providing you with work, delivering products or performing services, and you agree that (1) LinkedIn is not responsible for these offers, or performance or procurement of them, (2) LinkedIn does not endorse any particular Member’s offers, and (3) LinkedIn is not an agent or employment agency on behalf of any Member offering employment or other work, products or services.",
+      "quoteStart": 16121,
+      "quoteEnd": 16631,
+      "explanationTr": "LinkedIn, diğer üyelerin sunduğu ürün ve hizmetlerden sorumlu olmadığını ve bu teklifleri denetlemediğini, yönlendirmediğini veya kontrol etmediğini belirtiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach this Contract or the law or are misusing the Services (e.g., violating any of the Dos and Don’ts or Professional Community Policies ).",
+      "quoteStart": 17889,
+      "quoteEnd": 18113,
+      "explanationTr": "LinkedIn, sözleşme veya yasa ihlali ya da hizmetlerin kötüye kullanılması durumunda hesabınızı kısıtlayabilir, askıya alabilir veya sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c16",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We can also remove any content or other information you shared if we believe it violates our Professional Community Policies or Dos and Don’ts or otherwise violates this Contract.",
+      "quoteStart": 18114,
+      "quoteEnd": 18293,
+      "explanationTr": "LinkedIn, paylaştığınız içerikleri veya bilgileri Topluluk Politikaları'na aykırı olduğunu düşünürse kaldırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c17",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "TO THE FULLEST EXTENT PERMITTED BY LAW (AND UNLESS LINKEDIN HAS ENTERED INTO A SEPARATE WRITTEN AGREEMENT THAT OVERRIDES THIS CONTRACT), LINKEDIN AND ITS AFFILIATES, WILL NOT BE LIABLE IN CONNECTION WITH THIS CONTRACT FOR LOST PROFITS OR LOST BUSINESS OPPORTUNITIES, REPUTATION (E.G., OFFENSIVE OR DEFAMATORY STATEMENTS), LOSS OF DATA (E.G., DOWN TIME OR LOSS, USE OF, OR CHANGES TO, YOUR INFORMATION OR CONTENT) OR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL OR PUNITIVE DAMAGES.",
+      "quoteStart": 21277,
+      "quoteEnd": 21762,
+      "explanationTr": "LinkedIn, kayıp kâr, itibar kaybı, veri kaybı ve dolaylı zararlar için sorumlu tutulmayacağını belirtiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c18",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "LINKEDIN AND ITS AFFILIATES WILL NOT BE LIABLE TO YOU IN CONNECTION WITH THIS CONTRACT FOR ANY AMOUNT THAT EXCEEDS (A) THE TOTAL FEES PAID OR PAYABLE BY YOU TO LINKEDIN FOR THE SERVICES DURING THE TERM OF THIS CONTRACT, IF ANY, OR (B) US $1000.",
+      "quoteStart": 21763,
+      "quoteEnd": 22007,
+      "explanationTr": "LinkedIn'in toplam tazminat sorumluluğu, ödediğiniz ücretlerle veya 1000 ABD doları ile sınırlıdır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c19",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "LINKEDIN AND ITS AFFILIATES MAKE NO REPRESENTATION OR WARRANTY ABOUT THE SERVICES, INCLUDING ANY REPRESENTATION THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, AND PROVIDE THE SERVICES (INCLUDING CONTENT, OUTPUT AND INFORMATION) ON AN “AS IS” AND “AS AVAILABLE” BASIS.",
+      "quoteStart": 20427,
+      "quoteEnd": 20702,
+      "explanationTr": "Hizmetler \"olduğu gibi\" sunulur ve kesintisiz veya hatasız olacağına dair hiçbir garanti verilmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c20",
+      "category": "tracking",
+      "severity": 2,
+      "quote": "We use the data and other information that you provide and that we have about Members and content on the Services to make recommendations for connections, content, ads, and features that may be useful to you.",
+      "quoteStart": 18892,
+      "quoteEnd": 19100,
+      "explanationTr": "LinkedIn, sizin hakkınızdaki verileri bağlantı, içerik ve reklam önerileri yapmak ve içerik sıralamak için kullanır.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c21",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On termination, you lose the right to access or use the Services.",
+      "quoteStart": 22985,
+      "quoteEnd": 23138,
+      "explanationTr": "LinkedIn, dilediği zaman bildirimde bulunarak sözleşmeyi sonlandırabilir ve bu durumda hizmetlere erişim hakkınızı kaybedersiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c22",
+      "category": "other",
+      "severity": 2,
+      "quote": "You and LinkedIn both agree that all claims and disputes can be litigated only in the federal or state courts in Santa Clara County, California, USA, and you and LinkedIn each agree to personal jurisdiction in those courts.",
+      "quoteStart": 24865,
+      "quoteEnd": 25088,
+      "explanationTr": "Taraflar arasındaki anlaşmazlıkların yalnızca Kaliforniya'daki mahkemelerde çözüleceği ve Kaliforniya hukukunun geçerli olacağı kabul edilmektedir; bu, özellikle ABD dışındaki kullanıcılar için dava açmayı zorlaştırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c23",
+      "category": "other",
+      "severity": 2,
+      "quote": "You may not assign or transfer this Contract (or your membership or use of Services) to anyone without our consent. However, you agree that LinkedIn may assign this Contract to its affiliates or a party that buys it without your consent.",
+      "quoteStart": 25951,
+      "quoteEnd": 26188,
+      "explanationTr": "Sözleşmeyi size devretmeniz için LinkedIn'in onayı gerekir, ancak LinkedIn sözleşmeyi onayınız olmadan iştiraklerine veya kendisini satın alan bir tarafa devredebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c24",
+      "category": "other",
+      "severity": 1,
+      "quote": "If a court with authority over this Contract finds any part of it unenforceable, you and we agree that the court should modify the terms to make that part enforceable while still achieving its intent.",
+      "quoteStart": 25247,
+      "quoteEnd": 25447,
+      "explanationTr": "Sözleşmenin bir maddesi geçersiz bulunursa, mahkemenin bu maddeyi niyetine uygun şekilde değiştirerek geçerli kılması kabul edilmektedir; bu, tüketici aleyhine maddelerin tamamen iptal edilmesini zorlaştırabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c25",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We reserve the right to take action against serious violations of this Contract, including by implementing account restrictions for significant violations.",
+      "quoteStart": 31372,
+      "quoteEnd": 31527,
+      "explanationTr": "LinkedIn, sözleşme ihlalleri için hesabınızı kısıtlayabileceğini veya kapatma dahil çeşitli önlemler alabileceğini belirtiyor. Bu, hesabınızın tek taraflı olarak kısıtlanabileceği anlamına gelir.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "invalid_clause",
+      "quote": "We may modify this Contract, our Privacy Policy and our Cookie Policy from time to time. If we materially change these t"
+    }
+  ],
+  "uncertainties": [
+    "Belirtilen metin yalnızca sözleşmenin giriş ve yükümlülük bölümlerini içeriyor; sorumluluk sınırlaması, tahkim, içerik lisansı, veri satışı, izleme ve hesap kapatma gibi diğer bölümler metinde yer almadığı için bu maddeler değerlendirilemedi.",
+    "İlk paragraf, içeriklerin reklamlarda kullanılmasına ilişkin olup 'data_sale' veya 'tracking' kategorisine tam olarak uymayabilir; ancak reklam amaçlı kullanım nedeniyle 'data_sale' olarak işaretlendi.",
+    "\"We have the right to limit how you connect and interact on our Services.\" ifadesi genel bir kısıtlama hakkıdır; spesifik bir madde olarak ayrı değerlendirilmedi, çünkü detaylar sonraki paragraflarda açıklanmıştır.",
+    "Belirli bir hakemlik (arbitration) veya toplu dava (class-action) feragatı maddesi bu metinde açıkça yer almamaktadır; yalnızca yargı yetkisi ve uygulanacak hukuk hükümleri bulunmaktadır.",
+    "Metinde veri satışı, izleme (tracking), tek taraflı değişiklik veya içerik lisansı gibi maddeler bu bölümde görülmemiştir; bunlar belgenin başka bölümlerinde olabilir.",
+    "Belirtilen 'account restrictions' ifadesinin tam kapsamı (geçici kısıtlama mı, kalıcı kapatma mı) belirsizdir; bu nedenle güven derecesi orta olarak belirlenmiştir.",
+    "1 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

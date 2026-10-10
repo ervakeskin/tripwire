@@ -1,0 +1,246 @@
+{
+  "url": "https://www.redditinc.com/policies/user-agreement",
+  "score": 89,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. Any future release, update, or other addition to functionality of the Services will be subject to these Terms, which may be updated from time to time. You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Services or any part thereof. We",
+      "quoteStart": 41903,
+      "quoteEnd": 42344,
+      "explanationTr": "Reddit, hizmetleri istediği zaman, haber vermeden veya haber vererek değiştirebilir, askıya alabilir veya tamamen sonlandırabilir. Bu değişikliklerden dolayı size karşı hiçbir sorumluluk kabul etmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "hough we have no obligation to screen, edit, or monitor Your Content, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content, at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo",
+      "quoteStart": 45838,
+      "quoteEnd": 46212,
+      "explanationTr": "Reddit, içeriklerinizi herhangi bir sebeple, tek taraflı takdirle silebilir veya para kazanmaya uygun olmadığını kararlaştırabilir. Bu kararlara itiraz hakkınız sınırlıdır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "tracking",
+      "severity": 1,
+      "quote": "personalize your experience on the Services based on a variety of factors, including your activity on the Services, communities you are subscribed to, and preferences you’ve identified in your settings. Based on these and other factors, we may make recommendations to make your experience on Reddit more relevant. Fo",
+      "quoteStart": 42345,
+      "quoteEnd": 42661,
+      "explanationTr": "Reddit, deneyiminizi kişiselleştirmek için hizmetlerdeki aktivitelerinizi, abone olduğunuz toplulukları ve tercihlerinizi kullanır. Bu bilgiler size öneriler sunmak için değerlendirilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c4",
+      "category": "tracking",
+      "severity": 2,
+      "quote": " type, degree, and targeting of advertisements are subject to change, and you acknowledge and agree that we may place advertisements in connection with the display of any Content or information on the Services, including Your Content. If",
+      "quoteStart": 46988,
+      "quoteEnd": 47225,
+      "explanationTr": "Hizmet sağlayıcı, içeriklerinizin yanında reklamlar gösterebilir ve reklamların türü, derecesi ve hedeflemesi değiştirilebilir. Bu, reklamların kişiselleştirilmesi için verilerinizin kullanılabileceğine işaret eder.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms. If",
+      "quoteStart": 50054,
+      "quoteEnd": 50206,
+      "explanationTr": "Reddit, moderatör yetkinizi herhangi bir sebeple veya sebepsiz olarak istediği zaman kısıtlayabilir veya geri alabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "other",
+      "severity": 2,
+      "quote": "dit reserves the right, but has no obligation, to overturn any action or decision of a moderator if Reddit, in its sole discretion, believes that such action or decision is not in the interest of Reddit or the Reddit community.\nRe",
+      "quoteStart": 51229,
+      "quoteEnd": 51459,
+      "explanationTr": "Reddit, moderatörlerin aldığı herhangi bir aksiyonu veya kararı kendi tek taraflı takdirine göre ortadan kaldırabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c7",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. TH",
+      "quoteStart": 56392,
+      "quoteEnd": 56609,
+      "explanationTr": "Reddit'in toplam sorumluluğu, 100 ABD doları veya son altı ayda ödediğiniz tutardan hangisi yüksekse o kadarla sınırlıdır. Ayrıca dolaylı, özel ve cezai tazminatlar için hiçbir sorumluluk kabul etmezler.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "NO EVENT WILL ANY OF THE REDDIT ENTITIES BE LIABLE TO YOU FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, OR LOST PROFITS ARISING FROM OR RELATING TO THESE TERMS OR THE SERVICES, I",
+      "quoteStart": 55848,
+      "quoteEnd": 56066,
+      "explanationTr": "Hizmetler 'olduğu gibi' sunulur ve dolaylı, dolaysız olmayan, özel veya cezai zararlar için Reddit hiçbir sorumluluk kabul etmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "other",
+      "severity": 3,
+      "quote": " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective, directors, officers, employees, affiliates, agents, contractors, third-party service providers, and licensors (the “ Reddit Entities ”) harmless from and against any claim or demand made by any third party, a",
+      "quoteStart": 53905,
+      "quoteEnd": 54197,
+      "explanationTr": "Hizmetleri kullanmanız, kuralları ihlal etmeniz veya paylaştığınız içerik nedeniyle üçüncü kişilerden gelen tüm talepler ve masraflar (avukat ücretleri dahil) için siz Reddit'i tazmin etmekle yükümlüsünüz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above. If the changes, in our sole discretion, are material, we may also notify you by sending an email to the address associated with your Account (if you have chosen to provide a verified email address) or by otherwise providing you with notice through our Services. By continuing to access or use the Services on or after the Effective Date of the revised Terms, you agree to be bound by the revised Terms. If",
+      "quoteStart": 58217,
+      "quoteEnd": 58761,
+      "explanationTr": "Reddit, şartları dilediği zaman değiştirebilir ve siz hizmete devam ettiğinizde bu yeni şartları kabul etmiş sayılırsınız.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "the fullest extent permitted by applicable law, we may suspend or terminate your Account, moderator status, or ability to access or use the Services at any time for any or no reason, including for violating these Terms or our Reddit Rules . Th",
+      "quoteStart": 60157,
+      "quoteEnd": 60400,
+      "explanationTr": "Reddit, hesabınızı herhangi bir sebep göstermeksizin veya sebep göstererek istediği zaman askıya alabilir veya kapatabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "other",
+      "severity": 2,
+      "quote": " disputes related to these Terms or the Services will be brought solely in the federal or state courts located in San Francisco, California, and you and Reddit consent to personal jurisdiction in these courts. If",
+      "quoteStart": 57380,
+      "quoteEnd": 57592,
+      "explanationTr": "Tüm uyuşmazlıklar yalnızca San Francisco'daki mahkemelerde çözülecektir; bu, uzakta yaşayan kullanıcılar için dava açmayı zorlaştırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "other",
+      "severity": 1,
+      "quote": " may not assign or transfer any of your rights or obligations under these Terms without our consent. We may freely assign any of our rights and obligations under these Terms.\nHe",
+      "quoteStart": 61228,
+      "quoteEnd": 61405,
+      "explanationTr": "Reddit, sözleşmedeki haklarını dilediği gibi devredebilirken, siz haklarınızı ancak Reddit'in izniyle devredebilirsiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": " agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Services or any part thereof. We",
+      "quoteStart": 42189,
+      "quoteEnd": 42344,
+      "explanationTr": "Hizmetlerde yapılacak değişiklik, askıya alma veya sonlandırma nedeniyle Reddit'in size veya üçüncü kişilere karşı hiçbir sorumluluğu olmayacaktır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "content_license",
+      "severity": 3,
+      "quote": " grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content and any name, username, voice, or likeness provided in connection with Your Content in all media formats and channels now known or later developed anywhere in the world. Th",
+      "quoteStart": 44664,
+      "quoteEnd": 45063,
+      "explanationTr": "Reddit'e, paylaştığınız içerikleri dünyada, süresiz ve geri alınamaz şekilde kullanma, değiştirme, dağıtma ve hatta yapay zeka modellerini eğitmek için kullanma hakkı veriyorsunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c16",
+      "category": "content_license",
+      "severity": 2,
+      "quote": " also agree that we may remove metadata associated with Your Content, and you irrevocably waive any claims and assertions of moral rights or attribution with respect to Your Content. An",
+      "quoteStart": 45424,
+      "quoteEnd": 45609,
+      "explanationTr": "İçeriklerinizle ilgili tüm telif ve atıf haklarından vazgeçiyorsunuz; bu, içerikleriniz üzerinde sonradan söz hakkınızın kalmayacağı anlamına gelebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c17",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "ever, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo",
+      "quoteStart": 69966,
+      "quoteEnd": 70275,
+      "explanationTr": "Reddit, içeriklerinizi herhangi bir sebeple ve tek taraflı olarak silebilir veya para kazanmanıza engel olabilir; bu konuda size önceden haber verme yükümlülüğü yoktur.",
+      "confidence": "high"
+    },
+    {
+      "id": "c18",
+      "category": "other",
+      "severity": 1,
+      "quote": " ideas, suggestions, and feedback about Reddit or our Services that you provide to us are entirely voluntary, and you agree that Reddit may use such ideas, suggestions, and feedback without compensation or obligation to you. Al",
+      "quoteStart": 45610,
+      "quoteEnd": 45837,
+      "explanationTr": "Reddit'e verdiğiniz fikir ve önerileri size hiçbir ödeme yapmadan serbestçe kullanma hakkı tanıyor.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c19",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "dit reserves the right, but has no obligation, to overturn any action or decision of a moderator if Reddit, in its sole discretion, believes that such action or decision is not in the interest of Reddit or the Reddit community.\nRe",
+      "quoteStart": 51229,
+      "quoteEnd": 51459,
+      "explanationTr": "Reddit, moderatörlerin herhangi bir eylemini veya kararını kendi tek taraflı takdirine göre istediği zaman iptal edebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c20",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "using the Services you agree that the Reddit Entities’ liability is limited to the maximum extent permissible in your country of residence. Liability will be limited to foreseeable damages arising due to a breach of material contractual obligations typical for this type of contract. Reddit isn’t liable for damages that result from a non-material breach of any other applicable duty of care. Th",
+      "quoteStart": 78716,
+      "quoteEnd": 79111,
+      "explanationTr": "Reddit, sorumluluğunu yasal olarak mümkün olan en yüksek sınıra kadar kısıtlar ve hafif ihlallerden doğan zararlardan sorumlu tutulmaz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c21",
+      "category": "other",
+      "severity": 2,
+      "quote": " may not assign or transfer any rights or obligations under these Terms without Reddit’s prior written consent. Reddit may, without restriction, assign any of our rights and obligations under these Terms, at its sole discretion, with 30 days’ prior notice. Yo",
+      "quoteStart": 82411,
+      "quoteEnd": 82670,
+      "explanationTr": "Şirket, sözleşmedeki haklarını ve yükümlülüklerini 30 gün önceden bildirmek koşuluyla tek taraflı olarak devredebilir; siz ise ancak şirketin yazılı onayıyla devredebilirsiniz.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "invalid_clause",
+      "quote": "When Your Content is created with or submitted to the Services, you grant us a worldwide, royalty-free, perpetual, irrev"
+    },
+    {
+      "reason": "invalid_clause",
+      "quote": "Except to the extent prohibited or considered unfair by law, you agree to defend, indemnify, and hold Reddit, its affili"
+    },
+    {
+      "reason": "invalid_clause",
+      "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the "
+    }
+  ],
+  "uncertainties": [
+    "Belge yalnızca Reddit'in kullanım koşulları, gizlilik politikası ve diğer hukuki belgelere ait bir menü/dizin sayfasıdır; fiili sözleşme maddeleri (yenileme, tahkim, veri satışı, tek taraflı değişiklik, sorumluluk sınırı, içerik lisansı, iptal, izleme, hesap kapatma vb.) bu metinde yer almamaktadır.",
+    "Belge yalnızca çok dilli bir menü/sayfa başlığı listesi içeriyor; tüketici aleyhine maddeler (otomatik yenileme, tahkim, veri satışı vb.) bulunmuyor.",
+    "Belge yalnızca çok dilli bir menü/liste (Reddit'in çeşitli kullanım koşulları, gizlilik politikası, reklam koşulları vb. başlıkları) içeriyor; fiili sözleşme maddeleri veya tüketici aleyhine hükümler bulunmuyor.",
+    "Belge yalnızca Reddit'in kullanım koşulları, gizlilik politikası ve diğer hukuki belgelere ait bir içerik tablosu (içindekiler) içermektedir; fiili sözleşme maddeleri veya tüketici aleyhine hükümler bulunmamaktadır.",
+    "Belirtilen metin yalnızca Reddit Kullanıcı Sözleşmesi'nin giriş ve lisans bölümlerini içermektedir; yenileme, tahkim, veri satışı, tek taraflı değişiklik, sorumluluk sınırı, içerik lisansı, iptal, izleme veya hesap kapatma gibi maddeler bu kesimde yer almamaktadır.",
+    "Kişiselleştirme maddesi doğrudan veri satışı veya üçüncü taraflarla paylaşım içermemektedir; yalnızca öneri yapma amacıyla kullanım belirtildiği için 'tracking' kategorisinde düşük önemle işaretlenmiştir.",
+    "Belgede açık bir otomatik yenileme, tahkim, veri satışı, tek taraflı değişiklik, sorumluluk sınırı veya içerik lisansı maddesi bulunmamaktadır.",
+    "Kişiselleştirme maddesi, veri toplama ve izleme konusunda daha fazla detay için Gizlilik Politikası'na atıfta bulunur; bu nedenle tam kapsamı bu belgeden kesin olarak anlaşılamamaktadır.",
+    "Belgede doğrudan bir veri satışı veya izleme (tracking) maddesi bulunmamaktadır; reklam hedeflemesine dair kısa bir ifade olsa da ayrıntılı bir izleme maddesi bu metinde yer almamaktadır.",
+    "3 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

@@ -1,0 +1,156 @@
+# Eval raporu
+
+Model: qwen/qwen3.8-27b · Belge sayısı: 6
+
+**Yakalanan (TP): 23 · Kaçırılan (FN): 6 · Yanlış alarm adayı (FP): 120**
+**Recall: 79% · Precision (gold'a göre, alt sınır): 16%**
+Validator tarafından atılan (metinde olmayan alıntı) iddia: 11/164
+
+**Elle incelenen fazla maddeler: 0 gerçek risk (gold eksik) · 0 sınırda · 0 gürültü/yanlış alarm · 120 incelenmedi**
+**Düzeltilmiş precision (gerçek risk + sınırda yarım): 16%**
+
+> Gold etiketler elle ve eksiksiz değildir; "fazla" maddeler tek tek incelenip aşağıdaki Hata Analizi bölümüne işlenmelidir.
+
+## spotify (53975 chars, score 99, coverage 100%)
+- Yakalanan: 4/7 · Kaçırılan: 3 · Yanlış alarm adayı: 23 · Doğrulamada atılan uydurma alıntı: 4
+  - KAÇIRILAN [liability_cap] "IN NO EVENT WILL SPOTIFY, ITS OFFICERS, SHAREHOLDERS…"
+  - KAÇIRILAN [content_license] "you hereby grant to Spotify a non-exclusive, transferable, sublicensable, royalty-free, fu…"
+  - KAÇIRILAN [cancellation_friction] "Spotify will not refund any amounts…"
+  - FAZLA [liability_cap] (high) → incelenmedi "Spotify has no liability to you, nor any obligation to provide a refund to you, in connect…"
+  - FAZLA [account_termination] (high) → incelenmedi "Spotify may reclaim, or require you to change, your username for any reason.…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "Spotify may from time to time make changes to Paid Subscriptions, including recurring subs…"
+  - FAZLA [auto_renewal] (high) → incelenmedi "Paid Subscriptions continue indefinitely until cancelled. You will be billed on a recurrin…"
+  - FAZLA [cancellation_friction] (medium) → incelenmedi "Unless otherwise indicated, cancellation will take effect from the end of the billing peri…"
+  - FAZLA [account_termination] (high) → incelenmedi "Spotify reserves the right to remove or disable access to any User Content for any or no r…"
+  - FAZLA [liability_cap] (high) → incelenmedi "Spotify is not responsible for what you or others post or share on the Spotify Service.…"
+  - FAZLA [other] (medium) → incelenmedi "You also grant to us the right (1) to allow the Spotify Service to use the processor, band…"
+  - FAZLA [other] (medium) → incelenmedi "In any part of the Spotify Service, the Content that you access, including its selection a…"
+  - FAZLA [liability_cap] (high) → incelenmedi "THE SPOTIFY SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT ANY WARRANTIES OF ANY …"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY CLAIM ARISING UNDER THESE TERMS MUS…"
+  - FAZLA [other] (high) → incelenmedi "You agree to indemnify and hold Spotify harmless from and against all damages, losses, and…"
+  - FAZLA [other] (medium) → incelenmedi "these Terms and any dispute, claim, and/or controversy that in any way relates to or arise…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER IN ARBITRATION OR LITIG…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "Either you or Spotify may start arbitration proceedings. Any arbitration between you and S…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "If twenty-five (25) or more claimants submit Notices or attempt to file Demands raising si…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "To the fullest extent permitted by applicable law, each party may bring a Dispute against …"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "You may opt out of arbitration by providing an individual, personally signed notice of you…"
+  - FAZLA [other] (medium) → incelenmedi "If neither you nor Spotify elects to have your case heard in court consistent with Option …"
+  - FAZLA [unilateral_change] (high) → incelenmedi "We may make changes to these Terms (including any additional Spotify terms and conditions …"
+  - FAZLA [cancellation_friction] (high) → incelenmedi "Premium Subscribers who do not wish to continue using the Spotify Service under the update…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agr…"
+  - FAZLA [other] (medium) → incelenmedi "Spotify may assign any or all of these Terms, and may assign or delegate, in whole or in p…"
+
+## dropbox (25330 chars, score 97, coverage 100%)
+- Yakalanan: 5/6 · Kaçırılan: 1 · Yanlış alarm adayı: 19 · Doğrulamada atılan uydurma alıntı: 0
+  - KAÇIRILAN [cancellation_friction] "Dropbox does not provide refunds if we suspend or terminate your access to the Services…"
+  - FAZLA [content_license] (high) → incelenmedi "To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You g…"
+  - FAZLA [unilateral_change] (medium) → incelenmedi "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to revie…"
+  - FAZLA [other] (medium) → incelenmedi "Beta Services are made available so that we can collect user feedback, and by using our Be…"
+  - FAZLA [other] (medium) → incelenmedi "Beta Services are confidential until official launch. If you use any Beta Services, you ag…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "From time to time, Dropbox will add additional features to enhance the user experience of …"
+  - FAZLA [liability_cap] (medium) → incelenmedi "You acknowledge that Dropbox is not providing you with legal advice or acting as your atto…"
+  - FAZLA [account_termination] (medium) → incelenmedi "If you use a part of the Services that facilitates faxing, you may be required to provide …"
+  - FAZLA [account_termination] (medium) → incelenmedi "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remo…"
+  - FAZLA [account_termination] (medium) → incelenmedi "We reserve the right to delete or disable content alleged to be infringing and terminate a…"
+  - FAZLA [cancellation_friction] (medium) → incelenmedi "Refunds are only issued if required by law . For example, users living in the European Uni…"
+  - FAZLA [account_termination] (high) → incelenmedi "We won’t provide notice or an opportunity to export Your Stuff before termination or suspe…"
+  - FAZLA [account_termination] (high) → incelenmedi "Once we suspend or terminate your access to the Services, you will not be able to access o…"
+  - FAZLA [liability_cap] (high) → incelenmedi "IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, DROPBOX, ITS AFFILI…"
+  - FAZLA [liability_cap] (high) → incelenmedi "TO THE FULLEST EXTENT PERMITTED BY LAW, DROPBOX AND ITS AFFILIATES, SUPPLIERS AND DISTRIBU…"
+  - FAZLA [account_termination] (medium) → incelenmedi "you don’t have a Paid Account and haven't accessed our Services for 12 consecutive months.…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "You can decline this agreement to arbitrate by clicking here and submitting the opt-out fo…"
+  - FAZLA [other] (high) → incelenmedi "You and Dropbox agree that any judicial proceeding to resolve claims relating to these Ter…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "If you don’t agree to the updates we make, please cancel your account and stop using the S…"
+  - FAZLA [other] (medium) → incelenmedi "You may not assign any of your rights under these Terms, and any such attempt will be void…"
+
+## reddit (83819 chars, score 89, coverage 100%)
+- Yakalanan: 3/3 · Kaçırılan: 0 · Yanlış alarm adayı: 17 · Doğrulamada atılan uydurma alıntı: 3
+  - FAZLA [account_termination] (high) → incelenmedi "hough we have no obligation to screen, edit, or monitor Your Content, we may, in our sole …"
+  - FAZLA [tracking] (medium) → incelenmedi "personalize your experience on the Services based on a variety of factors, including your …"
+  - FAZLA [tracking] (medium) → incelenmedi " type, degree, and targeting of advertisements are subject to change, and you acknowledge …"
+  - FAZLA [account_termination] (high) → incelenmedi "reserve the right to revoke or limit a user’s ability to moderate at any time and for any …"
+  - FAZLA [other] (medium) → incelenmedi "dit reserves the right, but has no obligation, to overturn any action or decision of a mod…"
+  - FAZLA [other] (high) → incelenmedi " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective, direct…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "may make changes to these Terms from time to time. If we make changes, we will post the re…"
+  - FAZLA [account_termination] (high) → incelenmedi "the fullest extent permitted by applicable law, we may suspend or terminate your Account, …"
+  - FAZLA [other] (high) → incelenmedi " disputes related to these Terms or the Services will be brought solely in the federal or …"
+  - FAZLA [other] (high) → incelenmedi " may not assign or transfer any of your rights or obligations under these Terms without ou…"
+  - FAZLA [liability_cap] (high) → incelenmedi " agree that we will not be liable to you or to any third party for any modification, suspe…"
+  - FAZLA [content_license] (high) → incelenmedi " also agree that we may remove metadata associated with Your Content, and you irrevocably …"
+  - FAZLA [account_termination] (high) → incelenmedi "ever, we may, in our sole discretion, delete, deem your content ineligible for monetizatio…"
+  - FAZLA [other] (medium) → incelenmedi " ideas, suggestions, and feedback about Reddit or our Services that you provide to us are …"
+  - FAZLA [account_termination] (high) → incelenmedi "dit reserves the right, but has no obligation, to overturn any action or decision of a mod…"
+  - FAZLA [liability_cap] (high) → incelenmedi "using the Services you agree that the Reddit Entities’ liability is limited to the maximum…"
+  - FAZLA [other] (high) → incelenmedi " may not assign or transfer any rights or obligations under these Terms without Reddit’s p…"
+
+## grammarly (56843 chars, score 100, coverage 100%)
+- Yakalanan: 6/7 · Kaçırılan: 1 · Yanlış alarm adayı: 33 · Doğrulamada atılan uydurma alıntı: 3
+  - KAÇIRILAN [content_license] "You grant us a worldwide, non-exclusive, royalty-free license to your User Content…"
+  - FAZLA [account_termination] (high) → incelenmedi "Please note that once you delete your Account, you will not be able to reactivate it or re…"
+  - FAZLA [account_termination] (medium) → incelenmedi "you acknowledge that the Organization may access, view, restrict, merge, or terminate your…"
+  - FAZLA [content_license] (high) → incelenmedi "As between Superhuman and you, Superhuman owns all intellectual property rights in the Ser…"
+  - FAZLA [content_license] (high) → incelenmedi "If you provide us with any suggestions, enhancement requests, recommendations, or other fe…"
+  - FAZLA [tracking] (high) → incelenmedi "We may also collect and analyze data relating to your access and use of our Services (“ Us…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "We may modify or discontinue any feature, functionality, or component of our Services at a…"
+  - FAZLA [other] (medium) → incelenmedi "Any additional generative AI capacity or units that you purchase (i) will be tied to your …"
+  - FAZLA [liability_cap] (high) → incelenmedi "You acknowledge and agree that Superhuman is not responsible for any harms, damages, loss,…"
+  - FAZLA [account_termination] (high) → incelenmedi "We may, in our sole discretion, change the functionality of the Beta Services and/or disco…"
+  - FAZLA [liability_cap] (high) → incelenmedi "You acknowledge that Beta Services may not be as secure or reliable as our Services. We ar…"
+  - FAZLA [auto_renewal] (high) → incelenmedi "For Paid Subscriptions, we will bill you in advance on a recurring monthly or annual basis…"
+  - FAZLA [other] (high) → incelenmedi "To the fullest extent permitted by applicable law, all payments made by you under these Te…"
+  - FAZLA [tracking] (medium) → incelenmedi "You agree that we may use your information, such as device ID, Payment Method, and the nam…"
+  - FAZLA [account_termination] (high) → incelenmedi "Upon termination of the Services or the applicable feature or functionality thereof, your …"
+  - FAZLA [account_termination] (high) → incelenmedi "We reserve the right to suspend or terminate your access to our Services and/or your Accou…"
+  - FAZLA [liability_cap] (high) → incelenmedi "Superhuman will not have any liability whatsoever to you for any suspension or termination…"
+  - FAZLA [liability_cap] (high) → incelenmedi "IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENTITIES’ BE LIABLE TO YOU OR OTHERWISE RES…"
+  - FAZLA [other] (high) → incelenmedi "SUPERHUMAN AND THE SUPERHUMAN ENTITIES DO NOT MAKE ANY REPRESENTATION OR WARRANTY REGARDIN…"
+  - FAZLA [other] (high) → incelenmedi "YOU AGREE THAT SUPERHUMAN AND THE SUPERHUMAN ENTITIES WILL HAVE NO LIABILITY, AND HEREBY R…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "you and Superhuman agree to submit our disputes exclusively to binding individual arbitrat…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "You and Superhuman agree that each of us may bring claims against the other only on an ind…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "if the amount in dispute is less than $25,000, the arbitration will be conducted as a docu…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "The arbitrator will have exclusive authority to resolve any Dispute, including, without li…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "Payment of all filing, case-management, administrative, hearing, and arbitrator fees (“ Ar…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "if within a 90-day period, 25 or more claimants submit Notices of Dispute or file arbitrat…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "Superhuman will notify you of material changes to this Arbitration Agreement at least 30 d…"
+  - FAZLA [other] (high) → incelenmedi "you and Superhuman each agree to litigate those claims exclusively in state or federal cou…"
+  - FAZLA [arbitration_waiver] (high) → incelenmedi "For clarity, this Section 12.9 will continue to apply even if you validly opt out of arbit…"
+  - FAZLA [liability_cap] (high) → incelenmedi "We will not be liable by reason of any failure or delay in the performance of our obligati…"
+  - FAZLA [other] (high) → incelenmedi "You may not assign any of your rights or obligations under these Terms, and any such attem…"
+  - FAZLA [other] (medium) → incelenmedi "In the event that the email address you provide to Superhuman is not valid, or for any rea…"
+  - FAZLA [account_termination] (high) → incelenmedi "Accounts of users who are deemed to be repeat infringers. We may also at our sole discreti…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "You acknowledge that we may, from time to time, provide updated versions of the Mobile App…"
+
+## linkedin (32062 chars, score 96, coverage 100%)
+- Yakalanan: 3/4 · Kaçırılan: 1 · Yanlış alarm adayı: 20 · Doğrulamada atılan uydurma alıntı: 1
+  - KAÇIRILAN [cancellation_friction] "To avoid future charges, cancel before the renewal date…"
+  - FAZLA [auto_renewal] (high) → incelenmedi "If you purchase a subscription, your payment method automatically will be charged at the s…"
+  - FAZLA [auto_renewal] (high) → incelenmedi "We may store and continue billing your payment method (e.g., credit card), even after it h…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "Refunds are subject to our policy, and we may modify our prices and those modified prices …"
+  - FAZLA [unilateral_change] (high) → incelenmedi "We may modify our prices effective prospectively upon reasonable notice to the extent allo…"
+  - FAZLA [account_termination] (medium) → incelenmedi "You are responsible for anything that happens through your account unless you close it or …"
+  - FAZLA [other] (medium) → incelenmedi "To the extent that laws allow this, we are not obligated to publish any content or other i…"
+  - FAZLA [data_sale] (medium) → incelenmedi "You and LinkedIn agree that we may access, store, process, and use any information (includ…"
+  - FAZLA [content_license] (high) → incelenmedi "By submitting suggestions or other feedback regarding our Services to LinkedIn, you agree …"
+  - FAZLA [liability_cap] (high) → incelenmedi "We don’t promise to store or show (or keep showing) any information (including content) th…"
+  - FAZLA [liability_cap] (high) → incelenmedi "Others’ Content: By using the Services, you may encounter content or other information tha…"
+  - FAZLA [liability_cap] (high) → incelenmedi "You further acknowledge that LinkedIn does not supervise, direct, control, or monitor Memb…"
+  - FAZLA [account_termination] (high) → incelenmedi "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach …"
+  - FAZLA [account_termination] (high) → incelenmedi "We can also remove any content or other information you shared if we believe it violates o…"
+  - FAZLA [liability_cap] (high) → incelenmedi "LINKEDIN AND ITS AFFILIATES MAKE NO REPRESENTATION OR WARRANTY ABOUT THE SERVICES, INCLUDI…"
+  - FAZLA [tracking] (medium) → incelenmedi "We use the data and other information that you provide and that we have about Members and …"
+  - FAZLA [account_termination] (high) → incelenmedi "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On…"
+  - FAZLA [other] (high) → incelenmedi "You and LinkedIn both agree that all claims and disputes can be litigated only in the fede…"
+  - FAZLA [other] (high) → incelenmedi "You may not assign or transfer this Contract (or your membership or use of Services) to an…"
+  - FAZLA [other] (medium) → incelenmedi "If a court with authority over this Contract finds any part of it unenforceable, you and w…"
+  - FAZLA [account_termination] (medium) → incelenmedi "We reserve the right to take action against serious violations of this Contract, including…"
+
+## slack (13099 chars, score 73, coverage 100%)
+- Yakalanan: 2/2 · Kaçırılan: 0 · Yanlış alarm adayı: 8 · Doğrulamada atılan uydurma alıntı: 0
+  - FAZLA [unilateral_change] (high) → incelenmedi "If you access or use the Services, or continue accessing or using the Services after being…"
+  - FAZLA [liability_cap] (high) → incelenmedi "SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO Y…"
+  - FAZLA [account_termination] (medium) → incelenmedi "These User Terms remain effective until Customer’s subscription for you expires or termina…"
+  - FAZLA [unilateral_change] (high) → incelenmedi "Any material revisions to these User Terms will become effective on the date set forth in …"
+  - FAZLA [account_termination] (high) → incelenmedi "We may directly step in and take what we determine to be appropriate action (including dis…"
+  - FAZLA [other] (high) → incelenmedi "To the maximum extent permitted by law, you hereby acknowledge and agree that consumer law…"
+  - FAZLA [other] (high) → incelenmedi "We may assign these User Terms in their entirety (including all terms and conditions incor…"
+  - FAZLA [other] (medium) → incelenmedi "In any action or proceeding to enforce rights under the User Terms, the prevailing party w…"

@@ -79,3 +79,15 @@ describe('partial failure', () => {
     expect(r.rejected.map((x) => x.reason)).toEqual(['invalid_clause']);
   });
 });
+
+describe('score calibration', () => {
+  const mk = (category: any, n: number) => Array.from({ length: n }, (_, i) => ({ id: `${i}`, category, severity: 3 as const, quote: '', quoteStart: i, quoteEnd: i, explanationTr: '', confidence: 'high' as const }));
+  it('repeating one category adds less than a new category', () => {
+    const repeated = scoreClauses(mk('liability_cap', 6)).score;
+    const broad = scoreClauses([...mk('liability_cap', 1), ...mk('data_sale', 1), ...mk('arbitration_waiver', 1)]).score;
+    expect(broad).toBeGreaterThan(repeated);
+  });
+  it('does not saturate at 100 from volume alone', () => {
+    expect(scoreClauses(mk('other', 40)).score).toBeLessThan(60);
+  });
+});

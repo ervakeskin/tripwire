@@ -1,0 +1,268 @@
+{
+  "url": "https://www.dropbox.com/terms",
+  "score": 97,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with.",
+      "quoteStart": 2589,
+      "quoteEnd": 2802,
+      "explanationTr": "Dropbox, iştirakleri ve güvendiği üçüncü taraflar dosyalarınızı erişmek, depolamak ve taramak için izin alır. Bu izin, dosyalarınız üzerinde geniş bir kullanım hakkı tanır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to review the new terms.",
+      "quoteStart": 0,
+      "quoteEnd": 106,
+      "explanationTr": "Dropbox, 2027'de geçerli olacak yeni kullanım koşullarını tek taraflı olarak belirleyebilir ve bu değişiklikler sizin onayınız olmadan uygulanabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c3",
+      "category": "other",
+      "severity": 1,
+      "quote": "Beta Services are made available so that we can collect user feedback, and by using our Beta Services, you agree that we may contact you to collect such feedback.",
+      "quoteStart": 4864,
+      "quoteEnd": 5026,
+      "explanationTr": "Beta hizmetlerini kullandığınızda, Dropbox sizden geri bildirim toplamak için iletişime geçebilir ve bu hizmetler hakkında bilgi paylaşmamayı kabul etmiş olursunuz.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c4",
+      "category": "other",
+      "severity": 1,
+      "quote": "Beta Services are confidential until official launch. If you use any Beta Services, you agree not to disclose any information about those Services to anyone else without our permission.",
+      "quoteStart": 5027,
+      "quoteEnd": 5212,
+      "explanationTr": "Beta hizmetleri resmi lansmanına kadar gizli kabul edilir ve bu hizmetler hakkında kimseyle bilgi paylaşmanız yasaklanır.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c5",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+      "quoteStart": 9783,
+      "quoteEnd": 9904,
+      "explanationTr": "Ücretli hesabınıza geçtikten sonra, hesabı iptal edene kadar her yenileme döneminde otomatik olarak fatura kesilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+      "quoteStart": 10950,
+      "quoteEnd": 11136,
+      "explanationTr": "Dropbox, aboneliğinizin yenilenmesinde ücretleri tek taraflı olarak değiştirebilir; ancak yeni ücretin yürürlüğe girmesinden en az 30 gün önce e-posta ile bildirim yapar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "From time to time, Dropbox will add additional features to enhance the user experience of our storage service at no additional charge. However, these free features may be withdrawn without further notice.",
+      "quoteStart": 8048,
+      "quoteEnd": 8252,
+      "explanationTr": "Ücretsiz olarak eklenen özellikler, önceden haber verilmeksizin kaldırılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "You acknowledge that Dropbox is not providing you with legal advice or acting as your attorney or agent, and you assume full responsibility for any outcomes or costs associated with your use of our Templates.",
+      "quoteStart": 5906,
+      "quoteEnd": 6114,
+      "explanationTr": "Şablonları kullanırken ortaya çıkabilecek tüm sonuçlardan ve maliyetlerden tamamen siz sorumlusunuz; Dropbox hukuki danışmanlık vermediğini belirtir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c9",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "If you use a part of the Services that facilitates faxing, you may be required to provide information such as your name, billing address, physical address, payment information (including credit card number), and national ID number (where applicable). Failure to provide this information could result in suspension of your access.",
+      "quoteStart": 7235,
+      "quoteEnd": 7564,
+      "explanationTr": "Faks servisi için gerekli bilgileri vermezseniz hesabınıza erişiminiz askıya alınabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c10",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features.",
+      "quoteStart": 10825,
+      "quoteEnd": 10940,
+      "explanationTr": "Ücretli hesabınızı zamanında ödemezseniz Dropbox hesabınızı askıya alma veya ücretli özellikleri kaldırma hakkını saklı tutar.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c11",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers.",
+      "quoteStart": 9287,
+      "quoteEnd": 9406,
+      "explanationTr": "Telif hakkı ihlali iddiasıyla karşılaşılan içerikler silinebilir veya devre dışı bırakılabilir ve tekrarlayan ihlalcilerin hesapları kapatılabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c12",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "Refunds are only issued if required by law . For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here .",
+      "quoteStart": 10348,
+      "quoteEnd": 10612,
+      "explanationTr": "İade, yalnızca yasal olarak zorunlu olması durumunda yapılır; örneğin AB’de 14 gün içinde iptal ve iade hakkı vardır.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c13",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law.",
+      "quoteStart": 13002,
+      "quoteEnd": 13429,
+      "explanationTr": "Dropbox, ciddi bir ihlal olduğunu düşünürse size haber vermeden veya verilerinizi dışa aktarma fırsatı vermeden hesabınızı kapatabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "Once we suspend or terminate your access to the Services, you will not be able to access or export Your Stuff. Dropbox does not provide refunds if we suspend or terminate your access to the Services, unless required by law.",
+      "quoteStart": 13430,
+      "quoteEnd": 13653,
+      "explanationTr": "Hesabınız kapatıldığında verilerinize erişemezsiniz ve Dropbox, yasal zorunluluk olmadıkça ücret iadesi yapmaz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX. THIS PROVISION DOES NOT APPLY TO EU CONSUMERS WHERE PROHIBITED BY APPLICABLE LAW .",
+      "quoteStart": 16651,
+      "quoteEnd": 16962,
+      "explanationTr": "Dropbox, doğrudan zararlardan sorumlu olsa bile, tazminatı 20 dolar veya son dönemde ödediğiniz tutarın tamamı ile sınırlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c16",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, DROPBOX, ITS AFFILIATES, SUPPLIERS OR DISTRIBUTORS WON’T BE LIABLE FOR:\nANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR\nANY LOSS OF USE, DATA, BUSINESS, OR PROFITS, REGARDLESS OF LEGAL THEORY.",
+      "quoteStart": 15821,
+      "quoteEnd": 16121,
+      "explanationTr": "Dropbox, dolaylı zararlar, kâr kaybı veya veri kaybı gibi durumlardan hiçbir şekilde sorumlu tutulamaz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c17",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "TO THE FULLEST EXTENT PERMITTED BY LAW, DROPBOX AND ITS AFFILIATES, SUPPLIERS AND DISTRIBUTORS MAKE NO WARRANTIES, EITHER EXPRESS OR IMPLIED, ABOUT THE SERVICES. THE SERVICES ARE PROVIDED \"AS IS.\" WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+      "quoteStart": 14400,
+      "quoteEnd": 14704,
+      "explanationTr": "Hizmetler 'olduğu gibi' sunulur ve Dropbox, hizmetin çalışacağına veya belirli bir amaca uygun olacağına dair hiçbir garanti vermez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c18",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "you don’t have a Paid Account and haven't accessed our Services for 12 consecutive months.",
+      "quoteStart": 12568,
+      "quoteEnd": 12658,
+      "explanationTr": "Dropbox, hesabınızı 12 ay boyunca kullanmadığınız takdirde, bildirimde bulunarak erişiminizi sonlandırabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c19",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below.",
+      "quoteStart": 18544,
+      "quoteEnd": 18794,
+      "explanationTr": "ABD'de yaşıyorsanız, Dropbox ile aranızdaki uyuşmazlıkları mahkemede değil, tek bir hakemle bireysel olarak çözmeyi kabul ediyorsunuz. Bu, dava açma hakkınızı kısıtlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c20",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed.",
+      "quoteStart": 21872,
+      "quoteEnd": 22171,
+      "explanationTr": "Toplu dava (class action) veya temsilci dava açma hakkınızdan vazgeçiyorsunuz; uyuşmazlıkları yalnızca bireysel olarak çözebilirsiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c21",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms. However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding.",
+      "quoteStart": 19232,
+      "quoteEnd": 19569,
+      "explanationTr": "Arbitraj anlaşmasından vazgeçmek için hesabınızı oluşturduktan veya bu şartları kabul ettikten sonra yalnızca 30 gününüz var; bu süreyi kaçırırsanız hakem sürecine tabi olursunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c22",
+      "category": "other",
+      "severity": 2,
+      "quote": "You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Services will be brought in the federal or state courts of San Francisco County, California, subject to the mandatory arbitration provisions below. Both you and Dropbox consent to venue and personal jurisdiction in such courts.",
+      "quoteStart": 17714,
+      "quoteEnd": 18041,
+      "explanationTr": "Mahkeme yoluyla dava açmanız gerekiyorsa, bu davanın yalnızca Kaliforniya'nın San Francisco bölgesindeki federal veya eyalet mahkemelerinde açılması gerekiyor; bu, uzak bölgelerdeki kullanıcılar için maliyetli ve zorlayıcı olabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c23",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "If any part of this “Mandatory Arbitration Provisions” section is found to be illegal or unenforceable, the remainder will remain in effect, except that if a finding of partial illegality or unenforceability would allow class or representative arbitration, this “Mandatory Arbitration Provisions” section will be unenforceable in its entirety.",
+      "quoteStart": 22187,
+      "quoteEnd": 22530,
+      "explanationTr": "Bu madde, uyuşmazlıkları mahkemede değil zorunlu tahkim yoluyla çözmeyi öngörür ve toplu dava (class action) hakkınızı kısıtlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c24",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective. Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date. By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms.",
+      "quoteStart": 24927,
+      "quoteEnd": 25330,
+      "explanationTr": "Dropbox, şartları tek taraflı olarak değiştirebilir; değişikliklere itiraz ederseniz hesabınızı kapatmanız gerekir, aksi halde yeni şartlar kabul etmiş sayılırsınız.",
+      "confidence": "high"
+    },
+    {
+      "id": "c25",
+      "category": "other",
+      "severity": 2,
+      "quote": "You may not assign any of your rights under these Terms, and any such attempt will be void. Dropbox may assign its rights to any of its affiliates or subsidiaries, or to any successor in interest of any business associated with the Services.",
+      "quoteStart": 24186,
+      "quoteEnd": 24427,
+      "explanationTr": "Dropbox, şartlarındaki haklarını iştiraklerine veya şirketin devamı olan başka bir tüzel kişiye devredebilir; siz ise haklarınızı devredemezsiniz.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "Belgede açık bir otomatik yenileme, tahkim, veri satışı, sorumluluk sınırı veya hesap kapatma maddesi bulunmamaktadır.",
+    "Beta hizmetleri ile ilgili maddeler tüketici için dezavantajlı olabilir ancak kesin bir risk kategorisine tam olarak uymadığı için 'other' olarak sınıflandırılmıştır.",
+    "\"Refunds are only issued if required by law\" ifadesi, yasal hak olmayan durumlarda iade yapılmayacağı anlamına gelebilir; bu, tüketici için dezavantajlı olabilir ancak kesin bir iptal engeli değildir.",
+    "Belgede 'Resolving Disputes' başlığı görünüyor ancak içeriği kesik; bu nedenle tahkim veya toplu dava feragati gibi maddeler değerlendirilemedi.",
+    "Belgede 'Mandatory Arbitration Provisions' bölümünün tamamı yer almamaktadır; yalnızca bu bölümün 'Severability' alt maddesi mevcuttur. Bu nedenle tahkim şartının kapsamı ve kapsam dışı bırakılan istisnalar tam olarak değerlendirilememiştir."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

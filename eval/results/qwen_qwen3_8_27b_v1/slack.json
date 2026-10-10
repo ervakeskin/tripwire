@@ -1,0 +1,127 @@
+{
+  "url": "https://slack.com/terms-of-service/user",
+  "score": 73,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you access or use the Services, or continue accessing or using the Services after being notified of a change to the User Terms or the Acceptable Use Policy , you confirm that you have read, understand and agree to be bound by the User Terms and the Acceptable Use Policy .",
+      "quoteStart": 1193,
+      "quoteEnd": 1468,
+      "explanationTr": "Şirket, Kullanım Koşulları veya Uygun Kullanım Politikası'nda değişiklik yaptığında, bu değişiklikten haberdar edildikten sonra hizmeti kullanmaya devam etmeniz, yeni koşulları kabul ettiğiniz anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO YOU RELATING TO THE SERVICES, WHICH ARE PROVIDED TO YOU ON AN “AS IS” AND “ AS AVAILABLE” BASIS.",
+      "quoteStart": 4108,
+      "quoteEnd": 4293,
+      "explanationTr": "Slack, hizmetlerle ilgili olarak size hiçbir garanti vermez ve hizmetleri yalnızca \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunar. Bu, hizmette bir sorun çıkarsa tazminat talep etmenizi zorlaştırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "These User Terms remain effective until Customer’s subscription for you expires or terminates, or your access to the Services has been terminated by Customer or us. Please contact Customer if you at any time or for any reason wish to terminate your account, including due to a disagreement with any updates to these User Terms or the Acceptable Use Policy .",
+      "quoteStart": 5143,
+      "quoteEnd": 5500,
+      "explanationTr": "Hesabınız, müşteri (örneğin işvereniniz) veya Slack tarafından sonlandırılabilir. Hesabınızı kapatmak isterseniz, bunu doğrudan müşteriye bildirmeniz gerekir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c4",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OUR MAXIMUM AGGREGATE LIABILITY TO YOU FOR ANY BREACH OF THE USER TERMS IS ONE HUNDRED DOLLARS ($100) IN THE AGGREGATE.",
+      "quoteStart": 6583,
+      "quoteEnd": 6702,
+      "explanationTr": "Şirketin size karşı toplam sorumluluğu 100 dolarla sınırlı tutulmuştur. Ayrıca kâr kaybı veya dolaylı zararlar için hiçbir tarafın sorumluluğu kabul edilmemektedir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "IN NO EVENT WILL YOU OR WE HAVE ANY LIABILITY TO THE OTHER FOR ANY LOST PROFITS OR REVENUES OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, COVER OR PUNITIVE DAMAGES HOWEVER CAUSED, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, AND WHETHER OR NOT THE PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+      "quoteStart": 6064,
+      "quoteEnd": 6402,
+      "explanationTr": "Kâr veya gelir kaybı ile dolaylı, özel, arızi, sonuç veya cezai zararlar için hiçbir tarafın sorumluluğu olmayacaktır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "As our business evolves, we may change these User Terms or the Acceptable Use Policy . If we make a material change to the User Terms or the Acceptable Use Policy , we will provide you with reasonable notice prior to the change taking effect either by emailing the email address associated with your account or by messaging you through the Services.",
+      "quoteStart": 8586,
+      "quoteEnd": 8935,
+      "explanationTr": "Şirket, Kullanım Koşullarını tek taraflı olarak değiştirebilir. Değişikliklerin yürürlük tarihinden sonra hizmeti kullanmanız, yeni koşulları kabul ettiğiniz anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Any material revisions to these User Terms will become effective on the date set forth in our notice, and all other changes will become effective on the date we publish the change. If you use the Services after the effective date of any changes, that use will constitute your acceptance of the revised terms and conditions.",
+      "quoteStart": 9192,
+      "quoteEnd": 9515,
+      "explanationTr": "Değişikliklerin yürürlük tarihinden sonra hizmeti kullanmanız, revize edilmiş koşulları kabul ettiğiniz anlamına gelecektir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We may directly step in and take what we determine to be appropriate action (including disabling your account) if Customer does not take appropriate action or we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties.",
+      "quoteStart": 5800,
+      "quoteEnd": 6063,
+      "explanationTr": "Şirket, uygun gördüğü durumlarda hesabınızı devre dışı bırakma dahil olmak üzere uygun gördüğü eylemleri doğrudan gerçekleştirebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "other",
+      "severity": 2,
+      "quote": "To the maximum extent permitted by law, you hereby acknowledge and agree that consumer laws do not apply.",
+      "quoteStart": 6968,
+      "quoteEnd": 7073,
+      "explanationTr": "Tüketicilere yönelik yasal korumaların uygulanmayacağı kabul edilmektedir. Bu, tüketici haklarınızı kısıtlayabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "other",
+      "severity": 2,
+      "quote": "We may assign these User Terms in their entirety (including all terms and conditions incorporated herein by reference), without your consent, to a corporate affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of our assets.",
+      "quoteStart": 10555,
+      "quoteEnd": 10843,
+      "explanationTr": "Şirket, bu Kullanım Koşullarını sizin onayınız olmadan bir şirket iştirakine veya birleşme, satın alma gibi durumlarda devredebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "other",
+      "severity": 2,
+      "quote": "In any action or proceeding to enforce rights under the User Terms, the prevailing party will be entitled to recover its reasonable costs and attorney’s fees.",
+      "quoteStart": 11479,
+      "quoteEnd": 11637,
+      "explanationTr": "Bu madde, anlaşmazlık durumunda davayı kazanan tarafın karşı taraftan avukatlık ücretlerini ve masraflarını talep edebileceğini belirtir. Bu, tüketici için dava açma maliyetini artırabilir.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "Belgede açık bir veri satışı, takip, tahkim veya otomatik yenileme maddesi bulunmamaktadır.",
+    "Belgede hakemlik (arbitration) veya toplu dava feragati (class-action waiver) açıkça belirtilmemiştir; yalnızca mahkeme yetkisi (exclusive jurisdiction) maddesi bulunmaktadır.",
+    "Belgede veri satışı veya izleme (tracking) ile ilgili açık bir madde bulunmamaktadır; yalnızca Gizlilik Politikasına atıf yapılmaktadır.",
+    "Belirli bir kategoriye tam olarak uymayan 'prevailing party' (kazanan taraf) masraf maddesi 'other' kategorisine yerleştirildi."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}
