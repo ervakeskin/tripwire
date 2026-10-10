@@ -28,7 +28,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 /** Retries rate limits / transient errors (free tiers 429 often). */
 async function callWithRetry(chunk: string, o: AnalyzeInput): Promise<unknown> {
   let lastErr: unknown;
-  for (let attempt = 0; attempt < 4; attempt++) {
+  for (let attempt = 0; attempt < 6; attempt++) {
     try {
       return await callLlm(o.llm, SYSTEM, `<document>
 ${chunk}
@@ -36,7 +36,7 @@ ${chunk}
     } catch (e) {
       lastErr = e;
       if (!/ (429|5\d\d):/.test((e as Error).message)) break;
-      await sleep(2000 * 2 ** attempt);
+      await sleep(Math.min(30000, 3000 * 2 ** attempt));
     }
   }
   throw lastErr;

@@ -19,13 +19,21 @@ export const DEFAULT_PRESET = 'gemini';
 const TOOL_NAME = 'report_clauses';
 const TOOL_DESC = 'Report risky clauses found in the document.';
 
+let keyCounter = 0;
+/** apiKey may hold several comma-separated keys (free tiers rate-limit hard): rotate round-robin so retries hit a different key. */
+export function pickKey(apiKey: string): string {
+  const keys = apiKey.split(',').map((k) => k.trim()).filter(Boolean);
+  return keys.length ? keys[keyCounter++ % keys.length] : '';
+}
+
 /** One schema-forced call. Returns the raw tool input (unvalidated: validation is the caller's job). */
 export async function callLlm(cfg: LlmConfig, system: string, userContent: string, fetchImpl: typeof fetch = fetch): Promise<unknown> {
   const base = cfg.baseURL.replace(/\/+$/, '');
+  const key = pickKey(cfg.apiKey);
   if (cfg.provider === 'anthropic') {
     const res = await fetchImpl(`${base}/v1/messages`, {
       method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-api-key': cfg.apiKey, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+      headers: { 'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
       body: JSON.stringify({
         model: cfg.model, max_tokens: 4096, temperature: 0, system,
         tools: [{ name: TOOL_NAME, description: TOOL_DESC, input_schema: TOOL_INPUT_SCHEMA }],
@@ -42,7 +50,7 @@ export async function callLlm(cfg: LlmConfig, system: string, userContent: strin
 
   const res = await fetchImpl(`${base}/chat/completions`, {
     method: 'POST',
-    headers: { 'content-type': 'application/json', ...(cfg.apiKey ? { authorization: `Bearer ${cfg.apiKey}` } : {}) },
+    headers: { 'content-type': 'application/json', ...(key ? { authorization: `Bearer ${key}` } : {}) },
     body: JSON.stringify({
       model: cfg.model, temperature: 0,
       messages: [{ role: 'system', content: system }, { role: 'user', content: userContent }],
