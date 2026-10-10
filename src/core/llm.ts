@@ -9,8 +9,8 @@ export interface LlmConfig {
 }
 
 export const PRESETS: Record<string, Omit<LlmConfig, 'apiKey'> & { label: string; keyHint: string }> = {
-  gemini: { label: 'Google Gemini (ücretsiz kota)', provider: 'openai', baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-2.5-flash', keyHint: 'aistudio.google.com/apikey — kart gerekmez' },
-  groq: { label: 'Groq (ücretsiz kota)', provider: 'openai', baseURL: 'https://api.groq.com/openai/v1', model: 'llama-3.3-70b-versatile', keyHint: 'console.groq.com/keys — kart gerekmez' },
+  gemini: { label: 'Google Gemini (ücretsiz kota)', provider: 'openai', baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.5-flash', keyHint: 'aistudio.google.com/apikey — kart gerekmez' },
+  groq: { label: 'Groq (ücretsiz kota)', provider: 'openai', baseURL: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', keyHint: 'console.groq.com/keys — kart gerekmez' },
   ollama: { label: 'Ollama (yerel, anahtarsız)', provider: 'openai', baseURL: 'http://localhost:11434/v1', model: 'qwen2.5:7b-instruct', keyHint: 'Anahtar gerekmez; `ollama serve` çalışmalı' },
   anthropic: { label: 'Anthropic Claude', provider: 'anthropic', baseURL: 'https://api.anthropic.com', model: 'claude-haiku-4-5-20251001', keyHint: 'console.anthropic.com' },
 };
