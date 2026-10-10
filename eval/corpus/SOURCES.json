@@ -1,0 +1,32 @@
+{
+  "spotify": {
+    "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+    "fetched": "2026-10-10",
+    "chars": 53975
+  },
+  "dropbox": {
+    "url": "https://www.dropbox.com/terms",
+    "fetched": "2026-10-10",
+    "chars": 25330
+  },
+  "reddit": {
+    "url": "https://www.redditinc.com/policies/user-agreement",
+    "fetched": "2026-10-10",
+    "chars": 83819
+  },
+  "grammarly": {
+    "url": "https://www.grammarly.com/terms",
+    "fetched": "2026-10-10",
+    "chars": 56843
+  },
+  "linkedin": {
+    "url": "https://www.linkedin.com/legal/user-agreement",
+    "fetched": "2026-10-10",
+    "chars": 32062
+  },
+  "slack": {
+    "url": "https://slack.com/terms-of-service/user",
+    "fetched": "2026-10-10",
+    "chars": 13099
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_note": "Hand-labelled from the stored corpus text. Quotes are verbatim; each is a consumer-unfavourable clause. Not exhaustive - 'false alarms' in the report are manually re-reviewed because gold is incomplete.",
+  "spotify": [
+    { "category": "arbitration_waiver", "quote": "THESE TERMS CONTAIN A MANDATORY ARBITRATION PROVISION" },
+    { "category": "arbitration_waiver", "quote": "the parties agree to waive any right to a jury trial" },
+    { "category": "liability_cap", "quote": "IN NO EVENT WILL SPOTIFY, ITS OFFICERS, SHAREHOLDERS" },
+    { "category": "content_license", "quote": "you hereby grant to Spotify a non-exclusive, transferable, sublicensable, royalty-free, fully paid, irrevocable, worldwide license" },
+    { "category": "unilateral_change", "quote": "we may modify, suspend, or stop (permanently or temporarily) providing all or part of the Spotify Service" },
+    { "category": "account_termination", "quote": "we reserve the right to terminate a Paid Subscription at any time, on no less than 14 days' notice" },
+    { "category": "cancellation_friction", "quote": "Spotify will not refund any amounts" }
+  ],
+  "dropbox": [
+    { "category": "auto_renewal", "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation" },
+    { "category": "unilateral_change", "quote": "We may change the fees in effect on renewal of your subscription" },
+    { "category": "cancellation_friction", "quote": "Dropbox does not provide refunds if we suspend or terminate your access to the Services" },
+    { "category": "liability_cap", "quote": "WE LIMIT OUR LIABILITY TO YOU" },
+    { "category": "arbitration_waiver", "quote": "YOU ALSO AGREE TO THE FOLLOWING MANDATORY ARBITRATION PROVISIONS" },
+    { "category": "arbitration_waiver", "quote": "You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member" }
+  ],
+  "reddit": [
+    { "category": "unilateral_change", "quote": "We reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you" },
+    { "category": "liability_cap", "quote": "IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED" },
+    { "category": "content_license", "quote": "you grant Reddit the following license to use that Content" }
+  ],
+  "grammarly": [
+    { "category": "auto_renewal", "quote": "SUCH PAID SUBSCRIPTION WILL BE AUTOMATICALLY RENEWED FOR ADDITIONAL PERIODS" },
+    { "category": "arbitration_waiver", "quote": "SECTION 12 ALSO CONTAINS A CLASS ACTION AND JURY TRIAL WAIVER" },
+    { "category": "liability_cap", "quote": "TOTAL AGGREGATE LIABILITY TO YOU UNDER THESE TERMS EXCEED THE AMOUNT THAT YOU HAVE PAID" },
+    { "category": "content_license", "quote": "You grant us a worldwide, non-exclusive, royalty-free license to your User Content" },
+    { "category": "cancellation_friction", "quote": "all payments made by you under these Terms are non-refundable and payment obligations are non-cancelable" },
+    { "category": "unilateral_change", "quote": "We may change the fees for our Services and associated Subscription Plans at our discretion" },
+    { "category": "account_termination", "quote": "We may terminate these Terms at any time without liability to you" }
+  ],
+  "linkedin": [
+    { "category": "content_license", "quote": "A worldwide, transferable and sublicensable right to use, copy, modify, distribute" },
+    { "category": "unilateral_change", "quote": "We may change, suspend or discontinue any of our Services" },
+    { "category": "liability_cap", "quote": "LINKEDIN AND ITS AFFILIATES WILL NOT BE LIABLE TO YOU IN CONNECTION WITH THIS CONTRACT FOR ANY AMOUNT THAT EXCEEDS" },
+    { "category": "cancellation_friction", "quote": "To avoid future charges, cancel before the renewal date" }
+  ],
+  "slack": [
+    { "category": "unilateral_change", "quote": "we may change these User Terms or the Acceptable Use Policy" },
+    { "category": "liability_cap", "quote": "OUR MAXIMUM AGGREGATE LIABILITY TO YOU FOR ANY BREACH OF THE USER TERMS IS ONE HUNDRED DOLLARS" }
+  ]
+}
