@@ -1,4 +1,4 @@
-import { LlmOutputSchema, DISCLAIMER_TR, type Report, type VerifiedClause } from './schema';
+import { LlmClauseSchema, LlmOutputSchema, DISCLAIMER_TR, type Report, type VerifiedClause } from './schema';
 import { scoreClauses } from './score';
 
 /** Collapse whitespace/quote styles so cosmetic differences don't fail a verbatim check; keeps an index map to the original. */
@@ -51,7 +51,13 @@ export function validateLlmOutput(raw: unknown, source: string, opts: ValidateOp
     rejected.push({ reason: 'schema_violation', quote: '' });
   } else {
     uncertainties.push(...parsed.data.uncertainties);
-    for (const c of parsed.data.clauses) {
+    for (const rawClause of parsed.data.clauses) {
+      const cp = LlmClauseSchema.safeParse(rawClause);
+      if (!cp.success) {
+        rejected.push({ reason: 'invalid_clause', quote: String((rawClause as { quote?: unknown })?.quote ?? '').slice(0, 120) });
+        continue;
+      }
+      const c = cp.data;
       const loc = locateQuote(source, c.quote);
       if (!loc) {
         rejected.push({ reason: 'quote_not_in_source', quote: c.quote.slice(0, 120) });
@@ -70,7 +76,7 @@ export function validateLlmOutput(raw: unknown, source: string, opts: ValidateOp
       });
     }
   }
-  if (rejected.length) uncertainties.push(`${rejected.length} iddia orijinal metinde doğrulanamadığı için atıldı.`);
+  if (rejected.length) uncertainties.push(`${rejected.length} iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı.`);
   const { score, level } = scoreClauses(clauses);
   return {
     url: opts.url,

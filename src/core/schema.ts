@@ -23,8 +23,8 @@ export const LlmClauseSchema = z.object({
   confidence: z.enum(['low', 'medium', 'high']),
 });
 export const LlmOutputSchema = z.object({
-  clauses: z.array(LlmClauseSchema).max(40),
-  uncertainties: z.array(z.string().max(300)).max(10),
+  clauses: z.array(z.unknown()).max(60), // each clause is validated individually (one bad clause must not discard the rest)
+  uncertainties: z.array(z.string().max(300)).max(10).catch([]),
 });
 export type LlmOutput = z.infer<typeof LlmOutputSchema>;
 
@@ -65,7 +65,7 @@ export const TOOL_INPUT_SCHEMA = {
         type: 'object',
         properties: {
           category: { type: 'string', enum: [...CATEGORIES] },
-          severity: { type: 'integer', minimum: 1, maximum: 3 },
+          severity: { type: 'integer', description: 'Integer 1 (minor), 2 (notable) or 3 (severe). Never above 3.' },
           quote: { type: 'string', description: 'Verbatim, contiguous excerpt copied from the document.' },
           explanationTr: { type: 'string', description: 'Plain Turkish, 1-2 sentences.' },
           confidence: { type: 'string', enum: ['low', 'medium', 'high'] },

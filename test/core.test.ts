@@ -66,3 +66,16 @@ describe('score & chunk', () => {
     expect(chunkText(t, 120).map((c) => c.text).join('')).toBe(t);
   });
 });
+
+describe('partial failure', () => {
+  it('keeps valid clauses when a sibling clause violates the schema', () => {
+    const r = validateLlmOutput(
+      { clauses: [
+        { category: 'liability_cap', severity: 8, quote: 'binding arbitration; you waive the right', explanationTr: 'bozuk severity', confidence: 'high' },
+        { category: 'arbitration_waiver', severity: 3, quote: 'binding arbitration; you waive the right to a class action', explanationTr: 'Toplu dava hakkı yok.', confidence: 'high' },
+      ], uncertainties: [] },
+      SRC, opts);
+    expect(r.clauses).toHaveLength(1);
+    expect(r.rejected.map((x) => x.reason)).toEqual(['invalid_clause']);
+  });
+});

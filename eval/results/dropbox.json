@@ -1,0 +1,41 @@
+{
+  "url": "https://www.dropbox.com/terms",
+  "score": 12,
+  "level": "low",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with.",
+      "quoteStart": 2674,
+      "quoteEnd": 2802,
+      "explanationTr": "Dropbox, gönderdiğiniz dosyalarınıza erişim, depolama ve tarama izni alır ve bu izni bağlı kuruluşları ve güvenilir üçüncü taraflarla paylaşabilir.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We reserve the right to suspend or terminate your access to the Services with notice to you if Dropbox reasonably believ"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW ... WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We may decide to discontinue the Services in response to exceptional unforeseen circumstances, events beyond Dropbox’s c"
+    }
+  ],
+  "uncertainties": [
+    "Metnin yalnızca %40'i analiz edilebildi; sonuç eksik olabilir.",
+    "Bölüm 2/5 analiz edilemedi: LLM API 400: {\"error\":{\"message\":\"Tool call validation failed: tool call validation failed: parameters for tool report_clauses did not match schema: errors: [`/clauses/0/severity`: maximum: got 4, want 3]\",\"type\":",
+    "Bölüm 4/5 analiz edilemedi: LLM API 400: {\"error\":{\"message\":\"Tool call validation failed: tool call validation failed: parameters for tool report_clauses did not match schema: errors: [`/clauses/0/severity`: maximum: got 4, want 3, `/clause",
+    "Bölüm 5/5 analiz edilemedi: LLM API 400: {\"error\":{\"message\":\"Tool call validation failed: tool call validation failed: parameters for tool report_clauses did not match schema: errors: [`/clauses/0/severity`: maximum: got 4, want 3]\",\"type\":",
+    "3 iddia orijinal metinde doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 0.4,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}
