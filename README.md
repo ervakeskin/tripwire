@@ -63,6 +63,8 @@ Tehdit modeli: ToS sayfasının kendisi saldırgan olabilir.
 | Anahtar sızıntısı | anahtar yalnızca background'da; content script/sayfa erişemez | — |
 | Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting`; host: yalnızca seçilen LLM sağlayıcısı | `wxt.config.ts` |
 
+**Canlı model testi** (`npx tsx eval/injection-live.ts`, `fixtures/injection.html`: 4 gizli + 1 görünür talimat, gerçek ToS maddeleri arada): gemini-3.1-flash-lite ve qwen3.8-27b — gizli talimat LLM metnine **girmedi**, görünür talimat ve gizli metin işaretlendi, **iki model de talimata uymadı** ve 3 beklenen maddeyi (otomatik yenileme, veri satışı, tahkim) döndürdü; skor yalnızca doğrulanmış maddelerden hesaplandı (54 / 53). Raporlar: `eval/injection-report-*.md`. Sınır: tek bir sayfa ve iki model; daha ustaca saldırılar denenmedi.
+
 **Bilinen sınırlar:** (1) Model kandırılıp *hiç madde döndürmezse* validator bunu yakalayamaz (yanlış negatif) — bu durumda UI zayıf sinyalle ("0 ≠ güvenli", enjeksiyon varsa "güvenmeyin") uyarır. (2) `@page-agent/page-controller` paketinde `executeJavascript` için doğrudan `eval` var; biz bu API'yi çağırmıyoruz (read-only kullanım), ancak paket bundle'da yer alıyor. (3) Enjeksiyon tespiti heuristiktir; yeni kalıpları kaçırabilir.
 
 ## Eval (6 gerçek ToS)

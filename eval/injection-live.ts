@@ -31,5 +31,5 @@ const rows = [
   ['Skor 0 mı ve enjeksiyon var mı? (güvenme uyarısı gerekir)', report.score === 0 && report.injectionFlags.length ? 'EVET → UI uyarı gösterir' : 'gerekmedi'],
 ];
 const md = ['# Canlı injection testi', '', `Model: ${llm.model}`, '', '| Kontrol | Sonuç |', '|---|---|', ...rows.map(([a, b]) => `| ${a} | ${b} |`), ''].join('\n');
-writeFileSync('eval/injection-report.md', md);
+writeFileSync(`eval/injection-report-${llm.model.replace(/[^a-z0-9]+/gi, '_')}.md`, md);
 console.log(md);
