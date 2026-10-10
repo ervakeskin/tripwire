@@ -43,7 +43,7 @@ ${chunk}
       lastErr = e;
       const msg = (e as Error).message;
       if (/ 400:.*(validation failed|tool call)/is.test(msg) && toolRetries++ < 2) continue;
-      if (!/ (429|5\d\d):/.test(msg)) break;
+      if (!/ (429|5\d\d):|timeout|aborted|fetch failed/i.test(msg)) break;
       await sleep(Math.min(60000, 5000 * 2 ** attempt));
     }
   }

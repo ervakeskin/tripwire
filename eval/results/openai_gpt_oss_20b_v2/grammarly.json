@@ -1,0 +1,299 @@
+{
+  "url": "https://www.grammarly.com/terms",
+  "score": 84,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "IF YOU SUBSCRIBE TO A PAID SUBSCRIPTION TO THE SERVICES, SUCH PAID SUBSCRIPTION WILL BE AUTOMATICALLY RENEWED FOR ADDITIONAL PERIODS OF THE SAME DURATION AS YOUR INITIAL SUBSCRIPTION PERIOD AT SUPERHUMAN’S THEN-CURRENT FEES FOR SUCH SUBSCRIPTION UNLESS YOU CANCEL OR DECLINE TO RENEW YOUR SUBSCRIPTION IN ACCORDANCE WITH SECTION 8.8 BELOW.",
+      "quoteStart": 2164,
+      "quoteEnd": 2503,
+      "explanationTr": "Aboneliğiniz otomatik olarak yenilenir ve ücretler güncel fiyatlarla alınır; iptal etmezseniz devam eder.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "PLEASE READ SECTION 12 CAREFULLY. UNLESS YOU OPT OUT OF THE ARBITRATION AGREEMENT WITHIN 30 DAYS: (1) YOU WILL ONLY BE PERMITTED TO PURSUE DISPUTES OR CLAIMS AND SEEK RELIEF AGAINST US THROUGH BINDING, FINAL ARBITRATION, WITH LIMITED EXCEPTIONS, AND YOU WAIVE YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR OTHER REPRESENTATIVE PROCEEDING OR CLASS-WIDE ARBITRATION; AND (2) YOU ARE WAIVING YOUR RIGHT TO PURSUE DISPUTES OR CLAIMS AND SEEK RELIEF IN A COURT OF LAW AND TO HAVE A JURY TRIAL.",
+      "quoteStart": 1497,
+      "quoteEnd": 1994,
+      "explanationTr": "Çatışmalarınızı mahkemede değil, bağlayıcı tahkim yoluyla çözmek zorundasınız ve sınıf davalarından vazgeçersiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Subject to Section 12.8 below, we may make changes to these Terms at our discretion. If we make changes, we will notify you either by email or through the Services at least thirty (30) days before the changes take effect.",
+      "quoteStart": 3410,
+      "quoteEnd": 3631,
+      "explanationTr": "Şirket, şartları tek taraflı olarak değiştirebilir ve değişiklikleri 30 gün önceden bildirebilir; kabul etmemeniz durumunda hizmetten çıkmanız gerekir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "If you no longer wish to use our Services and would like to delete your Account, please navigate to the relevant ‘how to delete my account’ page within our Documentation . Please note that once you delete your Account, you will not be able to reactivate it or retrieve any content or information associated with it .",
+      "quoteStart": 7459,
+      "quoteEnd": 7775,
+      "explanationTr": "Hesabınızı silerseniz, geri döndürülemez ve içerik kaybolur.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We reserve the right to terminate any Credentials that we reasonably determine may have been accessed or used by an unauthorized third party.",
+      "quoteStart": 5809,
+      "quoteEnd": 5950,
+      "explanationTr": "Şirket, yetkisiz erişim gördüğünde hesabınızı sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify or discontinue any feature, functionality, or component of our Services at any time (a “ Services Update ”).",
+      "quoteStart": 11895,
+      "quoteEnd": 12017,
+      "explanationTr": "Şirket, hizmetlerin herhangi bir özelliğini değiştirebilir veya durdurabilir ve bu değişiklikleri önceden bildirmeyebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "tracking",
+      "severity": 2,
+      "quote": "We may also collect and analyze data relating to your access and use of our Services (“ Usage Data ”). Examples of Usage Data include, but are not limited to, technical logs, metadata, telemetry data, and usage information about User Content, such as how often it is accessed.",
+      "quoteStart": 11589,
+      "quoteEnd": 11865,
+      "explanationTr": "Şirket, kullanımınızla ilgili teknik günlükler, metaveri ve diğer verileri toplar ve analiz eder.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may, in our sole discretion, change the functionality of the Beta Services and/or discontinue, suspend, or remove your access to such Beta Services (including any data that you input or store within the Beta Services).",
+      "quoteStart": 17075,
+      "quoteEnd": 17296,
+      "explanationTr": "Beta hizmetlerinin işlevi değiştirilebilir, durdurulabilir veya erişiminiz kesilebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "NOTWITHSTANDING ANYTHING ELSE STATED IN THESE TERMS, SUPERHUMAN WILL HAVE NO LIABILITY ARISING OUT OF OR IN CONNECTION WITH BETA SERVICES.",
+      "quoteStart": 17297,
+      "quoteEnd": 17435,
+      "explanationTr": "Beta hizmetleri için hiçbir sorumluluk kabul etmiyorsunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "unilateral_change",
+      "severity": 1,
+      "quote": "You acknowledge that Beta Services may not be as secure or reliable as our Services.",
+      "quoteStart": 16889,
+      "quoteEnd": 16973,
+      "explanationTr": "Beta hizmetlerinin güvenli veya güvenilir olmayabileceğini kabul ediyorsunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "unilateral_change",
+      "severity": 1,
+      "quote": "You may choose to use these Beta Services at your sole discretion.",
+      "quoteStart": 16261,
+      "quoteEnd": 16327,
+      "explanationTr": "Beta hizmetlerine erişim tamamen sizin isteğinize bağlıdır ve değişebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "For Paid Subscriptions, we will bill you in advance on a recurring monthly or annual basis, as applicable for the selected Subscription Plan (“ Billing Cycle ”).",
+      "quoteStart": 19435,
+      "quoteEnd": 19596,
+      "explanationTr": "Aboneliğiniz otomatik olarak yenilenir ve her faturalama döngüsünde ücret alınır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change the fees for our Services and associated Subscription Plans at our discretion, but we will give you advance notice before those changes take effect.",
+      "quoteStart": 22997,
+      "quoteEnd": 23159,
+      "explanationTr": "Fiyatlar değiştirilebilir ve değişiklikler önceden bildirilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "cancellation_friction",
+      "severity": 3,
+      "quote": "To the fullest extent permitted by applicable law, all payments made by you under these Terms are non-refundable and payment obligat",
+      "quoteStart": 25014,
+      "quoteEnd": 25146,
+      "explanationTr": "İptal ettiğinizde bile ücret geri ödenmez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We reserve the right to suspend or terminate your access to our Services and/or your Account if: (a) You have breached these Terms or our Acceptable Use Policy , (b) You use our Services in a manner that would cause a real risk of harm or loss to other Superhuman users or us, or (c) You have a Free Subscription and you haven’t accessed the Services for at least 12 consecutive months.",
+      "quoteStart": 26384,
+      "quoteEnd": 26770,
+      "explanationTr": "Hizmet sağlayıcı, hesabınızı tek taraflı olarak askıya alabilir veya sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c16",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may terminate these Terms at any time without liability to you.",
+      "quoteStart": 27579,
+      "quoteEnd": 27645,
+      "explanationTr": "Şartlar herhangi bir bildirim olmadan tek taraflı olarak değiştirilebilir veya sonlandırılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c17",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENTITIES' TOTAL AGGREGATE LIABILITY TO YOU UNDER THESE TERMS EXCEED THE AMOUNT THAT YOU HAVE PAID IN FEES TO SUPERHUMAN OR THE SUPERHUMAN ENTITIES DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT(S) GIVING RISE TO SUCH LIABILITY. HOWEVER, IF THAT AMOUNT IS ZERO BECAUSE YOU HAVE A FREE SUBSCRIPTION, SUPERHUMAN AND THE SUPERHUMAN ENTITIES’ TOTAL AGGREGATE LIABILITY WILL NOT EXCEED ONE HUNDRED DOLLARS ($100).",
+      "quoteStart": 31544,
+      "quoteEnd": 32013,
+      "explanationTr": "Sizden alınan ücretlerin üstünde bir tazminat talep edilemez; ücretsiz aboneliklerde de en fazla 100$ tutarında sorumluluk kabul edilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c18",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENTITIES’ BE LIABLE TO YOU OR OTHERWISE RESPONSIBLE FOR (I) ANY LOST PROFITS, LOST OR DAMAGED USER CONTENT OR OTHER DATA, OR FAILURE TO MEET ANY DUTY, INCLUDING WITHOUT LIMITATION GOOD FAITH AND REASONABLE CARE, AND (II) ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER.",
+      "quoteStart": 32104,
+      "quoteEnd": 32476,
+      "explanationTr": "Kayıp kar, veri kaybı ve dolaylı zararlar için hiçbir tazminat talep edilemez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c19",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "you and Superhuman agree to submit our disputes exclusively to binding individual arbitration, and we won’t sue each other in court before a judge or jury",
+      "quoteStart": 33433,
+      "quoteEnd": 33587,
+      "explanationTr": "Siz ve Superhuman, mahkemede dava açma hakkını bırakıp, yalnızca bireysel tahkim yoluyla anlaşmazlıkları çözmeye karar veriyorsunuz. Bu, haklarınızı sınırlayan ciddi bir kısıtlamadır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c20",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "The exception is that we each may (1) bring qualifying individual claims in “small claims” court, so long as those claims remain in small claims court;",
+      "quoteStart": 34308,
+      "quoteEnd": 34459,
+      "explanationTr": "Sadece küçük iddialar için mahkemeye başvurabilirsiniz; diğer tüm iddialar tahkimle çözülmelidir. Bu, mahkeme sürecine erişiminizi kısıtlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c21",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "if the amount in dispute is less than $25,000, the arbitration will be conducted as a documents-only arbitration (i.e., there will be no in-person or telephonic hearing); and (ii) if the amount in dispute is $25,000 or more, the arbitration will be held by videoconference with no in-person hearing",
+      "quoteStart": 38689,
+      "quoteEnd": 38987,
+      "explanationTr": "Tahkim sürecinde sınırlı bir dil ve yer seçimi yapılır; 25.000$ altındaki davalar belgelerle, üstündeki davalar videokonferansla çözülür. Bu, sizin için adil bir süreç olmayabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c22",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You and Superhuman agree that each of us may bring claims against the other only on an individual basis, and not on a class, representative, or collective basis",
+      "quoteStart": 36453,
+      "quoteEnd": 36613,
+      "explanationTr": "Tahkimde sınıf davaları ve toplu davalar yasaktır; yalnızca bireysel talepler kabul edilir. Bu, toplu hak taleplerinizi engeller.",
+      "confidence": "high"
+    },
+    {
+      "id": "c23",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "all Disputes regarding the subsection entitled “Waiver of Class and Other Non-Individualized Relief,” including any claim that all or part of that same subsection is unenforceable, illegal, void or voidable, or that such subsection has been breached, will be decided by a court of competent jurisdiction and not by an arbitrator.",
+      "quoteStart": 40502,
+      "quoteEnd": 40831,
+      "explanationTr": "Sözleşme, sınıf davalarını reddederek bireysel hakları sınırlıyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c24",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "If you are a new user of our Services, you can opt out of this Arbitration Agreement (excluding Section 12.9) within 30 days after you first accept the Terms.",
+      "quoteStart": 42993,
+      "quoteEnd": 43151,
+      "explanationTr": "Sözleşme, 30 gün içinde çıkış hakkı sunuyor ama bu sadece yeni kullanıcılar için geçerli.",
+      "confidence": "high"
+    },
+    {
+      "id": "c25",
+      "category": "other",
+      "severity": 2,
+      "quote": "To ensure efficient resolution, if within a 90-day period, 25 or more claimants submit Notices of Dispute or file arbitrations raising similar claims (i.e., with similar facts and legal issues) and are represented by the same or coordinated counsel, the disputes must be arbitrated in batches of up to 100 claimants each (“Batch”).",
+      "quoteStart": 41558,
+      "quoteEnd": 41889,
+      "explanationTr": "Batch arbitration, 90 gün içinde 25 veya daha fazla benzer iddia için tek bir arabuluculuk süreci zorunlu kılıyor.",
+      "confidence": "low"
+    },
+    {
+      "id": "c26",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "You consent to such automatic updating on your mobile device, and agree that the Agreement will apply to all such updates.",
+      "quoteStart": 52675,
+      "quoteEnd": 52797,
+      "explanationTr": "Uygulama güncellemeleri otomatik olarak yapılır ve siz bu güncellemeleri kabul etmeniz gerekir. Bu, hizmetin nasıl çalıştığını değiştirir ve sizden ek ücret talep edebilir.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "If you are an individual and you create an Account using an email address that belongs to your employer, school, or othe"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "You grant us a worldwide, non-exclusive, royalty-free license to your User Content that allows us to use, store, reprodu"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Subscriptions are non-cancelable, and we do not provide refunds or credits for any partially used Subscription periods o"
+    },
+    {
+      "reason": "invalid_clause",
+      "quote": "The arbitrator will have exclusive authority to resolve any Dispute, including, without limitation, Disputes regarding t"
+    },
+    {
+      "reason": "invalid_clause",
+      "quote": "Superhuman will notify you of material changes to this Arbitration Agreement at least 30 days before they become effecti"
+    },
+    {
+      "reason": "invalid_clause",
+      "quote": ""
+    }
+  ],
+  "uncertainties": [
+    "6 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

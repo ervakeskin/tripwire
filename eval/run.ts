@@ -28,6 +28,7 @@ const chunkCache = (doc: string) => ({
 // Hand adjudication of "extra" predictions (not in sparse gold): valid = real consumer risk missing from gold, borderline, noise = false alarm.
 const adj: Record<string, 'valid' | 'borderline' | 'noise'> = existsSync('eval/adjudication.json') ? JSON.parse(readFileSync('eval/adjudication.json', 'utf8')) : {};
 const adjKey = (doc: string, quote: string) => `${doc}|${quote.replace(/\s+/g, ' ').slice(0, 50)}`;
+const allExtras: { doc: string; key: string; category: string; quote: string }[] = [];
 const adjCount = { valid: 0, borderline: 0, noise: 0, unreviewed: 0 };
 
 let tp = 0, fn = 0, fp = 0, rejectedTotal = 0, claimsTotal = 0;
@@ -53,6 +54,7 @@ for (const doc of Object.keys(gold).filter((k) => !k.startsWith('_'))) {
   const caught = goldSpans.filter((g) => report.clauses.some((c) => c.category === g.category && overlap({ start: c.quoteStart, end: c.quoteEnd }, g.loc!)));
   const missed = goldSpans.filter((g) => !caught.includes(g));
   const extra = report.clauses.filter((c) => !goldSpans.some((g) => g.category === c.category && overlap({ start: c.quoteStart, end: c.quoteEnd }, g.loc!)));
+  for (const e of extra) allExtras.push({ doc, key: adjKey(doc, e.quote), category: e.category, quote: e.quote });
   for (const e of extra) adjCount[adj[adjKey(doc, e.quote)] ?? 'unreviewed']++;
   tp += caught.length; fn += missed.length; fp += extra.length;
   rejectedTotal += report.rejected.length; claimsTotal += report.clauses.length + report.rejected.length;
@@ -63,6 +65,7 @@ for (const doc of Object.keys(gold).filter((k) => !k.startsWith('_'))) {
   for (const e of extra) lines.push(`  - FAZLA [${e.category}] (${e.confidence}) → ${adj[adjKey(doc, e.quote)] ?? 'incelenmedi'} "${e.quote.slice(0, 90)}…"`);
   lines.push('');
 }
+writeFileSync(`${RES}/extras.json`, JSON.stringify(allExtras, null, 2));
 const precision = tp / Math.max(1, tp + fp), recall = tp / Math.max(1, tp + fn);
 const head = [
   '# Eval raporu', '',

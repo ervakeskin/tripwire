@@ -1,0 +1,203 @@
+{
+  "url": "https://www.spotify.com/us/legal/end-user-agreement/",
+  "score": 73,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "THESE TERMS CONTAIN A MANDATORY ARBITRATION PROVISION THAT, AS FURTHER SET FORTH IN SECTION 6 BELOW, REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR ANY OTHER COURT PROCEEDINGS, OR CLASS ACTIONS OF ANY KIND.",
+      "quoteStart": 1485,
+      "quoteEnd": 1747,
+      "explanationTr": "Bu sözleşme, yargı yoluyla değil, bireysel tahkim yoluyla anlaşmazlık çözümünü zorunlu kılıyor. Sınıf davaları ve jüri hakları reddediliyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Spotify reserves the right to change our Spotify Service offerings and their availability from time to time, without notice or liability to you.",
+      "quoteStart": 4240,
+      "quoteEnd": 4384,
+      "explanationTr": "Spotify, hizmeti, fiyatları veya özellikleri değiştirip, hizmeti durdurabilir; bu değişiklikler önceden bildirilmeden yapılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "we may modify, suspend, or stop (permanently or temporarily) providing all or part of the Spotify Service (including particular functions, features, subscription plans, and promotional offerings).",
+      "quoteStart": 4679,
+      "quoteEnd": 4875,
+      "explanationTr": "Hizmetin herhangi bir bölümünü, özelliklerini veya promosyonlarını durdurabilir veya tamamen bırakabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "Unless otherwise required by law, we do not provide refunds or credits for any partial subscription periods, except as expressly stated in these Terms.",
+      "quoteStart": 11248,
+      "quoteEnd": 11399,
+      "explanationTr": "İptal sonrası geri ödeme yoktur; yalnızca ücretsiz sürüme geçersiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "we reserve the right to terminate a Paid Subscription at any time, on no less than 14 days' notice to you. Unless we inform you otherwise, we will allow you to retain access to the Paid Subscription for the remainder of the then-current billing period, after which we will downgrade your account to the free version of the Spotify Service.",
+      "quoteStart": 11717,
+      "quoteEnd": 12056,
+      "explanationTr": "Hizmet sağlayıcı, aboneliği 14 gün önceden bildirimde bulunarak sonlandırabilir ve kalan sürenin sonunda hesabı ücretsiz sürüme düşürebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or suspend your access to the Spotify Service at any time if we believe you have breached any of these Terms, if we stop providing the Spotify Service or any material component thereof, or as we believe necessary to comply with applicable law.",
+      "quoteStart": 22071,
+      "quoteEnd": 22416,
+      "explanationTr": "Spotify, hizmeti durdurabilir veya şartları değiştirebilir, sizin onayınız olmadan.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "tracking",
+      "severity": 2,
+      "quote": "You also grant to us the right (1) to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify Service, and (2) to provide advertising and other information to you, and (3) to allow our business partners to do the same.",
+      "quoteStart": 19627,
+      "quoteEnd": 19936,
+      "explanationTr": "Cihazınızın işlemci, bant genişliği ve depolama alanı reklam ve diğer bilgiler için kullanılabilir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c8",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SPOTIFY SERVICE, THIRD-PARTY APPLICATIONS, OR THIRD-PARTY APPLICATION CONTENT MORE THAN THE GREATER OF (A) THE AMOUNTS PAID BY YOU TO SPOTIFY DURING THE TWELVE MONTHS PRIOR TO THE FIRST CLAIM; OR (B) $30.00.",
+      "quoteStart": 26359,
+      "quoteEnd": 26617,
+      "explanationTr": "Spotify sınırlı bir sorumluluk üstleniyor; toplam tazminat, son 12 ayda ödediğiniz tutarın ya da 30 dolardan yüksek olamaz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT BELOW) WITHIN ONE (1) YEAR AFTER THE DATE THE PARTY ASSERTING THE CLAIM FIRST KNOWS OR REASONABLY SHOULD KNOW OF THE ACT, OMISSION, OR DEFAULT GIVING RISE TO THE CLAIM; AND THERE SHALL BE NO RIGHT TO ANY REMEDY FOR ANY CLAIM NOT ASSERTED WITHIN THAT TIME PERIOD.",
+      "quoteStart": 26867,
+      "quoteEnd": 27279,
+      "explanationTr": "Herhangi bir ihtilafı mahkemede değil, zorunlu arabuluculukla çözmek zorundasınız ve 1 yıl içinde dava açmanız gerekir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "This Arbitration Agreement section sets forth the terms and conditions pursuant to which Disputes between you and Spotify will be resolved through individual arbitration",
+      "quoteStart": 31627,
+      "quoteEnd": 31796,
+      "explanationTr": "Bu sözleşme, sizin ve Spotify’ın aralarındaki tüm anlaşmazlıkları mahkemeye değil, bireysel tahkim yoluyla çözmeyi zorunlu kılıyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "Neither party may participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding (whether in court or arbitration).",
+      "quoteStart": 31189,
+      "quoteEnd": 31390,
+      "explanationTr": "Siz ve Spotify, sınıf davalarına katılamayacak ve sınıf çözümlerine izin verilmeyecek şekilde sözleşmeyi kabul ediyorsunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER IN ARBITRATION OR LITIGATION ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, CONSOLIDATED, PRIVATE ATTORNEY GENERAL, OR REPRESENTATIVE ACTION.",
+      "quoteStart": 34773,
+      "quoteEnd": 35049,
+      "explanationTr": "Bu maddede, kullanıcıların sınıf davaları açamayacağı ve yalnızca bireysel olarak arabuluculuk veya mahkeme yoluyla davalarını sürdürebileceği belirtiliyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "You may opt out of arbitration by providing an individual, personally signed notice of your intention to opt out of arbitration to Spotify via email at tounotice@spotify.com within thirty (30) days after the conclusion of the second global mediation session.",
+      "quoteStart": 46535,
+      "quoteEnd": 46793,
+      "explanationTr": "İşlemler otomatik olarak arabuluculukla çözülür; yalnızca belirli bir süre içinde yazılı olarak çıkış yapılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "Assuming the number of remaining cases exceeds two hundred (200), then two hundred (200) cases shall be randomly selected (or selected through a process agreed to by counsel for the parties) to be filed and to proceed in individual arbitrations as part of a staged process.",
+      "quoteStart": 47238,
+      "quoteEnd": 47511,
+      "explanationTr": "Milyonlarca davayı tek tek seçmek yerine rastgele seçilen 200 dava arabuluculukla çözülür; bu, sizin davanızın seçilmemesi anlamına gelebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c15",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "To the fullest extent permitted by applicable law, each party may bring a Dispute against the other party only in an individual capacity and not participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding.",
+      "quoteStart": 49847,
+      "quoteEnd": 50141,
+      "explanationTr": "Sözleşme, sınıf davalarını ve jüri davasını reddeder; yalnızca bireysel davalar kabul edilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c16",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "Opting out of a material change to the Arbitration Agreement is not an opt-out of arbitration altogether. Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agree that any Dispute will be determined by binding individual (not class) arbitration in accordance with the Arbitration Agreement in effect immediately before any such opt-out.",
+      "quoteStart": 51956,
+      "quoteEnd": 52328,
+      "explanationTr": "Arbitrajı tamamen reddedemezsiniz; sadece değişiklikleri reddedebilirsiniz, ancak hâlâ bireysel, sınıf olmayan arbitraj zorunlu olur.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "If you have prepaid fees directly to Spotify for a Paid Subscription that Spotify permanently discontinues prior to the "
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Paid Subscriptions continue indefinitely until cancelled. You will be billed on a recurring basis on the first day of ea"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Spotify may from time to time make changes to Paid Subscriptions, including recurring subscription fees, the Prepaid Per"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Accordingly, you hereby grant to Spotify a non‑exclusive, transferable, sublicensable, royalty‑free, fully paid, irrevoc"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Either you or Spotify may start arbitration proceedings. Any arbitration between you and Spotify will be administered by"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Spotify may opt your case out of arbitration by sending a notice of intent to opt out to your counsel within fourteen (1"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We may make changes to these Terms (including any additional Spotify terms and conditions incorporated by reference here"
+    }
+  ],
+  "uncertainties": [
+    "7 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

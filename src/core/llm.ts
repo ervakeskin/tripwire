@@ -33,6 +33,7 @@ export async function callLlm(cfg: LlmConfig, system: string, userContent: strin
   if (cfg.provider === 'anthropic') {
     const res = await fetchImpl(`${base}/v1/messages`, {
       method: 'POST',
+      signal: AbortSignal.timeout(90_000), // a hung connection must fail (and be retried), never block the scan forever
       headers: { 'content-type': 'application/json', 'x-api-key': key, 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
       body: JSON.stringify({
         model: cfg.model, max_tokens: 4096, temperature: 0, system,
@@ -50,6 +51,7 @@ export async function callLlm(cfg: LlmConfig, system: string, userContent: strin
 
   const res = await fetchImpl(`${base}/chat/completions`, {
     method: 'POST',
+      signal: AbortSignal.timeout(90_000), // a hung connection must fail (and be retried), never block the scan forever
     headers: { 'content-type': 'application/json', ...(key ? { authorization: `Bearer ${key}` } : {}) },
     body: JSON.stringify({
       model: cfg.model, temperature: 0,

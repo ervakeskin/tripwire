@@ -1,0 +1,111 @@
+{
+  "url": "https://www.redditinc.com/policies/user-agreement",
+  "score": 54,
+  "level": "medium",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 3,
+      "quote": "reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. An",
+      "quoteStart": 41903,
+      "quoteEnd": 42037,
+      "explanationTr": "Hizmetleri istediğiniz zaman, bildirimde bulunmadan değiştirebilir, askıya alabilir veya sonlandırabilirler. Bu, kullanıcıların beklenmedik değişikliklerle karşılaşmasına yol açar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "content_license",
+      "severity": 3,
+      "quote": "n Your Content is created with or submitted to the Services, you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content and any name, username, voice, or likeness provided in connection with Your Content in all media formats and channels now known or later developed anywhere in the world. Th",
+      "quoteStart": 44600,
+      "quoteEnd": 45063,
+      "explanationTr": "Kullanıcıların gönderdiği içeriklere, dünya çapında, ömür boyu, geri alınamaz bir lisans verilir. Bu, içeriklerin sizin kontrolünüz dışında kullanılmasını sağlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. TH",
+      "quoteStart": 56392,
+      "quoteEnd": 56609,
+      "explanationTr": "Reddit, size karşı sorumluluğunu 100 dolar veya son altı ayda ödediğiniz tutarın üstüne çıkarmaz. Bu, hizmetlerden kaynaklanan zararlar için çok düşük bir tazminat anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "content_license",
+      "severity": 3,
+      "quote": " grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content an",
+      "quoteStart": 44664,
+      "quoteEnd": 44893,
+      "explanationTr": "Reddit size, süresiz, geri alınamaz bir lisans veriyor, bu da sizin içeriklerinizi istediği gibi kullanabileceği anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms. If",
+      "quoteStart": 50054,
+      "quoteEnd": 50206,
+      "explanationTr": "Reddit, moderatör yetkilerini herhangi bir nedenle, bildirimde bulunmadan iptal edebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "using the Services you agree that the Reddit Entities’ liability is limited to the maximum extent permissible in your country of residence. Liability will be limited to foreseeable damages arising due to a breach of material contractual obligations typical for this type of contract. Re",
+      "quoteStart": 78716,
+      "quoteEnd": 79002,
+      "explanationTr": "Reddit’in sorumluluğu, yalnızca önceden tahmin edilebilecek zararlarla sınırlıdır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "have a policy that includes the removal of any infringing material from the Services and for the termination, in appropriate circumstances, of users of our Services who are repeat infringers. If",
+      "quoteStart": 51565,
+      "quoteEnd": 51759,
+      "explanationTr": "Reddit, tekrarlayan ihlallerde kullanıcı hesabını sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above. If",
+      "quoteStart": 58217,
+      "quoteEnd": 58358,
+      "explanationTr": "Şirket, şartları istediği zaman değiştirebilir ve bu değişiklikleri bildirmeden geçerli kılabilir.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "invalid_clause",
+      "quote": "Except to the extent prohibited by law, you agree to defend, indemnify, and hold Reddit, its affiliates, and their respe"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the "
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "To the fullest extent permitted by applicable law, we may suspend or terminate your Account, moderator status, or abilit"
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "To the fullest extent permitted by applicable law, we may suspend or terminate your Account, moderator status, or abilit"
+    }
+  ],
+  "uncertainties": [
+    "4 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

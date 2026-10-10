@@ -1,0 +1,120 @@
+{
+  "url": "https://www.dropbox.com/terms",
+  "score": 66,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+      "quoteStart": 9783,
+      "quoteEnd": 9904,
+      "explanationTr": "Ücretli abonelikleriniz, siz iptal edene kadar her dönem otomatik olarak yenilenir ve kredi kartınızdan çekim yapılır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "Refunds are only issued if required by law . For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here .",
+      "quoteStart": 10348,
+      "quoteEnd": 10612,
+      "explanationTr": "Hizmeti iptal etseniz dahi, yasalar zorunlu kılmadıkça ödediğiniz ücretler için geri ödeme alamazsınız.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+      "quoteStart": 10950,
+      "quoteEnd": 11136,
+      "explanationTr": "Şirket, ekonomik koşullar veya iş değişiklikleri gibi gerekçelerle abonelik ücretlerini tek taraflı olarak artırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features.",
+      "quoteStart": 10825,
+      "quoteEnd": 10940,
+      "explanationTr": "Ödemenizi zamanında yapmazsanız, şirket hesabınızı askıya alma veya ücretli özellikleri kaldırma hakkını saklı tutar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law.",
+      "quoteStart": 13002,
+      "quoteEnd": 13429,
+      "explanationTr": "Dropbox, belirli durumlarda size önceden haber vermeden veya dosyalarınızı yedeklemenize izin vermeden hesabınızı askıya alabilir veya kapatabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+      "quoteStart": 16651,
+      "quoteEnd": 16879,
+      "explanationTr": "Dropbox, yasal olarak izin verilen durumlarda sorumluluğunu ödediğiniz tutar veya 20 dolar ile sınırlandırmaktadır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "other",
+      "severity": 2,
+      "quote": "Please note that Dropbox Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Team account. They may also be able to restrict or terminate your access to a Dropbox Team account.",
+      "quoteStart": 11795,
+      "quoteEnd": 12086,
+      "explanationTr": "Dropbox Team hesabı kullanıyorsanız, yöneticileriniz hesabınızdaki bilgilere erişebilir, bunları silebilir veya hesabınızı tamamen kontrol altına alabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below.",
+      "quoteStart": 18544,
+      "quoteEnd": 18794,
+      "explanationTr": "Şirket ile aranızdaki anlaşmazlıkları mahkemeye taşımak yerine zorunlu tahkime gitmeyi ve toplu dava açma hakkınızdan feragat etmeyi kabul ediyorsunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+      "quoteStart": 21872,
+      "quoteEnd": 22044,
+      "explanationTr": "Toplu dava açma hakkınızın olmadığını ve sadece bireysel olarak hak arayabileceğinizi belirten bir maddedir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "If any part of this “Mandatory Arbitration Provisions” section is found to be illegal or unenforceable, the remainder will remain in effect, except that if a finding of partial illegality or unenforceability would allow class or representative arbitration, this “Mandatory Arbitration Provisions” section will be unenforceable in its entirety.",
+      "quoteStart": 22187,
+      "quoteEnd": 22530,
+      "explanationTr": "Bu madde, tüm yasal anlaşmazlıkların mahkeme yerine zorunlu tahkim yoluyla çözülmesini şart koşuyor ve toplu dava açma hakkınızı kısıtlıyor.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Ter"
+    }
+  ],
+  "uncertainties": [
+    "The provided text is incomplete (ends abruptly at \"Templates and Forms\"). It does not contain the full Terms of Service, specifically missing sections on liability, arbitration, termination, and changes to terms, which are typically where risky clauses are found.",
+    "1 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

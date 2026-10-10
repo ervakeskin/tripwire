@@ -1,0 +1,140 @@
+{
+  "url": "https://www.redditinc.com/policies/user-agreement",
+  "score": 57,
+  "level": "medium",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "content_license",
+      "severity": 3,
+      "quote": "n Your Content is created with or submitted to the Services, you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content and any name, username, voice, or likeness provided in connection with Your Content in all media formats and channels now known or later developed anywhere in the world. Th",
+      "quoteStart": 44600,
+      "quoteEnd": 45063,
+      "explanationTr": "Paylaştığınız içerikler üzerinde şirkete dünya çapında, kalıcı, geri alınamaz ve alt lisans verilebilir çok geniş kapsamlı bir kullanım hakkı tanıyorsunuz. Bu hak, içeriklerinizin yapay zeka modellerini eğitmek için kullanılmasına da izin vermektedir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "hough we have no obligation to screen, edit, or monitor Your Content, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content, at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo",
+      "quoteStart": 45838,
+      "quoteEnd": 46212,
+      "explanationTr": "Şirket, herhangi bir zamanda ve herhangi bir nedenle, kendi takdirine bağlı olarak içeriğinizi silme veya kaldırma hakkına sahiptir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms. If",
+      "quoteStart": 50054,
+      "quoteEnd": 50206,
+      "explanationTr": "Reddit, herhangi bir sebeple veya hiçbir sebep göstermeksizin, moderatörlük yetkinizi istediği zaman iptal etme veya kısıtlama hakkını saklı tutar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. TH",
+      "quoteStart": 56392,
+      "quoteEnd": 56609,
+      "explanationTr": "Reddit, hizmetle ilgili herhangi bir sorun yaşamanız durumunda sorumluluğunu 100 dolar veya son altı ayda ödediğiniz tutar ile sınırlandırmaktadır. Bu, ciddi zararlarınız olsa bile çok düşük bir tazminat alabileceğiniz anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "other",
+      "severity": 3,
+      "quote": " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective, directors, officers, employees, affiliates, agents, contractors, third-party service providers, and licensors (the “ Reddit Entities ”) harmless from and against any claim or demand made by any third party, and any related liability, damage, loss, and expense (including costs and attorneys’ fees) due to, arising out of, or in connection with: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of applicable laws or regulations; or (d) Your Content. We",
+      "quoteStart": 53905,
+      "quoteEnd": 54476,
+      "explanationTr": "Hizmeti kullanımınızdan veya içeriğinizden kaynaklanan herhangi bir yasal sorun veya üçüncü taraf talebi durumunda, Reddit'in tüm masraflarını ve avukatlık ücretlerini karşılamayı kabul ediyorsunuz. Bu, kullanıcı için oldukça ağır bir mali yükümlülük getirebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 3,
+      "quote": "may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above. If the changes, in our sole discretion, are material, we may also notify you by sending an email to the address associated with your Account (if you have chosen to provide a verified email address) or by otherwise providing you with notice through our Services. By continuing to access or use the Services on or after the Effective Date of the revised Terms, you agree to be bound by the revised Terms. If",
+      "quoteStart": 58217,
+      "quoteEnd": 58761,
+      "explanationTr": "Reddit, şartları istediği zaman değiştirebileceğini ve hizmeti kullanmaya devam etmeniz durumunda bu yeni şartları kabul etmiş sayılacağınızı belirtiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "the fullest extent permitted by applicable law, we may suspend or terminate your Account, moderator status, or ability to access or use the Services at any time for any or no reason, including for violating these Terms or our Reddit Rules . Th",
+      "quoteStart": 60157,
+      "quoteEnd": 60400,
+      "explanationTr": "Reddit, hesabınızı veya hizmete erişiminizi herhangi bir neden göstermeksizin veya hiçbir neden olmaksızın dilediği zaman askıya alma veya sonlandırma hakkını saklı tutar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "unilateral_change",
+      "severity": 3,
+      "quote": "reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. An",
+      "quoteStart": 41903,
+      "quoteEnd": 42037,
+      "explanationTr": "Reddit, hizmetlerini veya özelliklerini herhangi bir zamanda, bildirimde bulunmaksızın değiştirme, askıya alma veya sonlandırma hakkını saklı tutar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "ever, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo",
+      "quoteStart": 69966,
+      "quoteEnd": 70275,
+      "explanationTr": "Reddit, içeriğinizi veya hesabınızı herhangi bir zamanda ve herhangi bir sebeple, tamamen kendi takdirine bağlı olarak silme veya kaldırma hakkını saklı tutar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "using the Services you agree that the Reddit Entities’ liability is limited to the maximum extent permissible in your country of residence. Liability will be limited to foreseeable damages arising due to a breach of material contractual obligations typical for this type of contract. Re",
+      "quoteStart": 78716,
+      "quoteEnd": 79002,
+      "explanationTr": "Reddit, yasaların izin verdiği ölçüde sorumluluğunu en alt seviyeye indirmekte ve sadece belirli durumlarda sorumlu tutulabileceğini belirtmektedir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "other",
+      "severity": 3,
+      "quote": " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective directors, officers, employees, affiliates, agents, contractors, third-party service providers, and licensors (the “ Reddit Entities ”) harmless from and against any claim or demand made by any third party, and any related liability, damage, loss, and expense (including costs and attorneys’ fees) due to, arising out of, or in connection with: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of applicable laws or regulations; or (d) Your Content. We",
+      "quoteStart": 77982,
+      "quoteEnd": 78552,
+      "explanationTr": "Kullanıcılar, hizmeti kullanımları veya içerikleriyle ilgili herhangi bir üçüncü taraf şikayetinde Reddit'in tüm yasal masraflarını ve zararlarını karşılamayı kabul etmektedir.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without "
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the "
+    }
+  ],
+  "uncertainties": [
+    "The provided document is a list of document titles and dates in multiple languages, not the actual text of the agreements. Therefore, no clauses could be extracted.",
+    "The provided document is a list of links/titles to various legal documents in multiple languages, not the actual text of the terms themselves. Therefore, no specific clauses can be extracted.",
+    "The provided document is a list of links/titles of various policies in multiple languages, not the actual text of the terms themselves. Therefore, no specific clauses could be extracted.",
+    "The provided text is merely a list of document titles and links in various languages, not the actual content of the Terms of Service. Therefore, no specific clauses can be extracted.",
+    "The provided document is a list of document titles and dates in various languages, not the actual text of the Terms of Service or Privacy Policy. Therefore, no specific clauses can be extracted.",
+    "The provided text is a list of document titles and dates in various languages, not the actual content of the terms of service. Therefore, no specific clauses can be extracted.",
+    "The provided document is a landing page/index of links rather than the full text of the User Agreement. The actual terms (e.g., arbitration, liability, content license) are contained in the linked documents which were not provided in the input.",
+    "2 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

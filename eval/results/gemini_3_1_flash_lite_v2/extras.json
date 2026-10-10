@@ -1,0 +1,320 @@
+[
+  {
+    "doc": "spotify",
+    "key": "spotify|Unless otherwise indicated (for example, if you ha",
+    "category": "auto_renewal",
+    "quote": "Unless otherwise indicated (for example, if you have signed up for a Prepaid Period), Paid Subscriptions continue indefinitely until cancelled. You will be billed on a recurring basis on the first day of each billing period and you will pay and you authorise us (or the applicable third party, if you sign up through a third party) to charge your payment method the then-current subscription fee."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Price changes will take effect at the start of the",
+    "category": "unilateral_change",
+    "quote": "Price changes will take effect at the start of the next subscription period following the date of the price change and, by continuing to use the Spotify Service after the price change takes effect, you will have accepted the new price."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Unless otherwise required by law, we do not provid",
+    "category": "cancellation_friction",
+    "quote": "Unless otherwise required by law, we do not provide refunds or credits for any partial subscription periods, except as expressly stated in these Terms."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Spotify may reclaim, or require you to change, you",
+    "category": "account_termination",
+    "quote": "Spotify may reclaim, or require you to change, your username for any reason."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Spotify may terminate these Terms (including any a",
+    "category": "account_termination",
+    "quote": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or suspend your access to the Spotify Service at any time if we believe you have breached any of these Terms, if we stop providing the Spotify Service or any material component thereof, or as we believe necessary to comply with applicable law."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|You also grant to us the right (1) to allow the Sp",
+    "category": "other",
+    "quote": "You also grant to us the right (1) to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify Service, and (2) to provide advertising and other information to you, and (3) to allow our business partners to do the same."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMEN",
+    "category": "other",
+    "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT BELOW) WITHIN ONE (1) YEAR AFTER THE DATE THE PARTY ASSERTING THE CLAIM FIRST KNOWS OR REASONABLY SHOULD KNOW OF THE ACT, OMISSION, OR DEFAULT GIVING RISE TO THE CLAIM; AND THERE SHALL BE NO RIGHT TO ANY REMEDY FOR ANY CLAIM NOT ASSERTED WITHIN THAT TIME PERIOD."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|You agree to indemnify and hold Spotify harmless f",
+    "category": "other",
+    "quote": "You agree to indemnify and hold Spotify harmless from and against all damages, losses, and expenses of any kind (including reasonable attorneys' fees and costs) arising out of or related to: (1) your breach of any of these Terms (including any additional Spotify terms and conditions incorporated herein); (2) any User Content you post or otherwise contribute; (3) any activity in which you engage on or through the Spotify Service; and (4) your violation of any law or the rights of a third party."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS A",
+    "category": "arbitration_waiver",
+    "quote": "YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER IN ARBITRATION OR LITIGATION ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, CONSOLIDATED, PRIVATE ATTORNEY GENERAL, OR REPRESENTATIVE ACTION."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Any arbitration between you and Spotify will be ad",
+    "category": "arbitration_waiver",
+    "quote": "Any arbitration between you and Spotify will be administered by National Arbitration and Mediation (\" NAM \") in accordance with their rules applicable to the nature of the Dispute, including the Comprehensive Dispute Resolution Rules and Procedures and/or the Supplemental Rules for Mass Arbitration Filings (\" NAM Rules \"), as modified by this Arbitration Agreement."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|If twenty-five (25) or more claimants submit Notic",
+    "category": "arbitration_waiver",
+    "quote": "If twenty-five (25) or more claimants submit Notices or attempt to file Demands raising similar claims, are represented by the same or coordinated counsel (regardless of whether the Notices or Demands are submitted simultaneously), and the parties cannot resolve the cases during the Informal Resolution Period, all of the cases must be resolved in arbitration through staged sets of proceedings. You agree to this process even though it may delay the arbitration of your case."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|To the fullest extent permitted by applicable law,",
+    "category": "arbitration_waiver",
+    "quote": "To the fullest extent permitted by applicable law, each party may bring a Dispute against the other party only in an individual capacity and not participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|We may make changes to these Terms (including any ",
+    "category": "unilateral_change",
+    "quote": "We may make changes to these Terms (including any additional Spotify terms and conditions incorporated by reference herein) from time to time by notifying you of such changes by any reasonable means, including by posting the revised Terms on the applicable Spotify Service"
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|Refunds are only issued if required by law . For e",
+    "category": "cancellation_friction",
+    "quote": "Refunds are only issued if required by law . For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here ."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|If you don’t pay for your Paid Account on time, we",
+    "category": "account_termination",
+    "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|We won’t provide notice or an opportunity to expor",
+    "category": "account_termination",
+    "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|Please note that Dropbox Team accounts are subject",
+    "category": "other",
+    "quote": "Please note that Dropbox Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Team account. They may also be able to restrict or terminate your access to a Dropbox Team account."
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|hough we have no obligation to screen, edit, or mo",
+    "category": "account_termination",
+    "quote": "hough we have no obligation to screen, edit, or monitor Your Content, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content, at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|reserve the right to revoke or limit a user’s abil",
+    "category": "account_termination",
+    "quote": "reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms. If"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit| agree to defend, indemnify, and hold Reddit, its ",
+    "category": "other",
+    "quote": " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective, directors, officers, employees, affiliates, agents, contractors, third-party service providers, and licensors (the “ Reddit Entities ”) harmless from and against any claim or demand made by any third party, and any related liability, damage, loss, and expense (including costs and attorneys’ fees) due to, arising out of, or in connection with: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of applicable laws or regulations; or (d) Your Content. We"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|may make changes to these Terms from time to time.",
+    "category": "unilateral_change",
+    "quote": "may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above. If the changes, in our sole discretion, are material, we may also notify you by sending an email to the address associated with your Account (if you have chosen to provide a verified email address) or by otherwise providing you with notice through our Services. By continuing to access or use the Services on or after the Effective Date of the revised Terms, you agree to be bound by the revised Terms. If"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|the fullest extent permitted by applicable law, we",
+    "category": "account_termination",
+    "quote": "the fullest extent permitted by applicable law, we may suspend or terminate your Account, moderator status, or ability to access or use the Services at any time for any or no reason, including for violating these Terms or our Reddit Rules . Th"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|ever, we may, in our sole discretion, delete, deem",
+    "category": "account_termination",
+    "quote": "ever, we may, in our sole discretion, delete, deem your content ineligible for monetization, or remove Your Content at any time and for any reason, including for violating these Terms, our Reddit Rules , or our other terms and policies , or if you otherwise create or are likely to create liability for us. Fo"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|using the Services you agree that the Reddit Entit",
+    "category": "liability_cap",
+    "quote": "using the Services you agree that the Reddit Entities’ liability is limited to the maximum extent permissible in your country of residence. Liability will be limited to foreseeable damages arising due to a breach of material contractual obligations typical for this type of contract. Re"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit| agree to defend, indemnify, and hold Reddit, its ",
+    "category": "other",
+    "quote": " agree to defend, indemnify, and hold Reddit, its affiliates, and their respective directors, officers, employees, affiliates, agents, contractors, third-party service providers, and licensors (the “ Reddit Entities ”) harmless from and against any claim or demand made by any third party, and any related liability, damage, loss, and expense (including costs and attorneys’ fees) due to, arising out of, or in connection with: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of applicable laws or regulations; or (d) Your Content. We"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Subject to Section 12.8 below, we may make changes",
+    "category": "unilateral_change",
+    "quote": "Subject to Section 12.8 below, we may make changes to these Terms at our discretion. If we make changes, we will notify you either by email or through the Services at least thirty (30) days before the changes take effect."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Please note that once you delete your Account, you",
+    "category": "account_termination",
+    "quote": "Please note that once you delete your Account, you will not be able to reactivate it or retrieve any content or information associated with it ."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may modify or discontinue any feature, function",
+    "category": "unilateral_change",
+    "quote": "We may modify or discontinue any feature, functionality, or component of our Services at any time (a “ Services Update ”). If we believe a Services Update may significantly impair your use of our Services, we will use reasonable efforts to notify you before making such Services Update"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|If you provide us with any suggestions, enhancemen",
+    "category": "other",
+    "quote": "If you provide us with any suggestions, enhancement requests, recommendations, or other feedback regarding our Services, we may use that feedback without restriction or any further obligation to you."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Any additional generative AI capacity or units tha",
+    "category": "cancellation_friction",
+    "quote": "Any additional generative AI capacity or units that you purchase (i) will be tied to your then-current Subscription, (ii) are not transferable to another Account, and (iii) will not be refunded to you upon expiry or termination of your Subscription."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|You acknowledge and agree that Superhuman is not r",
+    "category": "liability_cap",
+    "quote": "You acknowledge and agree that Superhuman is not responsible for any harms, damages, loss, lost profits, special or consequential damages, or claims arising out of or in connection with the installation of, use of, or reliance on any such Third-Party Service."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|NOTWITHSTANDING ANYTHING ELSE STATED IN THESE TERM",
+    "category": "liability_cap",
+    "quote": "NOTWITHSTANDING ANYTHING ELSE STATED IN THESE TERMS, SUPERHUMAN WILL HAVE NO LIABILITY ARISING OUT OF OR IN CONNECTION WITH BETA SERVICES."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|For Paid Subscriptions, we will bill you in advanc",
+    "category": "auto_renewal",
+    "quote": "For Paid Subscriptions, we will bill you in advance on a recurring monthly or annual basis, as applicable for the selected Subscription Plan (“ Billing Cycle ”)."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Superhuman will not have any liability whatsoever ",
+    "category": "account_termination",
+    "quote": "Superhuman will not have any liability whatsoever to you for any suspension or termination, including for deletion of User Content."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may terminate these Terms at any time without l",
+    "category": "unilateral_change",
+    "quote": "We may terminate these Terms at any time without liability to you."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENT",
+    "category": "liability_cap",
+    "quote": "IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENTITIES’ BE LIABLE TO YOU OR OTHERWISE RESPONSIBLE FOR (I) ANY LOST PROFITS, LOST OR DAMAGED USER CONTENT OR OTHER DATA, OR FAILURE TO MEET ANY DUTY, INCLUDING WITHOUT LIMITATION GOOD FAITH AND REASONABLE CARE, AND (II) ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|But if we can’t work it out, then you and Superhum",
+    "category": "arbitration_waiver",
+    "quote": "But if we can’t work it out, then you and Superhuman agree to submit our disputes exclusively to binding individual arbitration, and we won’t sue each other in court before a judge or jury, except in the limited circumstances described below."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|The arbitrator will have exclusive authority to re",
+    "category": "arbitration_waiver",
+    "quote": "The arbitrator will have exclusive authority to resolve any Dispute, including, without limitation, Disputes regarding the interpretation or application of the Arbitration Agreement, including the enforceability, revocability, scope, or validity of the Arbitration Agreement or any portion of the Arbitration Agreement"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Otherwise, you’ll be bound by the change, and the ",
+    "category": "unilateral_change",
+    "quote": "Otherwise, you’ll be bound by the change, and the modified Arbitration Agreement will apply to all Disputes between you and Superhuman, including those arising before the effective date of the changes"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|In the event that the email address you provide to",
+    "category": "other",
+    "quote": "In the event that the email address you provide to Superhuman is not valid, or for any reason is not capable of delivering to you any notices required by these Terms, Superhuman’s dispatch of the email containing such notice will nonetheless constitute effective notice."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may also at our sole discretion limit access to",
+    "category": "account_termination",
+    "quote": "We may also at our sole discretion limit access to the Services and/or terminate any subscriptions of any user of the Services who infringes any intellectual property rights of others, whether or not there is any repeat infringement."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|However, we may not always provide prior notice of",
+    "category": "unilateral_change",
+    "quote": "However, we may not always provide prior notice of changes to these terms (1) when those changes are legally required to be implemented with immediate effect, or (2) when those changes relate to a newly launched service or feature."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|If you purchase a subscription, your payment metho",
+    "category": "auto_renewal",
+    "quote": "If you purchase a subscription, your payment method automatically will be charged at the start of each subscription period for the fees and taxes applicable to that period. To avoid future charges, cancel before the renewal date."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|We may modify our prices effective prospectively u",
+    "category": "unilateral_change",
+    "quote": "We may modify our prices effective prospectively upon reasonable notice to the extent allowed under the law."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|You agree that we have no obligation to store, mai",
+    "category": "other",
+    "quote": "You agree that we have no obligation to store, maintain or provide you a copy of any content or other information that you or others provide, except to the extent required by applicable law and as noted in our Privacy Policy."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|By submitting suggestions or other feedback regard",
+    "category": "other",
+    "quote": "By submitting suggestions or other feedback regarding our Services to LinkedIn, you agree that LinkedIn can use and share (but does not have to) such feedback for any purpose without compensation to you."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|LinkedIn reserves the right to restrict, suspend, ",
+    "category": "account_termination",
+    "quote": "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach this Contract or the law or are misusing the Services (e.g., violating any of the Dos and Don’ts or Professional Community Policies )."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|LinkedIn reserves the right to limit your use of t",
+    "category": "unilateral_change",
+    "quote": "LinkedIn reserves the right to limit your use of the Services, including the number of your connections and your ability to contact other Members."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|Both you and LinkedIn may terminate this Contract ",
+    "category": "account_termination",
+    "quote": "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On termination, you lose the right to access or use the Services."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|If you access or use the Services, or continue acc",
+    "category": "unilateral_change",
+    "quote": "If you access or use the Services, or continue accessing or using the Services after being notified of a change to the User Terms or the Acceptable Use Policy , you confirm that you have read, understand and agree to be bound by the User Terms and the Acceptable Use Policy ."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF AN",
+    "category": "liability_cap",
+    "quote": "SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO YOU RELATING TO THE SERVICES, WHICH ARE PROVIDED TO YOU ON AN “AS IS” AND “ AS AVAILABLE” BASIS."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|We may directly step in and take what we determine",
+    "category": "account_termination",
+    "quote": "We may directly step in and take what we determine to be appropriate action (including disabling your account) if Customer does not take appropriate action or we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|If you use the Services after the effective date o",
+    "category": "unilateral_change",
+    "quote": "If you use the Services after the effective date of any changes, that use will constitute your acceptance of the revised terms and conditions."
+  }
+]

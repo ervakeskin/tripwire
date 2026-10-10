@@ -1,0 +1,122 @@
+{
+  "url": "https://www.linkedin.com/legal/user-agreement",
+  "score": 59,
+  "level": "medium",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify this Contract, our Privacy Policy and our Cookie Policy from time to time. If we materially change these terms or if we are legally required to provide notice, we will provide you notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. However, we may not always provide prior notice of changes to these terms (1) when those changes are legally required to be implemented with immediate effect, or (2) when those changes relate to a newly launched service or feature.",
+      "quoteStart": 3671,
+      "quoteEnd": 4227,
+      "explanationTr": "LinkedIn kendisi istediği zaman sözleşmeyi değiştirebilir ve değişiklikleri önceden bildirmeyebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "If you purchase a subscription, your payment method automatically will be charged at the start of each subscription period for the fees and taxes applicable to that period.",
+      "quoteStart": 7531,
+      "quoteEnd": 7703,
+      "explanationTr": "Abonelik süresi dolduğunda otomatik olarak fatura kesilir ve yenilenir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may modify our prices effective prospectively upon reasonable notice to the extent allowed under the law.",
+      "quoteStart": 7825,
+      "quoteEnd": 7933,
+      "explanationTr": "Fiyatlar değiştirilebilir ve yeni fiyatlar gelecekteki dönemlerde geçerli olur.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "content_license",
+      "severity": 3,
+      "quote": "You grant LinkedIn and our Affiliates the following non-exclusive license to the content and other information you provide (e.g., share, post, upload, and/or otherwise submit) to our Services:\nA worldwide, transferable and sublicensable right to use, copy, modify, distribute, publicly perform and display, host, and process your content and other information without any further consent, notice and/or compensation to you or others.",
+      "quoteStart": 10239,
+      "quoteEnd": 10672,
+      "explanationTr": "Kullanıcı içeriğine geniş, süresiz ve alt lisans hakkı verilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change or limit the availability of some features, or end any Service.",
+      "quoteStart": 13765,
+      "quoteEnd": 13842,
+      "explanationTr": "Siz, LinkedIn’in hizmetleri, özellikleri veya erişilebilirliğini istediği zaman değiştirebileceğini kabul ediyorsunuz. Bu, yeni kısıtlamalar veya tamamen sonlandırma anlamına gelebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change, suspend or discontinue any of our Services.",
+      "quoteStart": 13843,
+      "quoteEnd": 13901,
+      "explanationTr": "LinkedIn, hizmetleri durdurabilir, askıya alabilir veya tamamen sonlandırabilir. Böylece hesabınızın veya hizmetlerin erişimi aniden kesilebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach this Contract or the law or are misusing the Services",
+      "quoteStart": 17889,
+      "quoteEnd": 18032,
+      "explanationTr": "LinkedIn kendisi hesabınızı herhangi bir uyarı veya onay olmadan askıya alabilir veya sonlandırabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "LinkedIn reserves the right to limit your use of the Services, including the number of your connections and your ability to contact other Members",
+      "quoteStart": 17742,
+      "quoteEnd": 17887,
+      "explanationTr": "LinkedIn, hizmetlerin kullanımını sınırlama hakkına sahiptir; örneğin bağlantı sayısını kısıtlayabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "LINKEDIN AND ITS AFFILIATES WILL NOT BE LIABLE TO YOU IN CONNECTION WITH THIS CONTRACT FOR ANY AMOUNT THAT EXCEEDS (A) THE TOTAL FEES PAID OR PAYABLE BY YOU TO LINKEDIN FOR THE SERVICES DURING THE TERM OF THIS CONTRACT, IF ANY, OR (B) US $1000.",
+      "quoteStart": 21763,
+      "quoteEnd": 22007,
+      "explanationTr": "LinkedIn, size karşı sorumluluğunu toplam ücretlerin veya 1000$'ın üstüne çıkarmaz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On termination, you lose the right to access or use the Services.",
+      "quoteStart": 22985,
+      "quoteEnd": 23138,
+      "explanationTr": "Her iki taraf da sözleşmeyi istediği zaman sona erdirebilir, bu da hesabınızın kapanmasına ve hizmete erişiminizin kaybolmasına yol açar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "However, you agree that LinkedIn may assign this Contract to its affiliates or a party that buys it without your consent.",
+      "quoteStart": 26067,
+      "quoteEnd": 26188,
+      "explanationTr": "LinkedIn, sözleşmeyi kendi iştiraklerine devredebilir veya satın alabilir, sizin onayınız olmadan.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

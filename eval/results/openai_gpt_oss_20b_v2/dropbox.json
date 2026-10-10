@@ -1,0 +1,163 @@
+{
+  "url": "https://www.dropbox.com/terms",
+  "score": 67,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+      "quoteStart": 9783,
+      "quoteEnd": 9904,
+      "explanationTr": "Kullanıcı, ücretli hesabı oluşturduğunda otomatik olarak faturalandırılacak ve her yenileme döneminde ücret alacak.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions. We’ll give you no less than 30 days’ advance notice of these changes via a message to the email address associated with your account and you’ll have the opportunity to cancel your subscription before the new fee comes into effect.",
+      "quoteStart": 10950,
+      "quoteEnd": 11367,
+      "explanationTr": "Fiyatlar yenileme sırasında değiştirilebilir ve kullanıcıya 30 gün önceden bildirim yapılır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features.",
+      "quoteStart": 10825,
+      "quoteEnd": 10940,
+      "explanationTr": "Zamanında ödeme yapılmazsa hesap askıya alınabilir veya özellikler kaldırılabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "account_termination",
+      "severity": 2,
+      "quote": "We’ll provide you with reasonable advance notice via the email address associated with your account to remedy the activity that prompted us to contact you and give you the opportunity to export Your Stuff from our Services. If after such notice you fail to take the steps we ask of you, we’ll terminate or suspend your access to the Services.",
+      "quoteStart": 12659,
+      "quoteEnd": 13001,
+      "explanationTr": "Dropbox, bir ihlal durumunda, hesabınızı anında kapatabilir ve verilerinizi dışa aktarmanıza izin vermeden erişimi kesebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law.",
+      "quoteStart": 13002,
+      "quoteEnd": 13429,
+      "explanationTr": "Açıkça belirtilen durumlarda Dropbox, önceden bildirimde bulunmadan veya verilerinizi dışa aktarmanıza izin vermeden hesabınızı kapatabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+      "quoteStart": 16744,
+      "quoteEnd": 16879,
+      "explanationTr": "Dropbox, sorumluluğunu yalnızca $20 veya ödenen ücretin %100'üne sınırlıyor; bu, beklenmedik zararlar için yeterli olmayabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "Opt out of Agreement to Arbitrate. You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms. However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding.",
+      "quoteStart": 19197,
+      "quoteEnd": 19569,
+      "explanationTr": "Tahkim için 30 gün içinde çıkış hakkı var, ama önceki sürümde çıkış yapmışsanız bu hak geçerli kalıyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "Arbitration Fees and Incentives. The AAA rules will govern payment of all arbitration fees. For individual arbitration of non-frivolous claims less than $75,000 for which you timely provided Dropbox with a Notice of Dispute, Dropbox will reimburse arbitration filing fees at the conclusion of the arbitration and will pay other arbitration fees.",
+      "quoteStart": 20117,
+      "quoteEnd": 20462,
+      "explanationTr": "Tahkim ücretleri çoğu durumda tarafınızdan ödenir; yalnızca $75,000 altındaki davalarda Dropbox ücretleri geri öder.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "Judicial Forum for Disputes. You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Services will be brought in the federal or state courts of San Francisco County, California, subject to the mandatory arbitration provisions below.",
+      "quoteStart": 17685,
+      "quoteEnd": 17961,
+      "explanationTr": "Sözleşme, yalnızca San Francisco mahkemelerinde dava açılmasını zorunlu kılıyor; bu, hizmet değişikliklerinde tek taraflı karar alma imkanı verir.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c10",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding.",
+      "quoteStart": 19402,
+      "quoteEnd": 19569,
+      "explanationTr": "İlk kayıt sırasında 30 gün içinde çıkış yapamazsanız, daha önceki sürümde çıkış hakkınız olsa bile, bu hak geçerli kalmaz.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c11",
+      "category": "other",
+      "severity": 2,
+      "quote": "The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public.",
+      "quoteStart": 18998,
+      "quoteEnd": 19196,
+      "explanationTr": "Tahkim sürecinde yalnızca bireysel haklar verilir; başkaları adına tazminat talep edemezsiniz.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c12",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "If any part of this “Mandatory Arbitration Provisions” section is found to be illegal or unenforceable, the remainder will remain in effect, except that if a finding of partial illegality or unenforceability would allow class or representative arbitration, this “Mandatory Arbitration Provisions” section will be unenforceable in its entirety.",
+      "quoteStart": 22187,
+      "quoteEnd": 22530,
+      "explanationTr": "Bu madde, sizin ve Dropbox’ın, mahkemeye gitmek yerine zorunlu tahkim yoluyla anlaşmazlık çözmesini zorunlu kılar. Sınıf veya temsilci tahkimine izin vermez.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If an update affects your use of the Services or your legal rights as a user of our Services, we’ll notify you prior to the update's effective date by sending an email to the email address associated with your account or via an in-product notification. These updated terms will be effective no less than 30 days from when we notify you.",
+      "quoteStart": 24590,
+      "quoteEnd": 24926,
+      "explanationTr": "Dropbox, hizmetleri veya şartları tek taraflı olarak değiştirebilir ve bu değişiklikleri 30 gün önceden e-posta veya bildirimle bildirebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective.",
+      "quoteStart": 24927,
+      "quoteEnd": 25067,
+      "explanationTr": "Güncellenen şartları kabul etmeme durumunda hesabı iptal etmeniz ve hizmeti kullanmayı bırakmanız gerekir; aksi takdirde yeni şartlar geçerli olur.",
+      "confidence": "medium"
+    }
+  ],
+  "rejected": [
+    {
+      "reason": "quote_not_in_source",
+      "quote": "Refunds are only issued if required by law."
+    },
+    {
+      "reason": "quote_not_in_source",
+      "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and "
+    }
+  ],
+  "uncertainties": [
+    "2 iddia şema/alıntı doğrulamasında doğrulanamadığı için atıldı."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

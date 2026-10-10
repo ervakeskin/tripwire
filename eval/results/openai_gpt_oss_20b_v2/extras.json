@@ -1,0 +1,326 @@
+[
+  {
+    "doc": "spotify",
+    "key": "spotify|Unless otherwise required by law, we do not provid",
+    "category": "cancellation_friction",
+    "quote": "Unless otherwise required by law, we do not provide refunds or credits for any partial subscription periods, except as expressly stated in these Terms."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Spotify may terminate these Terms (including any a",
+    "category": "unilateral_change",
+    "quote": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or suspend your access to the Spotify Service at any time if we believe you have breached any of these Terms, if we stop providing the Spotify Service or any material component thereof, or as we believe necessary to comply with applicable law."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|You also grant to us the right (1) to allow the Sp",
+    "category": "tracking",
+    "quote": "You also grant to us the right (1) to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify Service, and (2) to provide advertising and other information to you, and (3) to allow our business partners to do the same."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE",
+    "category": "liability_cap",
+    "quote": "AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SPOTIFY SERVICE, THIRD-PARTY APPLICATIONS, OR THIRD-PARTY APPLICATION CONTENT MORE THAN THE GREATER OF (A) THE AMOUNTS PAID BY YOU TO SPOTIFY DURING THE TWELVE MONTHS PRIOR TO THE FIRST CLAIM; OR (B) $30.00."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMEN",
+    "category": "arbitration_waiver",
+    "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT BELOW) WITHIN ONE (1) YEAR AFTER THE DATE THE PARTY ASSERTING THE CLAIM FIRST KNOWS OR REASONABLY SHOULD KNOW OF THE ACT, OMISSION, OR DEFAULT GIVING RISE TO THE CLAIM; AND THERE SHALL BE NO RIGHT TO ANY REMEDY FOR ANY CLAIM NOT ASSERTED WITHIN THAT TIME PERIOD."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS A",
+    "category": "arbitration_waiver",
+    "quote": "YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER IN ARBITRATION OR LITIGATION ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, CONSOLIDATED, PRIVATE ATTORNEY GENERAL, OR REPRESENTATIVE ACTION."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|You may opt out of arbitration by providing an ind",
+    "category": "arbitration_waiver",
+    "quote": "You may opt out of arbitration by providing an individual, personally signed notice of your intention to opt out of arbitration to Spotify via email at tounotice@spotify.com within thirty (30) days after the conclusion of the second global mediation session."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Assuming the number of remaining cases exceeds two",
+    "category": "arbitration_waiver",
+    "quote": "Assuming the number of remaining cases exceeds two hundred (200), then two hundred (200) cases shall be randomly selected (or selected through a process agreed to by counsel for the parties) to be filed and to proceed in individual arbitrations as part of a staged process."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|To the fullest extent permitted by applicable law,",
+    "category": "arbitration_waiver",
+    "quote": "To the fullest extent permitted by applicable law, each party may bring a Dispute against the other party only in an individual capacity and not participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding."
+  },
+  {
+    "doc": "spotify",
+    "key": "spotify|Opting out of a material change to the Arbitration",
+    "category": "arbitration_waiver",
+    "quote": "Opting out of a material change to the Arbitration Agreement is not an opt-out of arbitration altogether. Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agree that any Dispute will be determined by binding individual (not class) arbitration in accordance with the Arbitration Agreement in effect immediately before any such opt-out."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|If you don’t pay for your Paid Account on time, we",
+    "category": "account_termination",
+    "quote": "If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|We’ll provide you with reasonable advance notice v",
+    "category": "account_termination",
+    "quote": "We’ll provide you with reasonable advance notice via the email address associated with your account to remedy the activity that prompted us to contact you and give you the opportunity to export Your Stuff from our Services. If after such notice you fail to take the steps we ask of you, we’ll terminate or suspend your access to the Services."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|We won’t provide notice or an opportunity to expor",
+    "category": "account_termination",
+    "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|Opt out of Agreement to Arbitrate. You can decline",
+    "category": "arbitration_waiver",
+    "quote": "Opt out of Agreement to Arbitrate. You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms. However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|Arbitration Fees and Incentives. The AAA rules wil",
+    "category": "arbitration_waiver",
+    "quote": "Arbitration Fees and Incentives. The AAA rules will govern payment of all arbitration fees. For individual arbitration of non-frivolous claims less than $75,000 for which you timely provided Dropbox with a Notice of Dispute, Dropbox will reimburse arbitration filing fees at the conclusion of the arbitration and will pay other arbitration fees."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|Judicial Forum for Disputes. You and Dropbox agree",
+    "category": "unilateral_change",
+    "quote": "Judicial Forum for Disputes. You and Dropbox agree that any judicial proceeding to resolve claims relating to these Terms or the Services will be brought in the federal or state courts of San Francisco County, California, subject to the mandatory arbitration provisions below."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|However, if you agreed to a previous version of th",
+    "category": "unilateral_change",
+    "quote": "However, if you agreed to a previous version of these Terms that allowed you to opt out of arbitration, your previous choice to opt out or not opt out remains binding."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|The arbitrator may award relief only individually ",
+    "category": "other",
+    "quote": "The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|If an update affects your use of the Services or y",
+    "category": "unilateral_change",
+    "quote": "If an update affects your use of the Services or your legal rights as a user of our Services, we’ll notify you prior to the update's effective date by sending an email to the email address associated with your account or via an in-product notification. These updated terms will be effective no less than 30 days from when we notify you."
+  },
+  {
+    "doc": "dropbox",
+    "key": "dropbox|If you don’t agree to the updates we make, please ",
+    "category": "cancellation_friction",
+    "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective."
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|reserve the right to revoke or limit a user’s abil",
+    "category": "unilateral_change",
+    "quote": "reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms. If"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|using the Services you agree that the Reddit Entit",
+    "category": "liability_cap",
+    "quote": "using the Services you agree that the Reddit Entities’ liability is limited to the maximum extent permissible in your country of residence. Liability will be limited to foreseeable damages arising due to a breach of material contractual obligations typical for this type of contract. Re"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|have a policy that includes the removal of any inf",
+    "category": "account_termination",
+    "quote": "have a policy that includes the removal of any infringing material from the Services and for the termination, in appropriate circumstances, of users of our Services who are repeat infringers. If"
+  },
+  {
+    "doc": "reddit",
+    "key": "reddit|may make changes to these Terms from time to time.",
+    "category": "unilateral_change",
+    "quote": "may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above. If"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|Subject to Section 12.8 below, we may make changes",
+    "category": "unilateral_change",
+    "quote": "Subject to Section 12.8 below, we may make changes to these Terms at our discretion. If we make changes, we will notify you either by email or through the Services at least thirty (30) days before the changes take effect."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|If you no longer wish to use our Services and woul",
+    "category": "cancellation_friction",
+    "quote": "If you no longer wish to use our Services and would like to delete your Account, please navigate to the relevant ‘how to delete my account’ page within our Documentation . Please note that once you delete your Account, you will not be able to reactivate it or retrieve any content or information associated with it ."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We reserve the right to terminate any Credentials ",
+    "category": "account_termination",
+    "quote": "We reserve the right to terminate any Credentials that we reasonably determine may have been accessed or used by an unauthorized third party."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may modify or discontinue any feature, function",
+    "category": "unilateral_change",
+    "quote": "We may modify or discontinue any feature, functionality, or component of our Services at any time (a “ Services Update ”)."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may also collect and analyze data relating to y",
+    "category": "tracking",
+    "quote": "We may also collect and analyze data relating to your access and use of our Services (“ Usage Data ”). Examples of Usage Data include, but are not limited to, technical logs, metadata, telemetry data, and usage information about User Content, such as how often it is accessed."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may, in our sole discretion, change the functio",
+    "category": "unilateral_change",
+    "quote": "We may, in our sole discretion, change the functionality of the Beta Services and/or discontinue, suspend, or remove your access to such Beta Services (including any data that you input or store within the Beta Services)."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|NOTWITHSTANDING ANYTHING ELSE STATED IN THESE TERM",
+    "category": "liability_cap",
+    "quote": "NOTWITHSTANDING ANYTHING ELSE STATED IN THESE TERMS, SUPERHUMAN WILL HAVE NO LIABILITY ARISING OUT OF OR IN CONNECTION WITH BETA SERVICES."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|You acknowledge that Beta Services may not be as s",
+    "category": "unilateral_change",
+    "quote": "You acknowledge that Beta Services may not be as secure or reliable as our Services."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|You may choose to use these Beta Services at your ",
+    "category": "unilateral_change",
+    "quote": "You may choose to use these Beta Services at your sole discretion."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|For Paid Subscriptions, we will bill you in advanc",
+    "category": "auto_renewal",
+    "quote": "For Paid Subscriptions, we will bill you in advance on a recurring monthly or annual basis, as applicable for the selected Subscription Plan (“ Billing Cycle ”)."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We reserve the right to suspend or terminate your ",
+    "category": "account_termination",
+    "quote": "We reserve the right to suspend or terminate your access to our Services and/or your Account if: (a) You have breached these Terms or our Acceptable Use Policy , (b) You use our Services in a manner that would cause a real risk of harm or loss to other Superhuman users or us, or (c) You have a Free Subscription and you haven’t accessed the Services for at least 12 consecutive months."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|We may terminate these Terms at any time without l",
+    "category": "unilateral_change",
+    "quote": "We may terminate these Terms at any time without liability to you."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENT",
+    "category": "liability_cap",
+    "quote": "IN NO EVENT WILL SUPERHUMAN AND THE SUPERHUMAN ENTITIES’ BE LIABLE TO YOU OR OTHERWISE RESPONSIBLE FOR (I) ANY LOST PROFITS, LOST OR DAMAGED USER CONTENT OR OTHER DATA, OR FAILURE TO MEET ANY DUTY, INCLUDING WITHOUT LIMITATION GOOD FAITH AND REASONABLE CARE, AND (II) ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|you and Superhuman agree to submit our disputes ex",
+    "category": "arbitration_waiver",
+    "quote": "you and Superhuman agree to submit our disputes exclusively to binding individual arbitration, and we won’t sue each other in court before a judge or jury"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|The exception is that we each may (1) bring qualif",
+    "category": "arbitration_waiver",
+    "quote": "The exception is that we each may (1) bring qualifying individual claims in “small claims” court, so long as those claims remain in small claims court;"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|if the amount in dispute is less than $25,000, the",
+    "category": "arbitration_waiver",
+    "quote": "if the amount in dispute is less than $25,000, the arbitration will be conducted as a documents-only arbitration (i.e., there will be no in-person or telephonic hearing); and (ii) if the amount in dispute is $25,000 or more, the arbitration will be held by videoconference with no in-person hearing"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|You and Superhuman agree that each of us may bring",
+    "category": "arbitration_waiver",
+    "quote": "You and Superhuman agree that each of us may bring claims against the other only on an individual basis, and not on a class, representative, or collective basis"
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|all Disputes regarding the subsection entitled “Wa",
+    "category": "arbitration_waiver",
+    "quote": "all Disputes regarding the subsection entitled “Waiver of Class and Other Non-Individualized Relief,” including any claim that all or part of that same subsection is unenforceable, illegal, void or voidable, or that such subsection has been breached, will be decided by a court of competent jurisdiction and not by an arbitrator."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|If you are a new user of our Services, you can opt",
+    "category": "arbitration_waiver",
+    "quote": "If you are a new user of our Services, you can opt out of this Arbitration Agreement (excluding Section 12.9) within 30 days after you first accept the Terms."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|To ensure efficient resolution, if within a 90-day",
+    "category": "other",
+    "quote": "To ensure efficient resolution, if within a 90-day period, 25 or more claimants submit Notices of Dispute or file arbitrations raising similar claims (i.e., with similar facts and legal issues) and are represented by the same or coordinated counsel, the disputes must be arbitrated in batches of up to 100 claimants each (“Batch”)."
+  },
+  {
+    "doc": "grammarly",
+    "key": "grammarly|You consent to such automatic updating on your mob",
+    "category": "unilateral_change",
+    "quote": "You consent to such automatic updating on your mobile device, and agree that the Agreement will apply to all such updates."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|We may modify this Contract, our Privacy Policy an",
+    "category": "unilateral_change",
+    "quote": "We may modify this Contract, our Privacy Policy and our Cookie Policy from time to time. If we materially change these terms or if we are legally required to provide notice, we will provide you notice through our Services, or by other means, to provide you the opportunity to review the changes before they become effective. However, we may not always provide prior notice of changes to these terms (1) when those changes are legally required to be implemented with immediate effect, or (2) when those changes relate to a newly launched service or feature."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|If you purchase a subscription, your payment metho",
+    "category": "auto_renewal",
+    "quote": "If you purchase a subscription, your payment method automatically will be charged at the start of each subscription period for the fees and taxes applicable to that period."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|We may modify our prices effective prospectively u",
+    "category": "unilateral_change",
+    "quote": "We may modify our prices effective prospectively upon reasonable notice to the extent allowed under the law."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|LinkedIn reserves the right to restrict, suspend, ",
+    "category": "account_termination",
+    "quote": "LinkedIn reserves the right to restrict, suspend, or terminate your account if you breach this Contract or the law or are misusing the Services"
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|LinkedIn reserves the right to limit your use of t",
+    "category": "unilateral_change",
+    "quote": "LinkedIn reserves the right to limit your use of the Services, including the number of your connections and your ability to contact other Members"
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|Both you and LinkedIn may terminate this Contract ",
+    "category": "account_termination",
+    "quote": "Both you and LinkedIn may terminate this Contract at any time with notice to the other. On termination, you lose the right to access or use the Services."
+  },
+  {
+    "doc": "linkedin",
+    "key": "linkedin|However, you agree that LinkedIn may assign this C",
+    "category": "unilateral_change",
+    "quote": "However, you agree that LinkedIn may assign this Contract to its affiliates or a party that buys it without your consent."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|These User Terms remain effective until Customer’s",
+    "category": "account_termination",
+    "quote": "These User Terms remain effective until Customer’s subscription for you expires or terminates, or your access to the Services has been terminated by Customer or us."
+  },
+  {
+    "doc": "slack",
+    "key": "slack|We may directly step in and take what we determine",
+    "category": "account_termination",
+    "quote": "We may directly step in and take what we determine to be appropriate action (including disabling your account) if Customer does not take appropriate action or we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties."
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "url": "https://www.dropbox.com/terms",
+  "score": 74,
+  "level": "high",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "content_license",
+      "severity": 2,
+      "quote": "To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with.",
+      "quoteStart": 2589,
+      "quoteEnd": 2802,
+      "explanationTr": "Dosyalarınızın ve içeriklerinizin Dropbox tarafından ve onların iş ortakları tarafından erişim, depolama ve tarama izni veriyorsunuz. Bu, verilerinizin üçüncü taraflarca da işlenmesine olanak tanır.",
+      "confidence": "medium"
+    },
+    {
+      "id": "c2",
+      "category": "auto_renewal",
+      "severity": 2,
+      "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+      "quoteStart": 9783,
+      "quoteEnd": 9904,
+      "explanationTr": "Ücretli hesabınıza geçtikten sonra, hesabı iptal edene kadar her yenileme döneminde otomatik olarak fatura kesilir. Yıllık planda yenilemeden önce e-posta ile hatırlatma gönderilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "Refunds are only issued if required by law . For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here .",
+      "quoteStart": 10348,
+      "quoteEnd": 10612,
+      "explanationTr": "Aboneliği iptal etmeniz durumunda iade yalnızca yasa gerektirdiği durumlarda yapılır; örneğin AB’de 14 gün içinde iade hakkı vardır, diğer yerlerde iade garantisi yoktur.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+      "quoteStart": 10950,
+      "quoteEnd": 11136,
+      "explanationTr": "Dropbox, aboneliğinizin yenilenmesinde ücretleri tek taraflı olarak değiştirebilir; ancak yeni ücretin yürürlüğe girmesinden en az 30 gün önce e-posta ile bildirim yapar ve bu tarihe kadar iptal edebilirsiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "unilateral_change",
+      "severity": 1,
+      "quote": "However, these free features may be withdrawn without further notice.",
+      "quoteStart": 8183,
+      "quoteEnd": 8252,
+      "explanationTr": "Ücretsiz olarak eklenen özellikler, ayrıca bir bildirim yapılmadan geri çekilebilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c6",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law.",
+      "quoteStart": 13002,
+      "quoteEnd": 13429,
+      "explanationTr": "Dropbox, ciddi bir ihlal olduğunu düşünürse size haber vermeden veya verilerinizi dışa aktarma fırsatı tanımadan hesabınızı kapatabilir. Bu durumda dosyalarınıza erişemezsiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c7",
+      "category": "cancellation_friction",
+      "severity": 2,
+      "quote": "Dropbox does not provide refunds if we suspend or terminate your access to the Services, unless required by law.",
+      "quoteStart": 13541,
+      "quoteEnd": 13653,
+      "explanationTr": "Dropbox hesabınızı askıya alır veya kapatırsa, ödediğiniz ücretin iadesini yapmayacağını belirtiyor (yasal zorunluluklar dışında).",
+      "confidence": "high"
+    },
+    {
+      "id": "c8",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+      "quoteStart": 16651,
+      "quoteEnd": 16879,
+      "explanationTr": "Dropbox, yasal olarak sınırlayamayacağı durumlar dışında, tazminat sorumluluğunu 20 ABD doları veya planınıza ödediğiniz tutarın %100'ü ile sınırlıyor. Bu, olası zararınızın çok küçük bir kısmı olabilir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c9",
+      "category": "liability_cap",
+      "severity": 2,
+      "quote": "IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, DROPBOX, ITS AFFILIATES, SUPPLIERS OR DISTRIBUTORS WON’T BE LIABLE FOR:\nANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR\nANY LOSS OF USE, DATA, BUSINESS, OR PROFITS, REGARDLESS OF LEGAL THEORY.",
+      "quoteStart": 15821,
+      "quoteEnd": 16121,
+      "explanationTr": "Dropbox, dolaylı zararlar, kâr kaybı, veri kaybı veya iş kesintisi gibi durumlardan hiçbir şekilde sorumlu tutulmayacağını belirtiyor.",
+      "confidence": "high"
+    },
+    {
+      "id": "c10",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below.",
+      "quoteStart": 18544,
+      "quoteEnd": 18794,
+      "explanationTr": "Dropbox ile aranızdaki uyuşmazlıkları mahkemede değil, tek bir hakemle bireysel olarak çözmeyi kabul ediyorsunuz. Bu, dava açma hakkınızı kısıtlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c11",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed.",
+      "quoteStart": 21872,
+      "quoteEnd": 22171,
+      "explanationTr": "Toplu dava (class action) veya temsilci dava açma hakkınız tamamen kaldırılmıştır; uyuşmazlıkları yalnızca bireysel olarak çözebilirsiniz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c12",
+      "category": "arbitration_waiver",
+      "severity": 2,
+      "quote": "You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms.",
+      "quoteStart": 19232,
+      "quoteEnd": 19401,
+      "explanationTr": "Arbitrasyon anlaşmasından vazgeçmek için hesabınızı oluşturduktan veya bu şartları kabul ettikten sonra yalnızca 30 gününüz var; bu süreyi kaçırırsanız hakem sürecine tabi olursunuz.",
+      "confidence": "high"
+    },
+    {
+      "id": "c13",
+      "category": "arbitration_waiver",
+      "severity": 3,
+      "quote": "If any part of this “Mandatory Arbitration Provisions” section is found to be illegal or unenforceable, the remainder will remain in effect, except that if a finding of partial illegality or unenforceability would allow class or representative arbitration, this “Mandatory Arbitration Provisions” section will be unenforceable in its entirety.",
+      "quoteStart": 22187,
+      "quoteEnd": 22530,
+      "explanationTr": "Bu madde, uyuşmazlıkları mahkemede değil zorunlu tahkim yoluyla çözmeyi öngörür ve toplu dava (class action) hakkınızı kısıtlar.",
+      "confidence": "high"
+    },
+    {
+      "id": "c14",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective. Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date. By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms.",
+      "quoteStart": 24927,
+      "quoteEnd": 25330,
+      "explanationTr": "Dropbox, şartları tek taraflı olarak değiştirebilir; değişikliklere itiraz ederseniz hesabınızı kapatmanız ve kullanmayı bırakmanız istenir.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "'Trusted third parties' ifadesi hangi üçüncü tarafların verilerinize erişebileceğini netleştirmemektedir.",
+    "İzleme ve profil oluşturma ile ilgili ayrıntılar bu bölümde yer almamaktadır."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}

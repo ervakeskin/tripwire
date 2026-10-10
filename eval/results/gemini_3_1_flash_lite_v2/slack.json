@@ -1,0 +1,64 @@
+{
+  "url": "https://slack.com/terms-of-service/user",
+  "score": 39,
+  "level": "medium",
+  "clauses": [
+    {
+      "id": "c1",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you access or use the Services, or continue accessing or using the Services after being notified of a change to the User Terms or the Acceptable Use Policy , you confirm that you have read, understand and agree to be bound by the User Terms and the Acceptable Use Policy .",
+      "quoteStart": 1193,
+      "quoteEnd": 1468,
+      "explanationTr": "Hizmet şartlarında veya kabul edilebilir kullanım politikasında yapılan değişikliklerden sonra hizmeti kullanmaya devam etmeniz, bu yeni şartları kabul ettiğiniz anlamına gelir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c2",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "SLACK MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO YOU RELATING TO THE SERVICES, WHICH ARE PROVIDED TO YOU ON AN “AS IS” AND “ AS AVAILABLE” BASIS.",
+      "quoteStart": 4108,
+      "quoteEnd": 4293,
+      "explanationTr": "Slack, hizmetlerin size sunumuyla ilgili hiçbir garanti vermediğini ve hizmetin \"olduğu gibi\" sağlandığını belirterek sorumluluğunu reddetmektedir.",
+      "confidence": "high"
+    },
+    {
+      "id": "c3",
+      "category": "account_termination",
+      "severity": 3,
+      "quote": "We may directly step in and take what we determine to be appropriate action (including disabling your account) if Customer does not take appropriate action or we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties.",
+      "quoteStart": 5800,
+      "quoteEnd": 6063,
+      "explanationTr": "Şirket, herhangi bir ihlal durumunda veya risk gördüğünde size haber vermeden hesabınızı kapatma yetkisini kendinde saklı tutmaktadır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c4",
+      "category": "liability_cap",
+      "severity": 3,
+      "quote": "OUR MAXIMUM AGGREGATE LIABILITY TO YOU FOR ANY BREACH OF THE USER TERMS IS ONE HUNDRED DOLLARS ($100) IN THE AGGREGATE.",
+      "quoteStart": 6583,
+      "quoteEnd": 6702,
+      "explanationTr": "Şirket, hizmetle ilgili herhangi bir sorunda size karşı olan toplam sorumluluğunu 100 dolar ile sınırlandırmıştır.",
+      "confidence": "high"
+    },
+    {
+      "id": "c5",
+      "category": "unilateral_change",
+      "severity": 2,
+      "quote": "If you use the Services after the effective date of any changes, that use will constitute your acceptance of the revised terms and conditions.",
+      "quoteStart": 9373,
+      "quoteEnd": 9515,
+      "explanationTr": "Şirket, kullanım şartlarını tek taraflı olarak değiştirme hakkına sahiptir ve hizmeti kullanmaya devam etmeniz bu yeni şartları kabul ettiğiniz anlamına gelir.",
+      "confidence": "high"
+    }
+  ],
+  "rejected": [],
+  "uncertainties": [
+    "The provided text contains standard boilerplate clauses regarding jurisdiction, attorney's fees, entire agreement, and hierarchy of documents, none of which meet the criteria for the specified risky categories."
+  ],
+  "injectionFlags": [],
+  "coverage": 1,
+  "disclaimer": "Bu araç hukuki tavsiye vermez. Sonuçlar otomatik analizdir; önemli kararlar için bir avukata danışın."
+}
