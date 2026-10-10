@@ -53,7 +53,7 @@ function highlight(quote: string) {
 
 export default defineContentScript({
   matches: ['http://*/*', 'https://*/*'],
-  runAt: 'document_idle',
+  registration: 'runtime', // not injected into every page: only on demand when the user scans (activeTab + scripting)
   main() {
     chrome.runtime.onMessage.addListener((msg: Msg, _s, sendResponse) => {
       if (msg.type === 'EXTRACT') {

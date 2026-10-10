@@ -20,12 +20,21 @@ async function targetTab(): Promise<number> {
   return t.id!;
 }
 
+/** Tabs opened before the extension was installed/reloaded have no content script yet: inject it on demand (activeTab + scripting), then retry once. */
+async function sendToTab<T>(msg: Msg): Promise<T> {
+  const tabId = await targetTab();
+  try {
+    return await chrome.tabs.sendMessage(tabId, msg);
+  } catch {
+    await chrome.scripting.executeScript({ target: { tabId }, files: ['content-scripts/content.js'] });
+    return chrome.tabs.sendMessage(tabId, msg);
+  }
+}
+
 const extensionHost: Host = {
-  async extract() {
-    return chrome.tabs.sendMessage(await targetTab(), { type: 'EXTRACT' } satisfies Msg);
-  },
+  extract: () => sendToTab<PageText>({ type: 'EXTRACT' }),
   analyze: (page) => chrome.runtime.sendMessage({ type: 'ANALYZE', page } satisfies Msg),
-  highlight: async (quote) => chrome.tabs.sendMessage(await targetTab(), { type: 'HIGHLIGHT', quote } satisfies Msg),
+  highlight: (quote) => void sendToTab({ type: 'HIGHLIGHT', quote }).catch(() => {}),
   onProgress: (cb) =>
     chrome.runtime.onMessage.addListener((m: Msg) => {
       if (m.type === 'PROGRESS') cb(m.done, m.total);
