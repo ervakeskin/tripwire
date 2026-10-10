@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tripwire Ayarlar</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 520px; margin: 32px auto; padding: 0 16px; }
+    input, select { width: 100%; padding: 8px; margin: 4px 0 12px; box-sizing: border-box; }
+    button { padding: 8px 16px; }
+    .warn { background: #fff4c2; padding: 8px 12px; border-radius: 6px; font-size: 13px; }
+    small { color: #59636e; }
+  </style>
+</head>
+<body>
+  <h2>Tripwire ayarları</h2>
+  <p class="warn">⚖️ Bu araç hukuki tavsiye vermez. Anahtarınız yalnızca bu tarayıcıda (chrome.storage.local) saklanır ve sadece seçtiğiniz sağlayıcıya gönderilir.</p>
+  <label>Sağlayıcı<select id="preset"></select></label>
+  <label>API anahtarı <small id="hint"></small><input id="key" type="password" autocomplete="off" /></label>
+  <label>Model<input id="model" /></label>
+  <label>Base URL<input id="baseURL" /></label>
+  <button id="save">Kaydet</button> <span id="ok"></span>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
