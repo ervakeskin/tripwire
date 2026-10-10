@@ -63,7 +63,7 @@ Tehdit modeli: ToS sayfasının kendisi saldırgan olabilir.
 | Anahtar sızıntısı | anahtar yalnızca background'da; content script/sayfa erişemez | — |
 | Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting`; host: yalnızca seçilen LLM sağlayıcısı | `wxt.config.ts` |
 
-**Canlı model testi** (`npx tsx eval/injection-live.ts`, `fixtures/injection.html`: 4 gizli + 1 görünür talimat, gerçek ToS maddeleri arada): gemini-3.1-flash-lite ve qwen3.8-27b — gizli talimat LLM metnine **girmedi**, görünür talimat ve gizli metin işaretlendi, **iki model de talimata uymadı** ve 3 beklenen maddeyi (otomatik yenileme, veri satışı, tahkim) döndürdü; skor yalnızca doğrulanmış maddelerden hesaplandı (54 / 53). Raporlar: `eval/injection-report-*.md`. Sınır: tek bir sayfa ve iki model; daha ustaca saldırılar denenmedi.
+**Canlı model testi** (`npx tsx eval/injection-live.ts`, `src/public/fixtures/injection.html`: 4 gizli + 1 görünür talimat, gerçek ToS maddeleri arada): gemini-3.1-flash-lite ve qwen3.8-27b — gizli talimat LLM metnine **girmedi**, görünür talimat ve gizli metin işaretlendi, **iki model de talimata uymadı** ve 3 beklenen maddeyi (otomatik yenileme, veri satışı, tahkim) döndürdü; skor yalnızca doğrulanmış maddelerden hesaplandı (54 / 53). Raporlar: `eval/injection-report-*.md`. Sınır: tek bir sayfa ve iki model; daha ustaca saldırılar denenmedi.
 
 **Bilinen sınırlar:** (1) Model kandırılıp *hiç madde döndürmezse* validator bunu yakalayamaz (yanlış negatif) — bu durumda UI zayıf sinyalle ("0 ≠ güvenli", enjeksiyon varsa "güvenmeyin") uyarır. (2) `@page-agent/page-controller` paketinde `executeJavascript` için doğrudan `eval` var; biz bu API'yi çağırmıyoruz (read-only kullanım), ancak paket bundle'da yer alıyor. (3) Enjeksiyon tespiti heuristiktir; yeni kalıpları kaçırabilir.
 
@@ -100,7 +100,12 @@ npm test                                          # Vitest: şema, validator, sa
 npm run build && npm run harness                  # http://localhost:4173/sidepanel.html?doc=tos-demo|injection
 npm run cy:run                                    # Cypress → cypress/videos/demo.cy.ts.mp4
 ```
-Cypress, aynı yan panel UI'sını ve aynı çekirdek hattı (çıkarım → sanitizer → validator → skor) normal bir sekmede çalıştırır; yalnızca LLM API çağrısı `cypress/fixtures/llm-*.json` ile **taklit edilir** (deterministik, anahtarsız). Videoda: (1) mutlu yol — 7 doğrulanmış madde, alıntı tıklayınca sayfada vurgulanır; (2) belirsizlik anı — uydurma "güvenli" iddiası atılır, belirsiz madde "emin değilim" olur, gizli+görünür enjeksiyon uyarısı gösterilir. Gerçek model yanıtlarıyla kaydetmek için fixture'lar `eval/results` çıktısından değiştirilebilir.
+Cypress, aynı yan panel UI'sını ve aynı çekirdek hattı (çıkarım → gizli metin sanitizer'ı → validator → skor) normal bir sekmede çalıştırır. Yalnızca LLM HTTP çağrısı, **gerçek model çıktısının kaydından** (`cypress/fixtures/*.json`; `scripts/record-fixtures.ts` ve eval koşusu ile kaydedildi, model: gemini-3.1-flash-lite) tekrar oynatılır; böylece video deterministiktir ve anahtar gerektirmez.
+
+Video (`cypress/videos/demo.cy.ts.mp4`, ~36 sn) üç sahne:
+1. **Mutlu yol:** örnek bir ToS → 6 doğrulanmış madde, her biri orijinal metinden alıntıyla; alıntıya tıklayınca sayfada vurgulanır; üstte "hukuki tavsiye vermez" bandı.
+2. **Prompt injection:** gizli + görünür "AI'ya talimat" içeren sayfa → talimatlar işaretlenir ve yok sayılır, gerçek riskler yine raporlanır.
+3. **Belirsizliğin dürüstçe gösterilmesi:** gerçek Dropbox ToS'unun 5 parçasından biri için sağlayıcı hatası (**yalnızca bu hata benzetimdir**, HTTP 400) → rapor "metnin yalnızca %80'i analiz edilebildi, sonuç eksik olabilir" uyarısını gösterir; eksik bölüm sessizce atlanmaz.
 
 ## Lisans / atıf
 page-agent: MIT (alibaba/page-agent). ToS metinleri ilgili şirketlere aittir; yalnızca değerlendirme amacıyla alıntılanmıştır.

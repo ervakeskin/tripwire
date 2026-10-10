@@ -1,0 +1,39 @@
+{
+ "id": "recorded_dropbox_2",
+ "type": "message",
+ "role": "assistant",
+ "_recordedWith": "gemini-3.1-flash-lite",
+ "content": [
+  {
+   "type": "tool_use",
+   "id": "tu",
+   "name": "report_clauses",
+   "input": {
+    "uncertainties": [],
+    "clauses": [
+     {
+      "category": "account_termination",
+      "confidence": "high",
+      "severity": 3,
+      "quote": "We won’t provide notice or an opportunity to export Your Stuff before termination or suspension of access to the Services where Dropbox reasonably believes:\nyou’re in material breach of these Terms, which includes, but is not limited to, violating our Acceptable Use Policy ,\ndoing so would cause us legal liability or compromise our ability to provide the Services to our other users, or\nwe're prohibited from doing so by law.",
+      "explanationTr": "Dropbox, belirli durumlarda size önceden haber vermeden veya dosyalarınızı yedeklemenize izin vermeden hesabınızı askıya alabilir veya kapatabilir."
+     },
+     {
+      "category": "liability_cap",
+      "severity": 3,
+      "explanationTr": "Dropbox, yasal olarak izin verilen durumlarda sorumluluğunu ödediğiniz tutar veya 20 dolar ile sınırlandırmaktadır.",
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+      "confidence": "high"
+     },
+     {
+      "category": "other",
+      "severity": 2,
+      "quote": "Please note that Dropbox Team accounts are subject to your organization's control. Your administrators may be able to access, disclose, restrict, or remove information in or from your Dropbox Team account. They may also be able to restrict or terminate your access to a Dropbox Team account.",
+      "explanationTr": "Dropbox Team hesabı kullanıyorsanız, yöneticileriniz hesabınızdaki bilgilere erişebilir, bunları silebilir veya hesabınızı tamamen kontrol altına alabilir.",
+      "confidence": "high"
+     }
+    ]
+   }
+  }
+ ]
+}

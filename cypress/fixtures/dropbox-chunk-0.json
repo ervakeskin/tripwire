@@ -1,0 +1,19 @@
+{
+ "id": "recorded_dropbox_0",
+ "type": "message",
+ "role": "assistant",
+ "_recordedWith": "gemini-3.1-flash-lite",
+ "content": [
+  {
+   "type": "tool_use",
+   "id": "tu",
+   "name": "report_clauses",
+   "input": {
+    "clauses": [],
+    "uncertainties": [
+     "The provided text is incomplete (ends abruptly at \"Templates and Forms\"). It does not contain the full Terms of Service, specifically missing sections on liability, arbitration, termination, and changes to terms, which are typically where risky clauses are found."
+    ]
+   }
+  }
+ ]
+}

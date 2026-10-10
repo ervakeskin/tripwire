@@ -1,0 +1,32 @@
+{
+ "id": "recorded_dropbox_4",
+ "type": "message",
+ "role": "assistant",
+ "_recordedWith": "gemini-3.1-flash-lite",
+ "content": [
+  {
+   "type": "tool_use",
+   "id": "tu",
+   "name": "report_clauses",
+   "input": {
+    "uncertainties": [],
+    "clauses": [
+     {
+      "explanationTr": "Bu madde, tüm yasal anlaşmazlıkların mahkeme yerine zorunlu tahkim yoluyla çözülmesini şart koşuyor ve toplu dava açma hakkınızı kısıtlıyor.",
+      "severity": 3,
+      "confidence": "high",
+      "category": "arbitration_waiver",
+      "quote": "If any part of this “Mandatory Arbitration Provisions” section is found to be illegal or unenforceable, the remainder will remain in effect, except that if a finding of partial illegality or unenforceability would allow class or representative arbitration, this “Mandatory Arbitration Provisions” section will be unenforceable in its entirety."
+     },
+     {
+      "category": "unilateral_change",
+      "confidence": "high",
+      "quote": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective. By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms.",
+      "severity": 2,
+      "explanationTr": "Şirket, hizmet şartlarını tek taraflı olarak değiştirme hakkını saklı tutuyor; güncellemeleri kabul etmiyorsanız hizmeti bırakmanız bekleniyor."
+     }
+    ]
+   }
+  }
+ ]
+}
