@@ -7,13 +7,13 @@ Sınıflandırma (`eval/adjudication.json`) geliştirici-yardımcısı tarafınd
 
 | Belge · gold | Gemini | Qwen | Neden |
 |---|---|---|---|
-| Spotify · liability_cap ("IN NO EVENT WILL SPOTIFY…") | kaçırdı | kaçırdı | Yakınında hiçbir tahmin yok: model bölümü başka sorumluluk cümleleriyle doldurdu / bölüm başına 6 madde sınırı (v2 istemi) bu cümleyi dışarıda bırakmış olabilir. **Gerçek kaçırma.** |
+| Spotify · liability_cap ("IN NO EVENT WILL SPOTIFY…") | kaçırdı | kaçırdı | Yakınında hiçbir tahmin yok. **Gerçek kaçırma**; nedeni doğrulanmadı (v2 istemindeki "bölüm başına en fazla 6 madde" sınırı bir aday açıklama, ama test edilmedi). |
 | Spotify · cancellation_friction ("will not refund any amounts") | kaçırdı | yakaladı | Gemini bunu `account_termination` olarak etiketledi: **kategori karışması**, madde bulundu. |
 | Dropbox · cancellation_friction (iade yok) | kaçırdı | yakaladı | Aynı: `account_termination` olarak etiketlendi. |
 | Grammarly · account_termination ("terminate… without liability") | kaçırdı | yakaladı | Gemini `unilateral_change` etiketledi: kategori karışması. |
 | LinkedIn · cancellation_friction ("cancel before the renewal date") | kaçırdı | kaçırdı | Yakınında `auto_renewal` tahmini var; yenileme maddesi doğru bulundu, "iptal zorluğu" ayrı madde olarak çıkarılmadı. Gold kategorisi tartışmalı. |
 | LinkedIn · unilateral_change ("may change, suspend or discontinue") | yakaladı | kaçırdı | Qwen aynı cümleyi `account_termination` etiketledi: kategori karışması. |
-| Slack · unilateral_change ("we may change these User Terms") | kaçırdı | kaçırdı | Yakında tahmin yok. **Gerçek kaçırma** (iki model de). Bu cümle bir "değişiklik bildirimi" paragrafının başında; model komşu "kullanıma devam = kabul" cümlesini seçti, ancak o 400 karakter dışında kaldı. |
+| Slack · unilateral_change ("we may change these User Terms") | kaçırdı | kaçırdı | Yakında tahmin yok. **Gerçek kaçırma** (iki model de); nedeni incelenmedi. |
 
 Özet: 6 (Gemini) kaçırmanın **3'ü kategori karışması**, 1'i tartışmalı gold, 2'si gerçek kaçırma. Qwen'in 4 kaçırmasının 1'i kategori karışması, 1'i tartışmalı gold, 2'si gerçek.
 Kategori karışmaları en çok `cancellation_friction ↔ account_termination` ve `unilateral_change ↔ account_termination` arasında: kategori tanımları bitişik. Bu, ürün açısından düşük zararlıdır (madde yine kullanıcıya gösterilir, yalnızca etiketi farklıdır) ama skor ağırlığını etkiler.
