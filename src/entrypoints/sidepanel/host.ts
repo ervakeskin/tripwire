@@ -2,12 +2,17 @@ import { analyze } from '../../core/analyze';
 import { PRESETS } from '../../core/llm';
 import { detectInjection, extractVisibleText } from '../../core/sanitize';
 import type { AnalyzeResponse, Msg, PageText } from '../../core/messages';
+import type { LinkInfo } from '../../core/legal';
+import { isLegalUrl, pickLegalLinks } from '../../core/legal';
 
 /** The side panel talks to the page + LLM through a Host, so the exact same UI/pipeline runs in the extension and in a plain web harness (used by Cypress). */
 export interface Host {
   extract(): Promise<PageText>;
   analyze(page: PageText): Promise<AnalyzeResponse>;
   highlight(quote: string): void;
+  findLegalLinks(): Promise<LinkInfo[]>;
+  openUrl(url: string): void;
+  getAutoScan(): Promise<boolean>;
   onProgress(cb: (done: number, total: number) => void): void;
 }
 
@@ -35,6 +40,9 @@ const extensionHost: Host = {
   extract: () => sendToTab<PageText>({ type: 'EXTRACT' }),
   analyze: (page) => chrome.runtime.sendMessage({ type: 'ANALYZE', page } satisfies Msg),
   highlight: (quote) => void sendToTab({ type: 'HIGHLIGHT', quote }).catch(() => {}),
+  findLegalLinks: () => sendToTab<LinkInfo[]>({ type: 'FIND_LINKS' }),
+  openUrl: async (url) => void chrome.tabs.update(await targetTab(), { url }),
+  getAutoScan: async () => ((await chrome.storage.local.get('autoScan')).autoScan ?? true) as boolean,
   onProgress: (cb) =>
     chrome.runtime.onMessage.addListener((m: Msg) => {
       if (m.type === 'PROGRESS') cb(m.done, m.total);
@@ -53,7 +61,7 @@ const webHost: Host = {
     });
     const w = frame.contentWindow!;
     const { visible, hidden } = extractVisibleText(frame.contentDocument!.body, w as unknown as Window);
-    return { url: frame.src, title: frame.contentDocument!.title, text: visible, hiddenFlags: detectInjection(hidden), hiddenChars: hidden.length, looksLikeLegal: /terms|privacy/i.test(frame.contentDocument!.title) };
+    return { url: frame.src, title: frame.contentDocument!.title, text: visible, hiddenFlags: detectInjection(hidden), hiddenChars: hidden.length, looksLikeLegal: isLegalUrl(frame.src, frame.contentDocument!.title), textSource: 'fallback', agentChars: 0, ownChars: visible.length };
   },
   async analyze(page) {
     try {
@@ -77,6 +85,15 @@ const webHost: Host = {
       }
     }
   },
+  async findLegalLinks() {
+    const frame = document.getElementById('page-frame') as HTMLIFrameElement;
+    const anchors = [...frame.contentDocument!.querySelectorAll<HTMLAnchorElement>('a[href]')].map((a) => ({ text: a.textContent ?? '', href: a.getAttribute('href') ?? '' }));
+    return pickLegalLinks(anchors, frame.src);
+  },
+  openUrl(url) {
+    (document.getElementById('page-frame') as HTMLIFrameElement).src = url;
+  },
+  getAutoScan: async () => new URLSearchParams(location.search).get('auto') === '1',
   onProgress: (cb) => (progressCb = cb),
 };
 

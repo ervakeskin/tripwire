@@ -10,9 +10,16 @@ const CAT_TR: Record<string, string> = {
 };
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
 
+let lastPage: PageText | null = null;
+let lastReport: Report | null = null;
+
 function render(r: Report) {
+  lastReport = r;
   const lvl = { low: 'Düşük risk', medium: 'Orta risk', high: 'Yüksek risk' }[r.level];
   let h = `<div class="score ${r.level}" data-testid="score"><div class="num">${r.score}</div><div><b>${lvl}</b><br><small>${r.clauses.length} doğrulanmış madde · kapsam %${Math.round(r.coverage * 100)}</small></div></div>`;
+  if (lastPage)
+    h += `<div class="meta" data-testid="source">Okuma katmanı: ${lastPage.textSource === 'page-agent' ? 'page-agent (PageController)' : 'yedek çıkarıcı'} · ${lastPage.agentChars}/${lastPage.ownChars} karakter</div>`;
+  h += '<button id="copyjson" class="linkbtn" data-testid="copyjson">Raporu JSON olarak kopyala</button>';
   if (r.injectionFlags.length)
     h += `<div class="notice inj" data-testid="injection">🚨 Sayfada yapay zekâya yönelik gizli/açık talimat benzeri metin bulundu (${esc(r.injectionFlags.join(', '))}). Yok sayıldı; skoru etkilemedi.</div>`;
   if (r.injectionFlags.length && !r.clauses.length)
@@ -24,6 +31,10 @@ function render(r: Report) {
       <p>${esc(c.explanationTr)}</p><blockquote data-quote="${esc(c.quote)}" title="Sayfada göster">“${esc(c.quote)}”</blockquote></div>`;
   if (!r.clauses.length && r.coverage > 0) h += '<div class="notice">Doğrulanmış riskli madde bulunamadı. Bu, belgenin risksiz olduğu anlamına gelmez.</div>';
   $('result').innerHTML = h;
+  $('copyjson')?.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(JSON.stringify(lastReport, null, 2)).catch(() => {});
+    $('copyjson').textContent = 'Kopyalandı ✓';
+  });
   $('result').querySelectorAll<HTMLElement>('blockquote').forEach((b) => b.addEventListener('click', () => host.highlight(b.dataset.quote!)));
 }
 
@@ -34,6 +45,7 @@ async function scan() {
   $('status').textContent = 'Sayfa okunuyor…';
   try {
     const page: PageText = await host.extract();
+    lastPage = page;
     if (page.text.length < 500) throw new Error('Bu sayfada analiz edilecek kadar metin yok.');
     $('status').textContent = page.looksLikeLegal ? 'Analiz ediliyor…' : 'Bu sayfa bir ToS/gizlilik sayfasına benzemiyor, yine de analiz ediliyor…';
     const res = await host.analyze(page);
@@ -49,6 +61,32 @@ async function scan() {
 
 host.onProgress((done, total) => ($('status').textContent = `Analiz ediliyor… ${done}/${total}`));
 $('scan').addEventListener('click', scan);
+
+/** Opening the panel on a terms-like page scans it right away (setting `autoScan`, default on); on other pages it offers links to legal documents instead. */
+async function autoStart() {
+  try {
+    const page = await host.extract();
+    lastPage = page;
+    if (page.looksLikeLegal && (await host.getAutoScan())) {
+      $('status').textContent = 'Koşul sayfası algılandı, otomatik taranıyor…';
+      await scan();
+      return;
+    }
+    if (!page.looksLikeLegal) {
+      const links = await host.findLegalLinks();
+      if (links.length) {
+        $('result').innerHTML =
+          '<div class="notice" data-testid="links">🔗 Bu sayfa bir koşul sayfası gibi görünmüyor. Şu bağlantılar koşul/gizlilik sayfalarına gidiyor olabilir:<ul>' +
+          links.map((l, i) => `<li><button class="linkbtn" data-i="${i}">${esc(l.text)}</button></li>`).join('') +
+          '</ul></div>';
+        $('result').querySelectorAll<HTMLElement>('button[data-i]').forEach((b) => b.addEventListener('click', () => host.openUrl(links[Number(b.dataset.i)].href)));
+      }
+    }
+  } catch {
+    /* no access to the tab yet (e.g. chrome:// page) – the manual scan button reports a proper error */
+  }
+}
+void autoStart();
 $('settings').addEventListener('click', (e) => {
   e.preventDefault();
   if (isExtension()) chrome.runtime.openOptionsPage();

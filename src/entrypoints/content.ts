@@ -1,8 +1,7 @@
 import { PageController } from '@page-agent/page-controller';
 import { detectInjection, extractVisibleText, stripMarkup } from '../core/sanitize';
+import { isLegalUrl, pickLegalLinks } from '../core/legal';
 import type { Msg, PageText } from '../core/messages';
-
-const LEGAL_RE = /terms|privacy|policy|agreement|conditions|subscription|gizlilik|koşul|şart|sözleşme|abonelik/i;
 
 /**
  * Read layer: page-agent's PageController renders the full page (viewportExpansion -1) as text.
@@ -12,13 +11,19 @@ const LEGAL_RE = /terms|privacy|policy|agreement|conditions|subscription|gizlili
 async function extract(): Promise<PageText> {
   const { visible, hidden } = extractVisibleText(document.body);
   let text = visible;
+  let textSource: PageText['textSource'] = 'fallback';
+  let agentChars = 0;
   try {
     const pc = new PageController({ viewportExpansion: -1 });
     const state = await pc.getBrowserState();
     const viaAgent = stripMarkup(state.content);
+    agentChars = viaAgent.length;
     // Prefer page-agent's view only if it is complete enough AND does not leak any hidden text.
     const leaks = hidden.length > 20 && viaAgent.includes(hidden.slice(0, 40));
-    if (!leaks && viaAgent.length >= visible.length * 0.6) text = viaAgent;
+    if (!leaks && viaAgent.length >= visible.length * 0.6) {
+      text = viaAgent;
+      textSource = 'page-agent';
+    }
     pc.dispose();
   } catch {
     /* fall back to own extractor */
@@ -29,7 +34,10 @@ async function extract(): Promise<PageText> {
     text,
     hiddenFlags: detectInjection(hidden),
     hiddenChars: hidden.length,
-    looksLikeLegal: LEGAL_RE.test(location.href + ' ' + document.title),
+    looksLikeLegal: isLegalUrl(location.href, document.title),
+    textSource,
+    agentChars,
+    ownChars: visible.length,
   };
 }
 
@@ -59,6 +67,11 @@ export default defineContentScript({
       if (msg.type === 'EXTRACT') {
         extract().then(sendResponse);
         return true;
+      }
+      if (msg.type === 'FIND_LINKS') {
+        const anchors = [...document.querySelectorAll<HTMLAnchorElement>('a[href]')].map((a) => ({ text: a.textContent ?? '', href: a.getAttribute('href') ?? '' }));
+        sendResponse(pickLegalLinks(anchors, location.href));
+        return;
       }
       if (msg.type === 'HIGHLIGHT') highlight(msg.quote);
     });

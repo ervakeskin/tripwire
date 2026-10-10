@@ -17,7 +17,9 @@ function applyPreset(id: string) {
 }
 preset.addEventListener('change', () => applyPreset(preset.value));
 
-chrome.storage.local.get('llm').then(({ llm }: { llm?: any }) => {
+const autoScan = $<HTMLInputElement>('autoScan');
+chrome.storage.local.get(['llm', 'autoScan']).then(({ llm, autoScan: a }: { llm?: any; autoScan?: boolean }) => {
+  autoScan.checked = a ?? true;
   preset.value = llm?.preset ?? DEFAULT_PRESET;
   applyPreset(preset.value);
   if (llm) {
@@ -30,6 +32,7 @@ chrome.storage.local.get('llm').then(({ llm }: { llm?: any }) => {
 $('save').addEventListener('click', async () => {
   const p = PRESETS[preset.value];
   await chrome.storage.local.set({
+    autoScan: autoScan.checked,
     llm: { preset: preset.value, provider: p.provider, baseURL: baseURL.value.trim(), model: model.value.trim(), apiKey: key.value.trim() },
   });
   $('ok').textContent = 'Kaydedildi ✓';

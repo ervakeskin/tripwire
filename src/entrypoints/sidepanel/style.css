@@ -21,3 +21,8 @@ button#scan:disabled { opacity:.6; cursor:wait; }
 #page-frame { display: none; }
 body.harness #page-frame { display: block; width: 100%; height: 320px; border: 1px solid var(--line); margin-top: 16px; }
 .conf-low { color:var(--high); font-weight:700; }
+
+.meta { color: var(--muted); font-size: 11.5px; margin: 4px 0; }
+.linkbtn { background: none; border: 0; padding: 2px 0; color: #1f6feb; cursor: pointer; font: inherit; text-decoration: underline; }
+@media (prefers-color-scheme: dark) { .linkbtn { color: #58a6ff; } }
+.notice ul { margin: 6px 0 0; padding-left: 18px; }

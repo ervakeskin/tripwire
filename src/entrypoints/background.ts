@@ -2,9 +2,52 @@ import { analyze } from '../core/analyze';
 import { DEFAULT_PRESET, PRESETS, type LlmConfig } from '../core/llm';
 import type { AnalyzeResponse, Msg } from '../core/messages';
 import type { Report } from '../core/schema';
+import { LEGAL_URL_RE2 } from '../core/legal';
+
+/** Red-dot variant of the toolbar icon, drawn at runtime (no image assets needed). */
+function icon(withDot: boolean): Record<number, ImageData> {
+  const out: Record<number, ImageData> = {};
+  for (const size of [16, 32]) {
+    const c = new OffscreenCanvas(size, size);
+    const g = c.getContext('2d')!;
+    g.fillStyle = '#1f6feb';
+    g.beginPath();
+    g.roundRect(0, 0, size, size, size / 5);
+    g.fill();
+    g.fillStyle = '#fff';
+    g.font = `bold ${Math.round(size * 0.7)}px sans-serif`;
+    g.textAlign = 'center';
+    g.textBaseline = 'middle';
+    g.fillText('T', size / 2, size / 2 + size * 0.05);
+    if (withDot) {
+      g.fillStyle = '#e03131';
+      g.beginPath();
+      g.arc(size * 0.75, size * 0.25, size * 0.25, 0, Math.PI * 2);
+      g.fill();
+    }
+    out[size] = g.getImageData(0, 0, size, size);
+  }
+  return out;
+}
+
+/** declarativeContent: no host permission, no page access; the browser itself swaps the icon when the URL looks like a terms page. */
+function setupLegalPageBadge() {
+  const dc = chrome.declarativeContent;
+  if (!dc) return;
+  dc.onPageChanged.removeRules(undefined, () => {
+    dc.onPageChanged.addRules([
+      {
+        conditions: [new dc.PageStateMatcher({ pageUrl: { urlMatches: LEGAL_URL_RE2 } })],
+        actions: [new dc.SetIcon({ imageData: icon(true) })],
+      },
+    ]);
+  });
+  chrome.action.setIcon({ imageData: icon(false) }).catch(() => {});
+}
 
 export default defineBackground(() => {
   chrome.sidePanel?.setPanelBehavior?.({ openPanelOnActionClick: true }).catch(() => {});
+  chrome.runtime.onInstalled.addListener(setupLegalPageBadge);
 
   chrome.runtime.onMessage.addListener((msg: Msg, _sender, sendResponse) => {
     if (msg.type !== 'ANALYZE') return;
