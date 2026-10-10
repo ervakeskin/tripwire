@@ -109,7 +109,10 @@ Video (`cypress/videos/demo.cy.ts.mp4`, ~36 sn) üç sahne:
 
 ## Gerçek tarayıcıda doğrulama
 
-Uzantı Chrome'a "paketlenmemiş" yüklenip gerçek bir sayfada elle denendi (gemini-3.1-flash-lite): `dropbox.com/terms` → **skor 58 (orta risk), 7 doğrulanmış madde, kapsam %100**, 1 iddia alıntı doğrulamasında atıldı ve raporda bildirildi. Maddeler: otomatik yenileme, tek taraflı fiyat/özellik değişikliği (2), sorumluluk sınırı ($20 veya ödenen tutar), hesap kapatma + iade yok, zorunlu tahkim ve toplu dava feragati (2). Her madde orijinal metinden birebir alıntıyla geldi. Bu deneme tek bir sayfadır; kapsamlı değerlendirme için yukarıdaki eval bölümüne bakın.
+Uzantı Chrome'a "paketlenmemiş" yüklenip gerçek bir sayfada elle denendi (gemini-3.1-flash-lite): `dropbox.com/terms` → **skor 58 (orta risk), 7 doğrulanmış madde, kapsam %100**, 1 iddia alıntı doğrulamasında atıldı ve raporda bildirildi. Maddeler: otomatik yenileme, tek taraflı fiyat/özellik değişikliği (2), sorumluluk sınırı ($20 veya ödenen tutar), hesap kapatma + iade yok, zorunlu tahkim ve toplu dava feragati (2). Her madde orijinal metinden birebir alıntıyla geldi. 
+![Tripwire yan paneli, Dropbox ToS sayfasında](docs/screenshot-dropbox.png)
+
+Bu deneme tek bir sayfadır; kapsamlı değerlendirme için yukarıdaki eval bölümüne bakın.
 
 ## Lisans / atıf
 page-agent: MIT (alibaba/page-agent). ToS metinleri ilgili şirketlere aittir; yalnızca değerlendirme amacıyla alıntılanmıştır.
