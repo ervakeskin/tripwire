@@ -3,8 +3,7 @@
 const TOKENS = ['terms', 'tos', 'privacy', 'legal', 'eula', 'agreement', 'user-agreement', 'end-user', 'conditions', 'gizlilik', 'kosul', 'kullanim-kosullari', 'sozlesme', 'sartlar'];
 
 /**
- * RE2-compatible source (no lookarounds) so the exact same pattern is used by chrome.declarativeContent
- * (urlMatches) and by JS. A token must START a path segment (/terms, /privacy-policy, /legal/...), so slugs like /interest-terms-explained are ignored.
+ * Pattern source kept free of lookarounds (RE2-compatible) so it can be reused outside JS if needed. A token must START a path segment (/terms, /privacy-policy, /legal/...), so slugs like /interest-terms-explained are ignored.
  */
 export const LEGAL_URL_RE2 = `(?i)/(${TOKENS.join('|')})([/._?#-]|$)`;
 const URL_RE = new RegExp(LEGAL_URL_RE2.replace('(?i)', ''), 'i');

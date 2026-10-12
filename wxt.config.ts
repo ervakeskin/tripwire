@@ -6,7 +6,7 @@ export default defineConfig({
   manifest: {
     name: 'Tripwire — ToS Trap Spotter',
     description: 'Kullanım koşullarındaki riskli maddeleri kanıtlı alıntılarla yakalar. Hukuki tavsiye değildir.',
-    permissions: ['activeTab', 'storage', 'sidePanel', 'scripting', 'declarativeContent'],
+    permissions: ['activeTab', 'storage', 'sidePanel', 'scripting'],
     host_permissions: ['https://api.anthropic.com/*', 'https://generativelanguage.googleapis.com/*', 'https://api.groq.com/*', 'http://localhost:11434/*'],
     optional_host_permissions: ['http://*/*', 'https://*/*'],
     side_panel: { default_path: 'sidepanel.html' },

@@ -72,7 +72,7 @@ Tehdit modeli: ToS sayfasının kendisi saldırgan olabilir.
 | Modelin kendi skorunu/riskini dayatması | şemada skor alanı yok; skor kodda hesaplanır | (d) |
 | Serbest metin çıktı | yalnızca zorunlu `tool_use` + Zod; aksi `schema_violation` | `test/core.test.ts` |
 | Anahtar sızıntısı | anahtar yalnızca background'da; content script/sayfa erişemez | — |
-| Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting, declarativeContent`; host: yalnızca LLM uçları (**tüm siteler için kalıcı host izni yok**; sayfaya, uzantı simgesine tıkladığınız sekmede `activeTab` ile erişilir. Yedek olarak, yalnızca siz düğmeye basarsanız, isteğe bağlı site erişim izni Chrome'dan istenir) | `wxt.config.ts` |
+| Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting`; host: yalnızca LLM uçları (**tüm siteler için kalıcı host izni yok**; sayfaya, uzantı simgesine tıkladığınız sekmede `activeTab` ile erişilir. Yedek olarak, yalnızca siz düğmeye basarsanız, isteğe bağlı site erişim izni Chrome'dan istenir) | `wxt.config.ts` |
 
 **Canlı model testi** (`npx tsx eval/injection-live.ts`, `src/public/fixtures/injection.html`: 4 gizli + 1 görünür talimat, gerçek ToS maddeleri arada): gemini-3.1-flash-lite ve qwen3.8-27b — gizli talimat LLM metnine **girmedi**, görünür talimat ve gizli metin işaretlendi, **iki model de talimata uymadı** ve 3 beklenen maddeyi (otomatik yenileme, veri satışı, tahkim) döndürdü; skor yalnızca doğrulanmış maddelerden hesaplandı (54 / 53). Raporlar: `eval/injection-report-*.md`. Sınır: tek bir sayfa ve iki model; daha ustaca saldırılar denenmedi.
 
@@ -122,7 +122,7 @@ Not: Cypress videosu, Cypress'in kendi çalıştırıcı arayüzüyle kaydedilir
 
 ## Otomatik yakalama, koşul bağlantısı ve page-agent
 
-- **Otomatik yakalama:** URL/başlık bir koşul sayfasına benziyorsa (`src/core/legal.ts`, birim testli) araç çubuğu simgesi **kırmızı noktalı** olur (`declarativeContent`: tarayıcı kendisi yapar, sayfa içeriğine/host iznine ihtiyaç yok). Yan panel o sayfada açılınca otomatik tarar (Ayarlar'dan kapatılabilir). Arka planda sessiz tarama yoktur.
+- **Otomatik yakalama:** URL/başlık bir koşul sayfasına benziyorsa (`src/core/legal.ts`, birim testli) yan panel o sayfada açılınca kendiliğinden tarar (Ayarlar'dan kapatılabilir; simgeye tıklamak = kullanıcı eylemi, arka planda sessiz tarama yoktur). *Not: araç çubuğu simgesinde "koşul sayfası" rozeti de denendi (`declarativeContent`), gerçek Chrome'da çalışmadığı için kaldırıldı.*
 - **Koşul bağlantısı bulucu:** koşul sayfası olmayan bir sayfada panel, sayfadaki Şartlar/Gizlilik bağlantılarını listeler; tıklayınca sekme o sayfaya gider. LLM kullanılmaz.
 - **page-agent kullanımı:** sayfa metni önce `@page-agent/page-controller` (page-agent'ın DOM→metin katmanı, `viewportExpansion: -1`) ile okunur; panelde "Okuma katmanı: page-agent / yedek çıkarıcı" ve karakter sayıları gösterilir. page-agent çıktısı eksikse (<%60) ya da gizli metin sızdırıyorsa kendi görünürlük-bilinçli çıkarıcımıza düşülür.
 - **Bilinçli karar:** page-agent'ın LLM-güdümlü "doğal dil komutuyla sayfada işlem yapma" modu **kullanılmaz**. Güvenilmeyen sayfa metni + sayfada eylem yetkisi, prompt injection ile istenmeyen tıklama/form doldurma demektir; bu aracın amacı yalnızca okumak ve raporlamaktır.
