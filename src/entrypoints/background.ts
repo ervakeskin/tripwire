@@ -42,7 +42,7 @@ function setupLegalPageBadge() {
       },
     ]);
   });
-  chrome.action.setIcon({ imageData: icon(false) }).catch(() => {});
+  chrome.action.setIcon({ imageData: icon(false) }).catch((e) => console.warn('[Tripwire] setIcon failed', e));
 }
 
 export default defineBackground(() => {
@@ -52,6 +52,12 @@ export default defineBackground(() => {
   chrome.action.onClicked.addListener((tab) => {
     if (tab.id !== undefined) void chrome.sidePanel.open({ tabId: tab.id });
   });
+  // Rules must exist after a plain "reload" of an unpacked extension too (onInstalled does not always fire then): set them on every worker start.
+  try {
+    setupLegalPageBadge();
+  } catch (e) {
+    console.warn('[Tripwire] badge setup failed', e);
+  }
   chrome.runtime.onInstalled.addListener(setupLegalPageBadge);
 
   chrome.runtime.onMessage.addListener((msg: Msg, _sender, sendResponse) => {
