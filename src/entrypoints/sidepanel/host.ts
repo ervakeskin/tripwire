@@ -26,12 +26,25 @@ async function targetTab(): Promise<number> {
 }
 
 /** Tabs opened before the extension was installed/reloaded have no content script yet: inject it on demand (activeTab + scripting), then retry once. */
+export const NO_ACCESS = 'NO_ACCESS';
+const isNoAccess = (e: unknown) => /cannot access|must request permission|host permission/i.test(String((e as Error)?.message ?? e));
+
+/** Fallback when activeTab was not granted (e.g. panel opened from the side-panel menu): ask the user for site access. Needs a user gesture. */
+export async function requestSiteAccess(): Promise<boolean> {
+  if (!isExtension()) return true;
+  return chrome.permissions.request({ origins: ['http://*/*', 'https://*/*'] });
+}
+
 async function sendToTab<T>(msg: Msg): Promise<T> {
   const tabId = await targetTab();
   try {
     return await chrome.tabs.sendMessage(tabId, msg);
   } catch {
-    await chrome.scripting.executeScript({ target: { tabId }, files: ['content-scripts/content.js'] });
+    try {
+      await chrome.scripting.executeScript({ target: { tabId }, files: ['content-scripts/content.js'] });
+    } catch (e) {
+      throw isNoAccess(e) ? new Error(NO_ACCESS) : e;
+    }
     return chrome.tabs.sendMessage(tabId, msg);
   }
 }

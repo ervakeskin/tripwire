@@ -72,7 +72,7 @@ Tehdit modeli: ToS sayfasının kendisi saldırgan olabilir.
 | Modelin kendi skorunu/riskini dayatması | şemada skor alanı yok; skor kodda hesaplanır | (d) |
 | Serbest metin çıktı | yalnızca zorunlu `tool_use` + Zod; aksi `schema_violation` | `test/core.test.ts` |
 | Anahtar sızıntısı | anahtar yalnızca background'da; content script/sayfa erişemez | — |
-| Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting, declarativeContent`; host: yalnızca LLM uçları (**tüm siteler için host izni yok**; sayfaya yalnız kullanıcı taradığında `activeTab` ile erişilir) | `wxt.config.ts` |
+| Gereksiz yetki | izinler: `activeTab, storage, sidePanel, scripting, declarativeContent`; host: yalnızca LLM uçları (**tüm siteler için kalıcı host izni yok**; sayfaya, uzantı simgesine tıkladığınız sekmede `activeTab` ile erişilir. Yedek olarak, yalnızca siz düğmeye basarsanız, isteğe bağlı site erişim izni Chrome'dan istenir) | `wxt.config.ts` |
 
 **Canlı model testi** (`npx tsx eval/injection-live.ts`, `src/public/fixtures/injection.html`: 4 gizli + 1 görünür talimat, gerçek ToS maddeleri arada): gemini-3.1-flash-lite ve qwen3.8-27b — gizli talimat LLM metnine **girmedi**, görünür talimat ve gizli metin işaretlendi, **iki model de talimata uymadı** ve 3 beklenen maddeyi (otomatik yenileme, veri satışı, tahkim) döndürdü; skor yalnızca doğrulanmış maddelerden hesaplandı (54 / 53). Raporlar: `eval/injection-report-*.md`. Sınır: tek bir sayfa ve iki model; daha ustaca saldırılar denenmedi.
 

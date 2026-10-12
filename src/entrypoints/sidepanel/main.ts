@@ -1,6 +1,6 @@
 import type { PageText } from '../../core/messages';
 import type { Report } from '../../core/schema';
-import { host, isExtension } from './host';
+import { host, isExtension, NO_ACCESS, requestSiteAccess } from './host';
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const CAT_TR: Record<string, string> = {
@@ -38,6 +38,16 @@ function render(r: Report) {
   $('result').querySelectorAll<HTMLElement>('blockquote').forEach((b) => b.addEventListener('click', () => host.highlight(b.dataset.quote!)));
 }
 
+/** activeTab only covers a tab the user opened the extension on; otherwise Chrome needs explicit site access (one click, user-approved). */
+function showAccessNotice() {
+  $('status').textContent = '';
+  $('result').innerHTML =
+    '<div class="notice" data-testid="noaccess">🔒 Bu sayfayı okumak için Chrome izni gerekiyor. Uzantı simgesine sayfadayken tıklayarak açmak yeterli olur; olmazsa aşağıdaki düğmeyle siteye erişim izni verin.<br><button id="grant" class="linkbtn">Siteye erişim izni ver</button></div>';
+  $('grant').addEventListener('click', async () => {
+    if (await requestSiteAccess()) void scan();
+  });
+}
+
 async function scan() {
   const btn = $<HTMLButtonElement>('scan');
   btn.disabled = true;
@@ -53,7 +63,8 @@ async function scan() {
     $('status').textContent = 'Tamamlandı.';
     render(res.report);
   } catch (e) {
-    $('status').textContent = `Hata: ${(e as Error).message}`;
+    if ((e as Error).message === NO_ACCESS) showAccessNotice();
+    else $('status').textContent = `Hata: ${(e as Error).message}`;
   } finally {
     btn.disabled = false;
   }
@@ -82,8 +93,9 @@ async function autoStart() {
         $('result').querySelectorAll<HTMLElement>('button[data-i]').forEach((b) => b.addEventListener('click', () => host.openUrl(links[Number(b.dataset.i)].href)));
       }
     }
-  } catch {
-    /* no access to the tab yet (e.g. chrome:// page) – the manual scan button reports a proper error */
+  } catch (e) {
+    if ((e as Error).message === NO_ACCESS) showAccessNotice();
+    /* other errors (e.g. chrome:// pages): the manual scan button reports a proper message */
   }
 }
 void autoStart();

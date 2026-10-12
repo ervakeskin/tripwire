@@ -46,7 +46,12 @@ function setupLegalPageBadge() {
 }
 
 export default defineBackground(() => {
-  chrome.sidePanel?.setPanelBehavior?.({ openPanelOnActionClick: true }).catch(() => {});
+  // Open the panel ourselves from action.onClicked: that click grants `activeTab` for the current tab (setPanelBehavior's
+  // openPanelOnActionClick does NOT, which made the panel unable to read the page).
+  chrome.sidePanel?.setPanelBehavior?.({ openPanelOnActionClick: false }).catch(() => {});
+  chrome.action.onClicked.addListener((tab) => {
+    if (tab.id !== undefined) void chrome.sidePanel.open({ tabId: tab.id });
+  });
   chrome.runtime.onInstalled.addListener(setupLegalPageBadge);
 
   chrome.runtime.onMessage.addListener((msg: Msg, _sender, sendResponse) => {
