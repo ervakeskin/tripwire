@@ -134,6 +134,8 @@ Uzantı Chrome'a "paketlenmemiş" yüklenip gerçek bir sayfada elle denendi (ge
 
 İkinci deneme (`linkedin.com/legal/user-agreement`, yeni sürüm): simgeye tıklayınca panel **kendiliğinden taradı** → skor 60 (yüksek), 11 doğrulanmış madde, kapsam %100, 0 atılan iddia. Panel altbilgisi **"Okuma katmanı: page-agent (PageController) · 33165/33062 karakter"** gösterdi: yani gerçek sayfada metin page-agent'ın `PageController`'ından geldi ve bizim görünürlük-bilinçli çıkarıcıyla neredeyse aynı uzunlukta (fark %0,3), yedek yola düşülmedi. "JSON olarak kopyala" çalıştı. Bu denemede açıklama–alıntı tutarsızlıkları da görüldü (bkz. Bilinen sınırlar 6).
 
+Koşul bağlantısı bulucu da gerçek Chrome'da doğrulandı: koşul sayfası olmayan bir ana sayfada panel "Bu sayfa bir koşul sayfası gibi görünmüyor… bağlantılar" kutusunu ve "Privacy & terms" bağlantısını listeledi. Araç çubuğu rozeti (denendi) çalışmadığı için kaldırıldı.
+
 Bu deneme tek bir sayfadır; kapsamlı değerlendirme için yukarıdaki eval bölümüne bakın.
 
 ## Lisans / atıf
