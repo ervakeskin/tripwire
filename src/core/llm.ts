@@ -9,7 +9,7 @@ export interface LlmConfig {
 }
 
 export const PRESETS: Record<string, Omit<LlmConfig, 'apiKey'> & { label: string; keyHint: string }> = {
-  gemini: { label: 'Google Gemini (ücretsiz kota)', provider: 'openai', baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.5-flash', keyHint: 'aistudio.google.com/apikey — kart gerekmez' },
+  gemini: { label: 'Google Gemini (ücretsiz kota)', provider: 'openai', baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-3.1-flash-lite', keyHint: 'aistudio.google.com/apikey — kart gerekmez' },
   groq: { label: 'Groq (ücretsiz kota)', provider: 'openai', baseURL: 'https://api.groq.com/openai/v1', model: 'openai/gpt-oss-120b', keyHint: 'console.groq.com/keys — kart gerekmez' },
   ollama: { label: 'Ollama (yerel, anahtarsız)', provider: 'openai', baseURL: 'http://localhost:11434/v1', model: 'qwen2.5:7b-instruct', keyHint: 'Anahtar gerekmez; `ollama serve` çalışmalı' },
   anthropic: { label: 'Anthropic Claude', provider: 'anthropic', baseURL: 'https://api.anthropic.com', model: 'claude-haiku-4-5-20251001', keyHint: 'console.anthropic.com' },
@@ -51,7 +51,7 @@ export async function callLlm(cfg: LlmConfig, system: string, userContent: strin
 
   const res = await fetchImpl(`${base}/chat/completions`, {
     method: 'POST',
-      signal: AbortSignal.timeout(90_000), // a hung connection must fail (and be retried), never block the scan forever
+    signal: AbortSignal.timeout(90_000), // a hung connection must fail (and be retried), never block the scan forever
     headers: { 'content-type': 'application/json', ...(key ? { authorization: `Bearer ${key}` } : {}) },
     body: JSON.stringify({
       model: cfg.model, temperature: 0,

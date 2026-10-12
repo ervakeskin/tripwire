@@ -11,7 +11,8 @@
     "eval": "tsx eval/run.ts",
     "eval:fetch": "tsx eval/fetch-corpus.ts",
     "harness": "node scripts/serve.mjs",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "demo": "node scripts/demo.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
@@ -28,5 +29,6 @@
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^4.1.11"
-  }
+  },
+  "license": "MIT"
 }

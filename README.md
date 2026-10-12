@@ -4,6 +4,17 @@ Chrome (MV3) uzantısı: kullanım koşulları / gizlilik politikası / abonelik
 
 > ⚖️ **Bu araç hukuki tavsiye vermez.** Bu ifade yan panelin en üstünde, sabit bir bantta her zaman görünür.
 
+## Hızlı başlangıç
+
+```bash
+npm install && npm run build      # → .output/chrome-mv3
+```
+1. `chrome://extensions` → Geliştirici modu → **Paketlenmemiş yükle** → `.output/chrome-mv3`
+2. Uzantı → **Ayarlar** → sağlayıcı (varsayılan Gemini, model `gemini-3.1-flash-lite`) + kendi anahtarın → Kaydet
+3. Bir kullanım koşulları sayfası aç (ör. `dropbox.com/terms`) → simgeye tıkla → panel kendiliğinden tarar (ya da **Bu sayfayı tara**)
+
+`npm test` (birim testleri) · `npm run demo` (Cypress demo videosu) · `npm run eval` (eval) · [`docs/threat-model.md`](docs/threat-model.md) · [`eval/ANALYSIS.md`](eval/ANALYSIS.md)
+
 ## Mimari ve veri akışı
 
 ```
