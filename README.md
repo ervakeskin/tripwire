@@ -132,6 +132,8 @@ Not: Cypress videosu, Cypress'in kendi çalıştırıcı arayüzüyle kaydedilir
 Uzantı Chrome'a "paketlenmemiş" yüklenip gerçek bir sayfada elle denendi (gemini-3.1-flash-lite): `dropbox.com/terms` → **skor 58 (orta risk), 7 doğrulanmış madde, kapsam %100**, 1 iddia alıntı doğrulamasında atıldı ve raporda bildirildi. Maddeler: otomatik yenileme, tek taraflı fiyat/özellik değişikliği (2), sorumluluk sınırı ($20 veya ödenen tutar), hesap kapatma + iade yok, zorunlu tahkim ve toplu dava feragati (2). Her madde orijinal metinden birebir alıntıyla geldi. 
 ![Tripwire yan paneli, Dropbox ToS sayfasında](docs/screenshot-dropbox.png)
 
+İkinci deneme (`linkedin.com/legal/user-agreement`, yeni sürüm): simgeye tıklayınca panel **kendiliğinden taradı** → skor 60 (yüksek), 11 doğrulanmış madde, kapsam %100, 0 atılan iddia. Panel altbilgisi **"Okuma katmanı: page-agent (PageController) · 33165/33062 karakter"** gösterdi: yani gerçek sayfada metin page-agent'ın `PageController`'ından geldi ve bizim görünürlük-bilinçli çıkarıcıyla neredeyse aynı uzunlukta (fark %0,3), yedek yola düşülmedi. "JSON olarak kopyala" çalıştı. Bu denemede açıklama–alıntı tutarsızlıkları da görüldü (bkz. Bilinen sınırlar 6).
+
 Bu deneme tek bir sayfadır; kapsamlı değerlendirme için yukarıdaki eval bölümüne bakın.
 
 ## Lisans / atıf
