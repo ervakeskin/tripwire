@@ -13,8 +13,9 @@ async function extract(): Promise<PageText> {
   let text = visible;
   let textSource: PageText['textSource'] = 'fallback';
   let agentChars = 0;
+  let pc: PageController | null = null;
   try {
-    const pc = new PageController({ viewportExpansion: -1 });
+    pc = new PageController({ viewportExpansion: -1 });
     const state = await pc.getBrowserState();
     const viaAgent = stripMarkup(state.content);
     agentChars = viaAgent.length;
@@ -24,9 +25,10 @@ async function extract(): Promise<PageText> {
       text = viaAgent;
       textSource = 'page-agent';
     }
-    pc.dispose();
   } catch {
     /* fall back to own extractor */
+  } finally {
+    pc?.dispose(); // also removes the index overlays page-agent draws on the page while building its tree
   }
   return {
     url: location.href,
